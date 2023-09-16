@@ -147,15 +147,14 @@
   background-color: #bac383;
 }
 
-@media (max-width: 768px) and (max-height: 556px) {
-  .item:not(:nth-child(1)) {
+@media (width <= 768px) {
+  .item:not(:nth-child(2)) {
     background-image: none !important;
     box-shadow: none;
   }
   .item::before {
     display: none;
   }
-
   .buttons button {
     width: 25px;
     height: 25px;
