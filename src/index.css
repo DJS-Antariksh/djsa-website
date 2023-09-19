@@ -19,8 +19,7 @@ code {
 /* Global */
 @font-face {
   font-family: 'Methanerse';
-  src: url('../public/fonts/Methanerse/MethanerseFreeTrial-0WpE4.otf') format('otf');
-  src: url('../public/fonts/Methanerse/MethanerseFreeTrial-eZX7x.ttf') format('ttf');
+  src: url('../public/fontss/methanerse.ttf') format('truetype');
 }
 
 .bg-global-background-image {
