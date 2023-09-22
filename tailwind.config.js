@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       letterSpacing: {
-        '1': '0.1em', // Define a custom letter spacing value
+        '1': '0.1em', 
       },
       lineHeight: {
         'extra-loose': '2.5',
@@ -22,8 +22,8 @@ module.exports = {
       '12xl':'10rem'
     },
     padding: {
-      '10': '2.5rem', // You can use any custom value you want here
-      '20': '5rem',  // For example, '10' corresponds to 2.5rem
+      '10': '2.5rem',
+      '20': '5rem', 
     },
     screens: {
       xs: "480px",
