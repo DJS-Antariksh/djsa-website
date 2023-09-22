@@ -5,9 +5,9 @@ import Core from "./components/Core"
 export default function App() {
   return (
     <div>
-      {/* <LandingPage/> */}
+      <LandingPage/>
       <Department/>
-      {/* <Core/> */}
+      <Core/>
     </div>
   )
 }

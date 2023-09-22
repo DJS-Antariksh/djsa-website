@@ -6,13 +6,7 @@ import stars from "../assets/2k_stars.jpg";
 import AntarikshLogo from "../assets/AntarikshLogo.png";
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [titleFontSize, setTitleFontSize] = useState(60); // Initial fontSize
-
-  const toggleMenu = () => {
-    console.log("yeah ");
-    setMenuOpen(!menuOpen);
-  };
+  
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
 
@@ -40,54 +34,17 @@ function App() {
             intensity: 1,
           },
         },
-        // left:440,
-        // bottom:150,
-        // saturation: 1,
       },
-      // title: {
-      //   text: "TO\nDECIPHER\nUNIMAGINABLE",
-      //   left: "center",
-      //   top: "center",
-      //   textStyle: {
-      //     fontSize: titleFontSize,
-      //     fontWeight: "normal",
-      //     verticalAlign: "middle",
-      //     shadowColor:"",
-      //     fontFamily: 'meth',
-      //     color:"#fff",
-      //   },
-      // },
       series: [],
     };
 
     option && myChart.setOption(option);
 
-    const resizeChart = () => {
-      if (chartInstance.current) {
-        chartInstance.current.resize();
-        if (window.innerWidth >= 2560) {
-          setTitleFontSize(200);
-        }else if (window.innerWidth > 768) {
-          setTitleFontSize(60);
-        } else if (window.innerWidth <= 768) {
-          setTitleFontSize(30);
-        } else if (window.innerWidth <= 425) {
-          setTitleFontSize(20);
-        } else {
-          setTitleFontSize(10);
-        }
-      }
-    };
-
-    // Attach the resize event listener
-    window.addEventListener("resize", resizeChart);
-
     // Cleanup: Remove the event listener when the component unmounts
     return () => {
-      window.removeEventListener("resize", resizeChart);
       myChart.dispose();
     };
-  }, [titleFontSize]);
+  }, []);
 
   return (
     <div style={{ width: "100vw", height: "100vh" }}>
@@ -113,17 +70,17 @@ function App() {
       >
         <div>
           <img
-            className="cursor-pointer w-36 xxl:w-72 sm:w-24"
+            className="w-48 cursor-pointer"
             src={AntarikshLogo}
             alt="AntarikshLogo"
           />
         </div>
         <div
         >
-          <ul className="flex md:flex-row md:items-center md:gap-[4vw] gap-8 sm:gap-[2vw]">
+          <ul className="flex md:flex-row md:items-center md:gap-[4vw] gap-8 sm:gap-[2vw] ml-96">
             <li>
               <a
-                className="text-lg text-white hover:text-gray-500 md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg text-white hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
                 href="#"
               >
                 Home
@@ -131,7 +88,7 @@ function App() {
             </li>
             <li>
               <a
-                className="text-lg text-white hover:text-gray-500 md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg text-white hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
                 href="#"
               >
                 About
@@ -139,7 +96,7 @@ function App() {
             </li>
             <li>
               <a
-                className="text-lg text-white hover:text-gray-500 md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg text-white hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
                 href="#"
               >
                 Achievements
@@ -147,7 +104,7 @@ function App() {
             </li>
             <li>
               <a
-                className="text-lg text-white hover:text-gray-500 md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg text-white hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
                 href="#"
               >
                 Department
@@ -155,7 +112,7 @@ function App() {
             </li>
             <li>
               <a
-                className="text-lg text-white hover:text-gray-500 md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg text-white hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
                 href="#"
               >
                 ContactUs
@@ -192,11 +149,11 @@ function App() {
         className="absolute leading-6 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         style={{ zIndex: 1 }}
       >
-        <p className="text-6xl text-center text-white font-meth tracking-1 sm:text-5xl xxl:text-9xl xxxl:text-12xl xxl:leading-12">TO</p>
+        <p className="text-6xl text-center text-white font-meth tracking-1">TO</p>
         <br />
-        <p className="text-6xl text-center text-white font-meth tracking-1 sm:text-5xl xxl:text-9xl xxxl:text-12xl xxl:leading-12">DECIPHER</p>
+        <p className="text-6xl text-center text-white font-meth tracking-1">DECIPHER</p>
         <br />
-        <p className="text-6xl text-center text-white font-meth tracking-1 sm:text-5xl xxl:text-9xl xxxl:text-12xl xxl:leading-12">UNIMAGINABLE</p>
+        <p className="text-6xl text-center text-white font-meth tracking-1">UNIMAGINABLE</p>
       </div>
     </div>
   );

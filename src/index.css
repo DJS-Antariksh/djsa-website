@@ -17,6 +17,21 @@ code {
     monospace;
 }
 
+::-webkit-scrollbar{
+  width: 12px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent,rgba(241, 153, 105));
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(transparent,rgb(238, 125, 64));
+  border-radius: 6px;
+}
+
 /* Global */
 @font-face {
   font-family: 'Methanerse';
