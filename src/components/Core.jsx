@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  TETabs,
-  TETabsContent,
-  TETabsItem,
-  TETabsPane,
-} from "tw-elements-react";
+import {TETabs,TETabsContent,TETabsItem,TETabsPane} from "tw-elements-react";
 import core1 from "../assets/20-21demo.png"
 import core2 from "../assets/21-22demo.png"
 import core3 from "../assets/22-23.png"
@@ -20,25 +15,25 @@ function Core() {
   };
 
   return (
-    <div className="mb-3">
-      <TETabs fill>
+    <div>
+      <TETabs fill >
         <TETabsItem
           onClick={() => handleFillClick("tab1")}
           active={fillActive === "tab1"}
         >
-          Home
+          Core 2020-2021
         </TETabsItem>
         <TETabsItem
           onClick={() => handleFillClick("tab2")}
           active={fillActive === "tab2"}
         >
-          Profile
+          Core 2021-2022
         </TETabsItem>
         <TETabsItem
           onClick={() => handleFillClick("tab3")}
           active={fillActive === "tab3"}
         >
-          Messages
+          Core 2022-2023
         </TETabsItem>
       </TETabs>
 

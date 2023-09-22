@@ -18,6 +18,9 @@ module.exports = {
       "poppins": ["Poppins", "sans-serif"],
       "meth": ['methanerse', 'sans-serif'],
     },
+    fontSize:{
+      '12xl':'10rem'
+    },
     padding: {
       '10': '2.5rem', // You can use any custom value you want here
       '20': '5rem',  // For example, '10' corresponds to 2.5rem
@@ -30,6 +33,7 @@ module.exports = {
       lg: "1200px",
       xl: "1700px",
       xxl: "2000px",
+      xxxl: "2560px",
     },
    
   },
