@@ -1,11 +1,13 @@
-import LandingPage from "./components/LandingPage/LandingPage"
+import LandingPage from "./components/LandingPage/LP"
 import Department from "./components/Department/Department"
+import Core from "./components/Core"
 
 export default function App() {
   return (
-    <div className="bg-global-background-image">
+    <div>
       <LandingPage/>
-      {/* <Department/> */}
+      <Department/>
+      <Core/>
     </div>
   )
 }

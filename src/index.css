@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;  
 }
 
 code {
@@ -19,15 +20,16 @@ code {
 /* Global */
 @font-face {
   font-family: 'Methanerse';
-  src: url('../public/fonts/Methanerse/MethanerseFreeTrial-0WpE4.otf') format('otf');
-  src: url('../public/fonts/Methanerse/MethanerseFreeTrial-eZX7x.ttf') format('ttf');
+  src: url('../public/fonts/methanerse.ttf') format('truetype');
 }
 
-.bg-global-background-image {
-  background-image: url('../public/images/darkplainstar.jpg');
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+.bg-star{
+  background-image: url("./assets/darkplainstar.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  /* background-image: url("./assets/2k_stars.jpg"); */
 }
+
 
 

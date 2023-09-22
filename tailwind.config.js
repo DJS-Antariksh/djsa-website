@@ -2,13 +2,43 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/tw-elements-react/dist/js/**/*.js",
+    "./index.html",
   ],
   theme: {
     extend: {
-      fontFamily: {
-        custom: ['Methanerse', 'sans-serif'],
+      letterSpacing: {
+        '1': '0.1em', // Define a custom letter spacing value
       },
+      lineHeight: {
+        'extra-loose': '2.5',
+        '12': '8rem',
+      },
+    fontFamily: {
+      "poppins": ["Poppins", "sans-serif"],
+      "meth": ['methanerse', 'sans-serif'],
     },
+    padding: {
+      '10': '2.5rem', // You can use any custom value you want here
+      '20': '5rem',  // For example, '10' corresponds to 2.5rem
+    },
+    screens: {
+      xs: "480px",
+      ss: "620px",
+      sm: "768px",
+      md: "1060px",
+      lg: "1200px",
+      xl: "1700px",
+      xxl: "2000px",
+    },
+   
   },
-  plugins: [],
+},
+  variants: {},
+  plugins: [require("tw-elements-react/dist/plugin.cjs")]
 }
+
+
+
+
+
