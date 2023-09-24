@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from "./Footer"
-import OnlySpnsors from './OnlySpnsors'
 import solidworks from "./solidworks.png"
 
 const Sponsor = () => {
@@ -8,19 +7,30 @@ const Sponsor = () => {
     <>
   
 
-   
-    {/* <div className='flex flex-wrap  m-20'>
-    <img className='m-20' src={solidworks}>
+  <div className='font-meth mt-16 mb-2 text-white text-3xl flex justify-center mb-2'>Sponsors</div>
+    <div className='flex flex-wrap  justify-center'>
+    <img className='m-12' src={solidworks}>
 </img>
-<img className='m-4' src={solidworks}>
+<img className='m-12' src={solidworks}>
 </img>
-<img className='m-4' src={solidworks}>
+<img className='m-12' src={solidworks}>
 </img>
-<img className='m-4' src={solidworks}>
+<img className='m-12' src={solidworks}>
 </img>
-</div> */}
+<img className='m-12' src={solidworks}>
+</img>
+<img className='m-12' src={solidworks}>
+</img>
+{/* <img className='m-12' src={solidworks}>
+</img>
+<img className='m-12' src={solidworks}>
+</img>
+<img className='m-12' src={solidworks}>
+</img> */}
 
-    {/* <Footer/> */}
+</div>
+
+  
  
     </>
   )

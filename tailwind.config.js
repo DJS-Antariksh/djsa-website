@@ -17,7 +17,9 @@ module.exports = {
       lg: "1200px",
       xl: "1700px",
     },
-   
+    rotate: {
+      '5': '-5deg',
+    },
   },
 },
   variants: {},
