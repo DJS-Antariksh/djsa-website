@@ -1,11 +1,26 @@
-import LandingPage from "./components/LandingPage/LandingPage"
+import LandingPage from "./components/LandingPage"
 import Department from "./components/Department/Department"
+import Core from "./components/Core"
+import OurRover from "./components/OurRovers/OurRover"
+import Abhyaan from "./components/OurRovers/Abhyaan"
+import Prayaan from "./components/OurRovers/Prayaan"
+import Sponsor from "./components/Sponsor/Sponsor"
+import Footer from "./components/Sponsor/Footer"
+import ContactUs from "./components/ContactUs"
+import Achievements from "./components/Achievements"
 
 export default function App() {
+  let slides = [ Abhyaan, Prayaan ];
   return (
-    <div className="bg-global-background-image">
+    <div>
       <LandingPage/>
-      {/* <Department/> */}
+       <OurRover slides={slides}/>
+       <Achievements/>
+      <Department/>
+      <Core/>
+      <ContactUs/>
+      <Sponsor/>
+      <Footer/>
     </div>
   )
 }

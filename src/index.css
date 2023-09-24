@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;  
 }
 
 code {
@@ -16,18 +17,51 @@ code {
     monospace;
 }
 
+::-webkit-scrollbar{
+  width: 12px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent,rgba(241, 153, 105));
+  border-radius: 6px;
+}
+
+/* ::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(transparent,rgb(238, 125, 64));
+  border-radius: 6px;
+} */
+
 /* Global */
 @font-face {
   font-family: 'Methanerse';
-  src: url('../public/fonts/Methanerse/MethanerseFreeTrial-0WpE4.otf') format('otf');
-  src: url('../public/fonts/Methanerse/MethanerseFreeTrial-eZX7x.ttf') format('ttf');
+  src: url('../public/fonts/methanerse.ttf') format('truetype');
 }
 
-.bg-global-background-image {
-  background-image: url('../public/images/darkplainstar.jpg');
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+.bg-star{
+  background-image: url("./assets/darkplainstar.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  /* background-image: url("./assets/2k_stars.jpg"); */
 }
+
+
+/* Achievements */
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animate-slide-from-left {
+  animation: slideFromLeft 3s ease-in ;
+}
+
 
 

@@ -1,32 +1,37 @@
 import React, { useState } from "react";
 import "./Department.css";
+import coding from "../../assets/coding.jpg"
+import elex from "../../assets/elex.jpg"
+import mechanical from "../../assets/mechanical.jpeg"
+import science from "../../assets/science.jpeg"
+import marketing from "../../assets/marketing.jpeg"
 
 function Slider() {
   const initialItems = [
     {
       name: "Coding",
       description: "Coding Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      bgImg: "url(../../images/coding.jpg)",
+      bgImg: coding,
     },
     {
       name: "Electronics",
       description: " Electronics Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      bgImg: "url(../../images/elex.jpg)",
+      bgImg: elex,
     },
     {
       name: "Mechanical",
       description: "Mechanical Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      bgImg: "url(../../images/mechanical.jpeg)",
+      bgImg: mechanical,
     },
     {
       name: "Science",
       description: "Science Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      bgImg: "url(../../images/science.jpeg)",
+      bgImg: science,
     },
     {
       name: "Marketing",
       description: "Marketing Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      bgImg: "url(../../images/marketing.jpeg)",
+      bgImg: marketing,
     },
   ];
   const [items, setItems] = useState(initialItems);
@@ -50,13 +55,14 @@ function Slider() {
   };
 
   return (
-    <div>
-      <div className="container">
+    <div style={{ width: "100vw", height: "100vh" }}>
+    <div className="container" 
+    >
         <div id="slide">
           {items.map((item, index) => (
-            <div key={index} className="item" style={{ backgroundImage: `${item.bgImg}` }}>
+            <div key={index} className="item " style={{ backgroundImage: `url(${item.bgImg})` }}>
               <div className="content">
-                <div className="name">{item.name}</div>
+                <div className="name font-meth">{item.name}</div>
                 <div className="des">{item.description}</div>
                 <button>See more</button>
               </div>
@@ -71,7 +77,7 @@ function Slider() {
             <i className="fa-solid fa-angle-right"></i>
           </button>
         </div>
-      </div>
+    </div>
     </div>
   );
 }
