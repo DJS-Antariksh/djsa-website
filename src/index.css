@@ -27,10 +27,10 @@ code {
   border-radius: 6px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+/* ::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(transparent,rgb(238, 125, 64));
   border-radius: 6px;
-}
+} */
 
 /* Global */
 @font-face {
@@ -44,6 +44,23 @@ code {
   background-attachment: fixed;
   /* background-repeat: no-repeat; */
   /* background-image: url("./assets/2k_stars.jpg"); */
+}
+
+
+/* Achievements */
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animate-slide-from-left {
+  animation: slideFromLeft 3s ease-in ;
 }
 
 
