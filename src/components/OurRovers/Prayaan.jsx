@@ -11,6 +11,7 @@ const Prayaan = () => {
           <img
             className=" mt-[-480px] hover:translate-x-2 hover:translate-y-1 transition-all duration-1000 "
             src={PrayaanPic}
+            alt="prayan"
           ></img>
         </div>
 
