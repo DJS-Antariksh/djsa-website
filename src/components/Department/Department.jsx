@@ -55,7 +55,7 @@ function Slider() {
   };
 
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
+    <div style={{ width: "100vw", height: "100vh" }} className="my-9">
     <div className="container" 
     >
         <div id="slide">

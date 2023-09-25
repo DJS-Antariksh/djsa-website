@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactUs() {
   return (
-<div className="flex items-center justify-center h-screen mr-4">
+<div className="flex items-center justify-center h-screen mr-4 mt-[-3rem]">
   <div className="p-4">
     <h1 className="mb-4 text-2xl text-center text-white font-meth">Contact Us</h1>
     <form className="max-w-3xl p-8 mx-auto">

@@ -16,7 +16,7 @@ function Achievements() {
   }, []);
 
   return (
-<div>
+<div className="mt-[6rem]">
 {isVideoPlaying ? (
         <div className="w-screen h-screen mt-8">
           <video
