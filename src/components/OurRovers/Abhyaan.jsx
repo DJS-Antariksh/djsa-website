@@ -10,6 +10,7 @@ const Abhyaan = () => {
           <img
             className="mt-8 ml-64 transition-all duration-1000 hover:translate-x-2 hover:translate-y-1 rotate-5"
             src={AbhyaanPic}
+            alt="abhyan"
           ></img>
         </div>
 
