@@ -8,12 +8,14 @@ import Sponsor from "./components/Sponsor/Sponsor"
 import Footer from "./components/Sponsor/Footer"
 import ContactUs from "./components/ContactUs"
 import Achievements from "./components/Achievements"
+import AboutTeam from "./components/AboutTeam/AboutTeam"
 
 export default function App() {
   let slides = [ Abhyaan, Prayaan ];
   return (
     <div>
       <LandingPage/>
+      <AboutTeam/>
        <OurRover slides={slides}/>
        <Achievements/>
       <Department/>

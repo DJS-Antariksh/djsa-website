@@ -38,15 +38,15 @@ const OurRover = ({ slides }) => {
 
         <div className="top-0 flex items-center justify-between w-full h-full px-10 text-3xl text-white opacity-50 ">
           <button onClick={previousSlide}>
-          <BsChevronCompactLeft  size={40} />
+          <BsChevronCompactLeft className='mt-[-30rem]'  size={40} />
           </button>
           <button onClick={nextSlide}>
             {/* <BsFillArrowRightCircleFill /> */}
-            <BsChevronCompactRight  size={40} />
+            <BsChevronCompactRight className='mt-[-30rem]' size={40} />
           </button>
         </div>
 
-        <div className="bottom-0 flex justify-center w-full gap-3 py-4 ">
+        <div className="bottom-0 mt-[-10rem] flex justify-center w-full gap-3 py-4 ">
           {slides.map((_, i) => (
             <div
               onClick={() => {
