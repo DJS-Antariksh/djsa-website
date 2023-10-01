@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "echarts": "^5.4.3",
     "echarts-gl": "^2.0.9",
+    "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",

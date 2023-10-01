@@ -7,8 +7,9 @@ import Prayaan from "./components/OurRovers/Prayaan"
 import Sponsor from "./components/Sponsor/Sponsor"
 import Footer from "./components/Sponsor/Footer"
 import ContactUs from "./components/ContactUs"
-import Achievements from "./components/Achievements"
+import Achievements from "./components/Achievements/Achievements"
 import AboutTeam from "./components/AboutTeam/AboutTeam"
+import Competitions from "./components/Competitions"
 
 export default function App() {
   let slides = [ Abhyaan, Prayaan ];
@@ -16,8 +17,9 @@ export default function App() {
     <div>
       <LandingPage/>
       <AboutTeam/>
-       <OurRover slides={slides}/>
-       <Achievements/>
+      <OurRover slides={slides}/>
+      <Competitions/>
+      <Achievements/>
       <Department/>
       <Core/>
       <ContactUs/>
