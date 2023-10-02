@@ -55,6 +55,9 @@ function Slider() {
   };
 
   return (
+    <>
+    <div className='flex justify-center mt-20  text-3xl text-white font-meth'>Departments</div>
+
     <div style={{ width: "100vw", height: "100vh" }} className="my-9">
     <div className="container" 
     >
@@ -79,6 +82,7 @@ function Slider() {
         </div>
     </div>
     </div>
+    </>
   );
 }
 

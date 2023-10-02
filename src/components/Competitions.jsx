@@ -8,7 +8,7 @@ function Competitions() {
 <div>
 
 <div className="ml-20">
-<div className='flex justify-center mt-16 mb-12 text-3xl text-white font-meth'>Competitions</div>
+<div className='flex justify-center mt-16 ml-[-45px] mb-12 text-3xl text-white font-meth'>Competitions</div>
 <div className="flex flex-row items-center mt-5 animate-slide-from-left">
   <div className="absolute flex flex-col items-center justify-center w-10 gap-5  border border-white border-solid rounded-full ">
     

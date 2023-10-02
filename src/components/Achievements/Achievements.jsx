@@ -47,6 +47,8 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-50%"]);
 
   return (
+    <>
+     <div className='flex justify-center mt-24  text-3xl text-white font-meth'>Achievements</div>
     <section ref={targetRef} className="relative h-[200vh]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
@@ -56,11 +58,13 @@ const HorizontalScrollCarousel = () => {
         </motion.div>
       </div>
     </section>
+    </>
   );
 };
 
 const Card = ({ card }) => {
   return (
+    <>
     <div
       key={card.id}
       className="group mr-14 relative h-[450px] w-[450px] overflow-hidden bg-neutral-200"
@@ -74,11 +78,12 @@ const Card = ({ card }) => {
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
       <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-3xl font-black uppercase text-white backdrop-blur-lg">
           {card.title}
         </p>
       </div>
     </div>
+    </>
   );
 };
 
@@ -87,12 +92,12 @@ const Card = ({ card }) => {
 const cards = [
   {
     url: "https://th.bing.com/th/id/R.7cdf60c7cd8b2b14995694dcd7c99e06?rik=3obl%2fhI6QdNIMA&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f01%2ffree-beautiful-place-wallpaper-hd-173.jpg&ehk=92RRpT4hrYheMDBZkK0HhLLXx9%2fGDjnafeDmbgjE1K8%3d&risl=1&pid=ImgRaw&r=0",
-    title: "Title 1",
+    title: "2nd rank ERC Remote",
     id: 1,
   },
   {
     url:"https://wallpaperaccess.com/full/809523.jpg",
-    title: "Title 2",
+    title: "10th rank ERC Onsite",
     id: 2,
   },
   {
