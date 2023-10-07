@@ -1,5 +1,5 @@
-import React, { useState,useEffect } from "react";
-import videoBg from "../assets/valo.mp4"
+// import React, { useState,useEffect } from "react";
+// import videoBg from "../assets/valo.mp4"
 import erclogo from "../assets/erc.jpg"
 
 function Competitions() {
@@ -10,9 +10,9 @@ function Competitions() {
 <div className="ml-20">
 <div className='flex justify-center mt-16 ml-[-45px] mb-12 text-3xl text-white font-meth'>Competitions</div>
 <div className="flex flex-row items-center mt-5 animate-slide-from-left">
-  <div className="absolute flex flex-col items-center justify-center w-10 gap-5  border border-white border-solid rounded-full ">
+  <div className="absolute flex flex-col items-center justify-center w-10 gap-5 border border-white border-solid rounded-full ">
     
-      <img src={erclogo} className="w-[5rem] rounded-full"></img>
+      <img src={erclogo} alt="erc" className="w-[5rem] rounded-full"></img>
    
   </div>  
   <div className="ml-9  flex flex-col w-[54rem] items-start gap-0  p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
@@ -30,9 +30,9 @@ function Competitions() {
 
 <div className="flex flex-row items-center mt-5 ml-[7.5rem] animate-slide-from-left">
   <div className="absolute flex flex-col items-center justify-center w-10 gap-5 p-2 border border-white border-solid rounded-full ">
-  <div className="absolute flex flex-col items-center justify-center w-10 gap-5  border border-white border-solid rounded-full ">
+  <div className="absolute flex flex-col items-center justify-center w-10 gap-5 border border-white border-solid rounded-full ">
     
-    <img src={erclogo} className="w-[5rem] rounded-full"></img>
+    <img src={erclogo} alt="erc" className="w-[5rem] rounded-full"></img>
  
 </div>  
   </div>
@@ -50,9 +50,9 @@ function Competitions() {
 
 <div className="flex flex-row items-center mt-5 ml-[15rem] animate-slide-from-left">
   <div className="absolute flex flex-col items-center justify-center w-10 gap-5 p-2 border border-white border-solid rounded-full ">
-  <div className="absolute flex flex-col items-center justify-center w-10 gap-5  border border-white border-solid rounded-full ">
+  <div className="absolute flex flex-col items-center justify-center w-10 gap-5 border border-white border-solid rounded-full ">
     
-    <img src={erclogo} className="w-[5rem] rounded-full"></img>
+    <img src={erclogo} alt="erc" className="w-[5rem] rounded-full"></img>
  
 </div>  
   </div>
@@ -70,9 +70,9 @@ function Competitions() {
 
 <div className="flex flex-row items-center mt-5 ml-[22.5rem] animate-slide-from-left">
   <div className="absolute flex flex-col items-center justify-center w-10 gap-5 p-2 border border-white border-solid rounded-full ">
-  <div className="absolute flex flex-col items-center justify-center w-10 gap-5  border border-white border-solid rounded-full ">
+  <div className="absolute flex flex-col items-center justify-center w-10 gap-5 border border-white border-solid rounded-full ">
     
-    <img src={erclogo} className="w-[5rem] rounded-full"></img>
+    <img src={erclogo} alt="erc" className="w-[5rem] rounded-full"></img>
  
 </div>  
   </div>
@@ -90,9 +90,9 @@ function Competitions() {
 
 <div className="flex flex-row items-center mt-5 ml-[30rem] animate-slide-from-left">
   <div className="absolute flex flex-col items-center justify-center w-10 gap-5 p-2 border border-white border-solid rounded-full ">
-  <div className="absolute flex flex-col items-center justify-center w-10 gap-5  border border-white border-solid rounded-full ">
+  <div className="absolute flex flex-col items-center justify-center w-10 gap-5 border border-white border-solid rounded-full ">
     
-    <img src={erclogo} className="w-[5rem] rounded-full"></img>
+    <img src={erclogo} alt="erc" className="w-[5rem] rounded-full"></img>
  
 </div>  
   </div>

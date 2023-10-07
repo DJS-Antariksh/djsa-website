@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import * as echarts from "echarts";
 import "echarts-gl";
 import earth from "../assets/8k_mars.jpg";
@@ -80,7 +80,7 @@ function App() {
           <ul className="flex md:flex-row md:items-center md:gap-[4vw] gap-8 sm:gap-[2vw] ml-96">
             <li>
               <a
-                className="font-poppins font-light text-lg text-white hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
                 href="#"
               >
                 Home
@@ -88,7 +88,7 @@ function App() {
             </li>
             <li>
               <a
-                className="font-poppins font-light text-lg text-white hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
                 href="#"
               >
                 About
@@ -96,7 +96,7 @@ function App() {
             </li>
             <li>
               <a
-                className="font-poppins font-light text-lg text-white hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
                 href="#"
               >
                 Achievements
@@ -104,7 +104,7 @@ function App() {
             </li>
             <li>
               <a
-                className=" font-poppins font-light text-lg text-white hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
                 href="#"
               >
                 Department
@@ -112,7 +112,7 @@ function App() {
             </li>
             <li>
               <a
-                className="font-poppins font-light text-lg text-white hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
                 href="#"
               >
                 ContactUs
