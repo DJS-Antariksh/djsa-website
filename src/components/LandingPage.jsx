@@ -4,7 +4,7 @@ import "echarts-gl";
 import earth from "../assets/8k_mars.jpg";
 import stars from "../assets/2k_stars.jpg";
 import AntarikshLogo from "../assets/AntarikshLogo.png";
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 
 function App() {
   const chartRef = useRef(null);
@@ -82,7 +82,6 @@ function App() {
                 to="/"
                 spy={true}
                 smooth={true}
-                 
                 duration={500}
                 className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
               >
@@ -94,7 +93,6 @@ function App() {
                 to="about"
                 spy={true}
                 smooth={true}
-                 
                 duration={500}
                 className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
               >
@@ -106,7 +104,6 @@ function App() {
                 to="achievements"
                 spy={true}
                 smooth={true}
-                 
                 duration={500}
                 className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
               >
@@ -118,7 +115,6 @@ function App() {
                 to="department"
                 spy={true}
                 smooth={true}
-                 
                 duration={500}
                 className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
               >
@@ -130,7 +126,6 @@ function App() {
                 to="contactUs"
                 spy={true}
                 smooth={true}
-                 
                 duration={500}
                 className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
               >

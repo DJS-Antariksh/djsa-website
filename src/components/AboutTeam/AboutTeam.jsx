@@ -27,7 +27,16 @@ const AboutTeam = () => {
           About the Team
         </div>
         <div className="text-white font-poppins font-light  flex flex-row align-items justify-center m-40 mt-16 mb-16">
-        DJS Antariksh is the official Rover challenge team of Dwarkadas J. Sanghvi College of Engineering, Mumbai, India. It was founded in the year 2019-20. The team comprises 50 passionate undergraduate students from various domains of engineering, working together to explore rover technologies. The team's motto, 'To Decipher Unimaginable,' embodies its commitment to space exploration.  Its vision is to expand the boundaries of innovation through the optimal utilization of technology, culminating in the creation of a cutting-edge Martian Rover. This advanced technology will serve as a catalyst, inspiring and fueling the spirit of space exploration.
+          DJS Antariksh is the official Rover challenge team of Dwarkadas J.
+          Sanghvi College of Engineering, Mumbai, India. It was founded in the
+          year 2019-20. The team comprises 50 passionate undergraduate students
+          from various domains of engineering, working together to explore rover
+          technologies. The team's motto, 'To Decipher Unimaginable,' embodies
+          its commitment to space exploration. Its vision is to expand the
+          boundaries of innovation through the optimal utilization of
+          technology, culminating in the creation of a cutting-edge Martian
+          Rover. This advanced technology will serve as a catalyst, inspiring
+          and fueling the spirit of space exploration.
         </div>
       </div>
 

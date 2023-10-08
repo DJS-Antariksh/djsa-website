@@ -1,25 +1,23 @@
-import React, { useState } from 'react';
-import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+import React, { useState } from "react";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 const OurRover = ({ slides }) => {
   const [current, setCurrent] = useState(0);
 
   const previousSlide = () => {
-    if (current === 0)
-    setCurrent(slides.length - 1);
+    if (current === 0) setCurrent(slides.length - 1);
     else setCurrent(current - 1);
-    console.log(current)
+    console.log(current);
   };
 
   const nextSlide = () => {
-    if (current === slides.length - 1) 
-    setCurrent(0);
+    if (current === slides.length - 1) setCurrent(0);
     else setCurrent(current + 1);
-    console.log(current)
+    console.log(current);
   };
 
   return (
-    <div id='ourRover'>
+    <div id="ourRover">
       {/* <div className='flex justify-center m-16 text-3xl text-white font-meth'>Our Martian Rover</div> */}
       <div className="overflow-hidden ">
         <div
@@ -30,18 +28,18 @@ const OurRover = ({ slides }) => {
         >
           {slides.map((Component, index) => (
             <div key={index} className="w-full">
-              <Component/>
+              <Component />
             </div>
           ))}
         </div>
 
         <div className="top-0 flex items-center justify-between w-full h-full px-10 text-3xl text-white opacity-50 ">
           <button onClick={previousSlide}>
-          <BsChevronCompactLeft className='mt-[-30rem]'  size={40} />
+            <BsChevronCompactLeft className="mt-[-30rem]" size={40} />
           </button>
           <button onClick={nextSlide}>
             {/* <BsFillArrowRightCircleFill /> */}
-            <BsChevronCompactRight className='mt-[-30rem]' size={40} />
+            <BsChevronCompactRight className="mt-[-30rem]" size={40} />
           </button>
         </div>
 
@@ -64,7 +62,3 @@ const OurRover = ({ slides }) => {
 };
 
 export default OurRover;
-
-
-
-

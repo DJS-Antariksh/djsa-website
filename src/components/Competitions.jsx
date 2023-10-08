@@ -69,7 +69,6 @@ function Competitions() {
 
 export default Competitions;
 
-
 // import erclogo from "../assets/erc.jpg";
 
 // function Competitions() {
@@ -162,7 +161,7 @@ export default Competitions;
 //               </div>
 //             </div>
 //             <p className="font-poppins relative w-[50rem] font-extralight text-white text-[0.8rem] tracking-[0.80px] leading-[normal]">
-//             International Rover Design Challenge is an online space engineering design and research-oriented competition by Space Robotics Society. Teams must carefully plan each sub-system of the Rover considering various extra-terrestrial parameters in their design. This competition allows students to explore and spark the innovative design thinking of individuals, free from constraints on available physical resources. 
+//             International Rover Design Challenge is an online space engineering design and research-oriented competition by Space Robotics Society. Teams must carefully plan each sub-system of the Rover considering various extra-terrestrial parameters in their design. This competition allows students to explore and spark the innovative design thinking of individuals, free from constraints on available physical resources.
 //             </p>
 //           </div>
 //         </div>
@@ -184,7 +183,7 @@ export default Competitions;
 //               </div>
 //             </div>
 //             <p className="font-poppins relative w-[50rem] font-extralight text-white text-[0.8rem] tracking-[0.80px] leading-[normal]">
-//             International Space Drone Challenge is a space robotics engineering competition. It challenges university students to conceptualize, design, develop and operate an astronaut-assistive next-generation space drone and perform specific missions in Mars simulated conditions. 
+//             International Space Drone Challenge is a space robotics engineering competition. It challenges university students to conceptualize, design, develop and operate an astronaut-assistive next-generation space drone and perform specific missions in Mars simulated conditions.
 //             </p>
 //           </div>
 //         </div>

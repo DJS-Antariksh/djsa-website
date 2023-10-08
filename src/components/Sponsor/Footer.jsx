@@ -43,7 +43,6 @@ const Footer = () => (
                   to="/"
                   spy={true}
                   smooth={true}
-                   
                   duration={500}
                   className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
                 >
@@ -55,7 +54,6 @@ const Footer = () => (
                   to="about"
                   spy={true}
                   smooth={true}
-                   
                   duration={500}
                   className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
                 >
@@ -67,7 +65,6 @@ const Footer = () => (
                   to="achievements"
                   spy={true}
                   smooth={true}
-                   
                   duration={500}
                   className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
                 >
@@ -79,7 +76,6 @@ const Footer = () => (
                   to="contactUs"
                   spy={true}
                   smooth={true}
-                   
                   duration={500}
                   className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
                 >
@@ -92,7 +88,6 @@ const Footer = () => (
                     to="sponsor"
                     spy={true}
                     smooth={true}
-                     
                     duration={500}
                     className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
                   >
@@ -109,39 +104,38 @@ const Footer = () => (
             </h4>
             <ul className="list-none mt-4 font-poppins font-extralight text-[16px] leading-[24px] text-white ">
               <li className="mt-4 hover:text-secondary cursor-pointer">
-              <Link
-                    to="ourRover"
-                    spy={true}
-                    smooth={true}
-                     
-                    duration={500}
-                    className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
-                  >
-                    Our Rover
-                  </Link>
+                <Link
+                  to="ourRover"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                >
+                  Our Rover
+                </Link>
               </li>
               <li className="mt-4 hover:text-secondary cursor-pointer">
-              <Link
-                    to="department"
-                    spy={true}
-                    smooth={true}
-                     
-                    duration={500}
-                    className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
-                  >
-                    Department
-                  </Link>
+                <Link
+                  to="department"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                >
+                  Department
+                </Link>
               </li>
-              <li className="mt-4 hover:text-secondary cursor-pointer"><Link
-                    to="core"
-                    spy={true}
-                    smooth={true}
-                     
-                    duration={500}
-                    className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
-                  >
-                    Core
-                  </Link></li>
+              <li className="mt-4 hover:text-secondary cursor-pointer">
+                <Link
+                  to="core"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                >
+                  Core
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -151,21 +145,51 @@ const Footer = () => (
             <h4 className="font-poppins font-normal text-[18px] leading-[27px] text-white">
               Follow Us On
             </h4>
-            <ul className="list-none flex flex-row mt-4 font-poppins font-normal text-[16px] leading-[24px] text-white ">
-              <li className="m-2 hover:text-secondary cursor-pointer">
-                <AiFillInstagram className=" w-[30px] h-[100px]" />
+            <ul className="list-none flex flex-row mt-4 font-poppins font-normal text-[16px] leading-[24px] text-white">
+              <li className="m-2 hover:text-secondary">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillInstagram className="w-[30px] h-[30px]" />
+                </a>
               </li>
-              <li className="m-2 hover:text-secondary cursor-pointer">
-                <AiFillFacebook className=" w-[30px] h-[100px]" />
+              <li className="m-2 hover:text-secondary">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillFacebook className="w-[30px] h-[30px]" />
+                </a>
               </li>
-              <li className="m-2 hover:text-secondary cursor-pointer">
-                <AiOutlineTwitter className=" w-[30px] h-[100px]" />
+              <li className="m-2 hover:text-secondary">
+                <a
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiOutlineTwitter className="w-[30px] h-[30px]" />
+                </a>
               </li>
-              <li className="m-2 hover:text-secondary cursor-pointer">
-                <AiFillLinkedin className=" w-[30px] h-[100px]" />
+              <li className="m-2 hover:text-secondary">
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillLinkedin className="w-[30px] h-[30px]" />
+                </a>
               </li>
-              <li className="m-2 hover:text-secondary cursor-pointer">
-                <AiFillYoutube className=" w-[30px] h-[100px]" />
+              <li className="m-2 hover:text-secondary">
+                <a
+                  href="https://www.youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillYoutube className="w-[30px] h-[30px]" />
+                </a>
               </li>
             </ul>
           </div>

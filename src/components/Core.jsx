@@ -1,8 +1,13 @@
 import React, { useState } from "react";
-import {TETabs,TETabsContent,TETabsItem,TETabsPane} from "tw-elements-react";
-import core1 from "../assets/20-21demo.png"
-import core2 from "../assets/21-22demo.png"
-import core3 from "../assets/22-23.png"
+import {
+  TETabs,
+  TETabsContent,
+  TETabsItem,
+  TETabsPane,
+} from "tw-elements-react";
+import core1 from "../assets/20-21demo.png";
+import core2 from "../assets/21-22demo.png";
+import core3 from "../assets/22-23.png";
 
 function Core() {
   const [fillActive, setFillActive] = useState("tab3");
@@ -16,7 +21,7 @@ function Core() {
 
   return (
     <div id="core">
-      <TETabs fill >
+      <TETabs fill>
         <TETabsItem
           onClick={() => handleFillClick("tab1")}
           active={fillActive === "tab1"}
@@ -38,11 +43,17 @@ function Core() {
       </TETabs>
 
       <TETabsContent>
-        <TETabsPane show={fillActive === "tab1"} className="text-white"><img src={core1} alt={"core1"}/></TETabsPane>
-        <TETabsPane show={fillActive === "tab2"} className="text-white"><img src={core2} alt={"core2"}/></TETabsPane>
-        <TETabsPane show={fillActive === "tab3"} className="text-white"><img src={core3} alt={"core3"}/></TETabsPane>
+        <TETabsPane show={fillActive === "tab1"} className="text-white">
+          <img src={core1} alt={"core1"} />
+        </TETabsPane>
+        <TETabsPane show={fillActive === "tab2"} className="text-white">
+          <img src={core2} alt={"core2"} />
+        </TETabsPane>
+        <TETabsPane show={fillActive === "tab3"} className="text-white">
+          <img src={core3} alt={"core3"} />
+        </TETabsPane>
       </TETabsContent>
     </div>
   );
 }
-export default Core
+export default Core;

@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const slideStyles = {
   width: "110%",
@@ -44,7 +44,7 @@ const dotStyle = {
   margin: "0 3px",
   cursor: "pointer",
   fontSize: "20px",
-  color:"white",
+  color: "white",
 };
 
 const ImageSlider = ({ slides }) => {
@@ -80,7 +80,7 @@ const ImageSlider = ({ slides }) => {
     // Clean up the interval when the component unmounts
     return () => clearInterval(intervalId);
   }, [currentIndex, slides]);
-  
+
   return (
     <div style={sliderStyles}>
       <div>
