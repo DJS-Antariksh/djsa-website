@@ -4,7 +4,9 @@ import AbhyaanPic from "../../assets/Abhyaan.png";
 const Abhyaan = () => {
   return (
     <div className="page ">
-     <div className='flex justify-center mt-16 mb-2 text-3xl text-white font-meth'>Our Martian Rover</div>
+      <div className="flex justify-center mt-16 mb-2 text-3xl text-white font-meth">
+        Our Martian Rover
+      </div>
       <div className="flex flex-row ">
         <div>
           <img
@@ -16,41 +18,41 @@ const Abhyaan = () => {
 
         <div className="w-2/5">
           <div className="flex flex-col mt-16 mb-8 ml-20">
-            <p className="font-thin text-white font-poppins">
-              Rover Name
-            </p>
+            <p className="font-thin text-white font-poppins">Rover Name</p>
             <p className="font-light text-white font-poppins">Abhyaan</p>
           </div>
 
           <div className="flex flex-col mb-8 ml-20">
-            <p className="font-thin text-white font-poppins">
-              Competition
+            <p className="font-thin text-white font-poppins">Dimension</p>
+            <p className="font-light text-white font-poppins">
+              1056.83mm X 816.6mm
             </p>
-            <p className="font-light text-white font-poppins">ERC</p>
           </div>
 
           <div className="flex flex-col mb-8 ml-20">
             <p className="font-thin text-white font-poppins">
               Weight Specifications
             </p>
-            <p className="font-light text-white font-poppins">--</p>
+            <p className="font-light text-white font-poppins"> 59 kgs</p>
+          </div>
+          <div className="flex flex-col mb-8 ml-20">
+            <p className="font-thin text-white font-poppins">Visual system</p>
+            <p className="font-light text-white font-poppins">
+              {" "}
+              zed2, Intel depth camera, Logitech camera
+            </p>
+          </div>
+          <div className="flex flex-col mb-8 ml-20">
+            <p className="font-thin text-white font-poppins">Max Speed</p>
+            <p className="font-light text-white font-poppins">1m/s</p>
           </div>
 
           <div className="flex flex-col mb-8 ml-20">
-            <p className="font-thin text-white font-poppins">
-              Lorem Ipsum
+            <p className="font-thin text-white font-poppins">USP</p>
+            <p className="font-light text-white font-poppins">
+              Double rocker suspension system Can climb inclination of 60 degree
             </p>
-            <p className="font-light text-white font-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam perspiciatis officiis rerum nam at eos quos ratione aliquam quisquam. Blanditiis neque praesentium molestias ut, aut dolores in quasi delectus doloribus!</p>
           </div>
-
-          <div className="flex flex-col mb-8 ml-20">
-            <p className="font-thin text-white font-poppins">
-             Lorem ipsum
-            </p>
-            <p className="font-light text-white font-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam accusantium incidunt hic cumque quos saepe voluptatibus unde est voluptates, possimus quisquam dicta! Error, autem at.</p>
-          </div>
-
-
         </div>
       </div>
     </div>

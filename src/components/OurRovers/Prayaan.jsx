@@ -1,11 +1,12 @@
 import React from "react";
 import PrayaanPic from "../../assets/Prayaan.png";
 
-// mt-16
 const Prayaan = () => {
   return (
-    <div className="page w-full   mt-[-720px] ml-[1520px]">
-     <div className='flex justify-center mt-16 mb-2 text-3xl text-white font-meth'>Our Martian Rover</div>
+    <div className="page w-full  mt-[-720px] ml-[1360px]">
+      <div className="flex justify-center mt-16 mb-2 text-3xl text-white font-meth">
+        Our Martian Rover
+      </div>
       <div className="flex flex-row">
         <div>
           <img
@@ -14,8 +15,7 @@ const Prayaan = () => {
             alt="prayan"
           ></img>
         </div>
-
-        <div className="w-1/3 ml-[-180px] ">
+        {/* <div className="w-1/3 ml-[-180px] ">
           <div className="flex flex-col mt-16 mb-8">
             <p className="font-thin text-white font-poppins">
               Rover Name
@@ -52,6 +52,42 @@ const Prayaan = () => {
           </div>
 
 
+        </div> */}
+        <div className="w-2/5">
+          <div className="flex flex-col mt-16 mb-8">
+            <p className="font-thin text-white font-poppins">Rover Name</p>
+            <p className="font-light text-white font-poppins">Prayan</p>
+          </div>
+          <div className="flex flex-col mb-8">
+            <p className="font-thin text-white font-poppins">Dimension</p>
+            <p className="font-light text-white font-poppins">
+              1040.911mm X 1143.984
+            </p>
+          </div>
+
+          <div className="flex flex-col mb-8">
+            <p className="font-thin text-white font-poppins">
+              Weight Specifications
+            </p>
+            <p className="font-light text-white font-poppins">70.4kg</p>
+          </div>
+          <div className="flex flex-col mb-8">
+            <p className="font-thin text-white font-poppins">Visual system</p>
+            <p className="font-light text-white font-poppins">
+              zed2, Intel depth camera, Logitech camera
+            </p>
+          </div>
+          <div className="flex flex-col mb-8">
+            <p className="font-thin text-white font-poppins">Max Speed</p>
+            <p className="font-light text-white font-poppins">1m/s</p>
+          </div>
+
+          <div className="flex flex-col mb-8">
+            <p className="font-thin text-white font-poppins">USP</p>
+            <p className="font-light text-white font-poppins">
+              Rocker bogie suspension can climb incline of 60 degree
+            </p>
+          </div>
         </div>
       </div>
     </div>
