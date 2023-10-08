@@ -21,7 +21,7 @@ const AboutTeam = () => {
     margin: "0 auto",
   };
   return (
-    <>
+    <div id="about">
       <div>
         <div className="flex justify-center mt-16 mb-2 text-3xl text-white font-meth">
           About the Team
@@ -36,7 +36,7 @@ const AboutTeam = () => {
           <ImageSlider slides={slides} />
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

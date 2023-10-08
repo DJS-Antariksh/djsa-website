@@ -15,7 +15,7 @@ function Core() {
   };
 
   return (
-    <div>
+    <div id="core">
       <TETabs fill >
         <TETabsItem
           onClick={() => handleFillClick("tab1")}

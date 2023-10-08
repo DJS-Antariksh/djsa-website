@@ -19,7 +19,7 @@ const OurRover = ({ slides }) => {
   };
 
   return (
-    <>
+    <div id='ourRover'>
       {/* <div className='flex justify-center m-16 text-3xl text-white font-meth'>Our Martian Rover</div> */}
       <div className="overflow-hidden ">
         <div
@@ -59,7 +59,7 @@ const OurRover = ({ slides }) => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -4,9 +4,9 @@ import "echarts-gl";
 import earth from "../assets/8k_mars.jpg";
 import stars from "../assets/2k_stars.jpg";
 import AntarikshLogo from "../assets/AntarikshLogo.png";
+import {Link} from "react-scroll";
 
 function App() {
-  
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
 
@@ -47,7 +47,7 @@ function App() {
   }, []);
 
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
+    <div style={{ width: "100vw", height: "100vh" }} id="/">
       <div
         ref={chartRef}
         style={{
@@ -75,48 +75,67 @@ function App() {
             alt="AntarikshLogo"
           />
         </div>
-        <div
-        >
+        <div>
           <ul className="flex md:flex-row md:items-center md:gap-[4vw] gap-8 sm:gap-[2vw] ml-96">
             <li>
-              <a
-                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
-                href="#"
+              <Link
+                to="/"
+                spy={true}
+                smooth={true}
+                 
+                duration={500}
+                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
-                href="#"
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                 
+                duration={500}
+                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
-                href="#"
+              <Link
+                to="achievements"
+                spy={true}
+                smooth={true}
+                 
+                duration={500}
+                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
               >
                 Achievements
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
-                href="#"
+              <Link
+                to="department"
+                spy={true}
+                smooth={true}
+                 
+                duration={500}
+                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
               >
                 Department
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:underline hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
-                href="#"
+              <Link
+                to="contactUs"
+                spy={true}
+                smooth={true}
+                 
+                duration={500}
+                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
               >
                 ContactUs
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -149,11 +168,17 @@ function App() {
         className="absolute leading-6 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         style={{ zIndex: 1 }}
       >
-        <p className="text-6xl text-center text-white font-meth tracking-1">TO</p>
+        <p className="text-6xl text-center text-white font-meth tracking-1">
+          TO
+        </p>
         <br />
-        <p className="text-6xl text-center text-white font-meth tracking-1">DECIPHER</p>
+        <p className="text-6xl text-center text-white font-meth tracking-1">
+          DECIPHER
+        </p>
         <br />
-        <p className="text-6xl text-center text-white font-meth tracking-1">UNIMAGINABLE</p>
+        <p className="text-6xl text-center text-white font-meth tracking-1">
+          UNIMAGINABLE
+        </p>
       </div>
     </div>
   );

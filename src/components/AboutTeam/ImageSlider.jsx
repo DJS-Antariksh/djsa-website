@@ -80,6 +80,7 @@ const ImageSlider = ({ slides }) => {
     // Clean up the interval when the component unmounts
     return () => clearInterval(intervalId);
   }, [currentIndex, slides]);
+  
   return (
     <div style={sliderStyles}>
       <div>

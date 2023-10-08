@@ -47,7 +47,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-50%"]);
 
   return (
-    <>
+    <div id="achievements">
       <div className="flex justify-center mt-24  text-3xl text-white font-meth">
         Achievements
       </div>
@@ -60,7 +60,7 @@ const HorizontalScrollCarousel = () => {
           </motion.div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 const cards = [

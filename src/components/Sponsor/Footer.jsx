@@ -5,6 +5,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
 import logo from "../../assets/AntarikshLogo.png";
 import bg from "../../assets/footerbg.png";
+import { Link } from "react-scroll";
 
 const Footer = () => (
   <>
@@ -36,12 +37,69 @@ const Footer = () => (
             <h4 className="font-poppins relative font-normal text-[18px] leading-[27px] text-white">
               Useful Links
             </h4>
-            <ul className="list-none mt-4 font-poppins relative font-extralight text-[16px] leading-[24px] text-white ">
-              <li className="mt-4 hover:text-secondary cursor-pointer">Home</li>
-              <li className="mt-4 hover:text-secondary cursor-pointer">About Us</li>
-              <li className="mt-4 hover:text-secondary cursor-pointer">Achievements</li>
-              <li className="mt-4 hover:text-secondary cursor-pointer">Contact Us</li>
-              <li className="mt-4 hover:text-secondary cursor-pointer">Sponsors</li>
+            <ul className="list-none mt-4 font-poppins relative text-[16px] leading-[24px] text-white ">
+              <li className="mt-4">
+                <Link
+                  to="/"
+                  spy={true}
+                  smooth={true}
+                   
+                  duration={500}
+                  className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="mt-4">
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                   
+                  duration={500}
+                  className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li className="mt-4">
+                <Link
+                  to="achievements"
+                  spy={true}
+                  smooth={true}
+                   
+                  duration={500}
+                  className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                >
+                  Achievements
+                </Link>
+              </li>
+              <li className="mt-4">
+                <Link
+                  to="contactUs"
+                  spy={true}
+                  smooth={true}
+                   
+                  duration={500}
+                  className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li className="mt-4">
+                <li className="mt-4">
+                  <Link
+                    to="sponsor"
+                    spy={true}
+                    smooth={true}
+                     
+                    duration={500}
+                    className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                  >
+                    Sponsor
+                  </Link>
+                </li>
+              </li>
             </ul>
           </div>
 
@@ -50,9 +108,40 @@ const Footer = () => (
               About the Team
             </h4>
             <ul className="list-none mt-4 font-poppins font-extralight text-[16px] leading-[24px] text-white ">
-              <li className="mt-4 hover:text-secondary cursor-pointer">Our Rover</li>
-              <li className="mt-4 hover:text-secondary cursor-pointer"> Departments</li>
-              <li className="mt-4 hover:text-secondary cursor-pointer">Core</li>
+              <li className="mt-4 hover:text-secondary cursor-pointer">
+              <Link
+                    to="ourRover"
+                    spy={true}
+                    smooth={true}
+                     
+                    duration={500}
+                    className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                  >
+                    Our Rover
+                  </Link>
+              </li>
+              <li className="mt-4 hover:text-secondary cursor-pointer">
+              <Link
+                    to="department"
+                    spy={true}
+                    smooth={true}
+                     
+                    duration={500}
+                    className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                  >
+                    Department
+                  </Link>
+              </li>
+              <li className="mt-4 hover:text-secondary cursor-pointer"><Link
+                    to="core"
+                    spy={true}
+                    smooth={true}
+                     
+                    duration={500}
+                    className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                  >
+                    Core
+                  </Link></li>
             </ul>
           </div>
 
