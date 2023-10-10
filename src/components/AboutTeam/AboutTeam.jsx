@@ -1,19 +1,17 @@
 import ImageSlider from "./ImageSlider";
+import about1 from "../../assets/about1.jpg"
+import about2 from "../../assets/about2.jpg"
+import about3 from "../../assets/about3.jpg"
+import about4 from "../../assets/about4.jpg"
+import about5 from "../../assets/about5.jpg"
 
 const AboutTeam = () => {
   const slides = [
-    {
-      url: "https://th.bing.com/th/id/R.7cdf60c7cd8b2b14995694dcd7c99e06?rik=3obl%2fhI6QdNIMA&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f01%2ffree-beautiful-place-wallpaper-hd-173.jpg&ehk=92RRpT4hrYheMDBZkK0HhLLXx9%2fGDjnafeDmbgjE1K8%3d&risl=1&pid=ImgRaw&r=0",
-    },
-    {
-      url: "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
-    },
-    {
-      url: "https://th.bing.com/th/id/OIP.ts14J2Z7Q8DYNohIc6ndJQAAAA?pid=ImgDet&w=450&h=311&rs=1",
-    },
-    { url: "https://wallpapercave.com/wp/wp3386769.jpg" },
-    { url: "https://wallpaperaccess.com/full/809523.jpg" },
-    { url: "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg" },
+    {url: about1},
+    {url: about2},
+    {url: about3},
+    {url: about4},
+    {url: about5},
   ];
   const containerStyles = {
     width: "500px",
