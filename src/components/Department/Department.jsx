@@ -10,32 +10,31 @@ function Slider() {
   const initialItems = [
     {
       name: "Coding",
-      description:
-        "Coding Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:"The Coding Department plays a pivotal role in providing the rover with autonomy. This team is responsible for writing the software that controls the rover's movements, interprets sensor data, makes autonomous decisions, and facilitates communication with the ground station.",
       bgImg: coding,
     },
     {
       name: "Electronics",
       description:
-        " Electronics Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "The Electronics Department spearheads the development and integration of the rover's electronic systems and the circuit design. This team designs and assembles critical components such as sensors, cameras, communication systems, and control units, ensuring that they work seamlessly together to enable the rover's functions.",
       bgImg: elex,
     },
     {
       name: "Mechanical",
       description:
-        "Mechanical Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Responsible for the rover's physical structure, the Mechanical Department focuses on designing and analyzing the rover's mechanical structure. This includes crafting the rover's chassis, wheels, suspension, and more. Collaborating closely with the Electronics Department, they ensure the physical and electronic components integrate seamlessly.",
       bgImg: mechanical,
     },
     {
       name: "Science",
       description:
-        "Science Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "The Science Department delves into the mysteries of Mars' geological history, aiming to develop hypotheses that can be tested during the competition. Through in-depth research on Mars' geology, climate, and potential for past or present life, they create scientific experiments and hypotheses for the rover to execute. This department then analyzes the data collected by the rover to draw scientific conclusions, contributing valuable insights to the mission's objectives.",
       bgImg: science,
     },
     {
       name: "Marketing",
       description:
-        "Marketing Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Managing the team's finances, logistics, publicity, sponsorships, and media presence, the Marketing Department is essential for securing the resources and visibility needed for the rover project's success. Their tasks include securing sponsorships, creating marketing materials, maintaining a strong social media presence, and effectively managing the project's budget, ensuring the team's financial sustainability.",
       bgImg: marketing,
     },
   ];
