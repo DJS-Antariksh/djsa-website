@@ -4,7 +4,7 @@ import PrayaanPic from "../../assets/Prayaan.png";
 const Prayaan = () => {
   return (
     <div className="page w-full  mt-[-720px] ml-[1360px]">
-      <div className="flex justify-center mt-16 mb-2 text-3xl text-white font-meth">
+      <div className="flex justify-center mt-16 mb-2 text-3xl text-white font-meth component_title">
         Our Martian Rover
       </div>
       <div className="flex flex-row">

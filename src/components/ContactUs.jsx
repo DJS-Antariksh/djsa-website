@@ -3,7 +3,7 @@ import React from "react";
 function ContactUs() {
   return (
     <div
-      className="flex items-center justify-center h-screen mr-4 mt-[-3rem]"
+      className="flex items-center justify-center h-screen mr-4 mt-[-3rem] component_title"
       id="contactUs"
     >
       <div className="p-4">

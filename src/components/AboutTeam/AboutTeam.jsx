@@ -23,10 +23,10 @@ const AboutTeam = () => {
   return (
     <div id="about">
       <div>
-        <div className="flex justify-center mt-16 mb-2 text-3xl text-white font-meth">
+        <div className="flex justify-center mt-16 mb-2 text-3xl text-white font-meth component_title">
           About the Team
         </div>
-        <div className="text-white font-poppins font-light  flex flex-row align-items justify-center m-40 mt-16 mb-16">
+        <div className="flex flex-row justify-center m-40 mt-16 mb-16 font-light text-white font-poppins align-items">
           DJS Antariksh is the official Rover challenge team of Dwarkadas J.
           Sanghvi College of Engineering, Mumbai, India. It was founded in the
           year 2019-20. The team comprises 50 passionate undergraduate students
@@ -40,7 +40,7 @@ const AboutTeam = () => {
         </div>
       </div>
 
-      <section className="events mb-40">
+      <section className="mb-40 events">
         <div className="events-carousel " style={containerStyles}>
           <ImageSlider slides={slides} />
         </div>

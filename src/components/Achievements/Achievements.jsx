@@ -17,7 +17,7 @@ const Competitions = () => {
   }, []);
 
   return (
-    <div className="mt-14">
+    <div className="mt-14" id="achievements">
       {isVideoPlaying ? (
         <div className="w-screen h-screen">
           <video
@@ -48,11 +48,11 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <div id="achievements">
-      <div className="flex justify-center mt-24  text-3xl text-white font-meth">
+      <div className="flex justify-center mt-24 text-3xl text-white font-meth component_title">
         Achievements
       </div>
       <section ref={targetRef} className="relative h-[200vh]">
-        <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+        <div className="sticky top-0 flex items-center h-screen overflow-hidden">
           <motion.div style={{ x }} className="flex gap-4">
             {cards.map((card) => {
               return <Card card={card} key={card.id} />;
@@ -107,7 +107,7 @@ const Card = ({ card }) => {
           className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
         ></div>
         <div className="absolute inset-0 z-10 grid place-content-center">
-          <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-3xl font-black uppercase text-white backdrop-blur-lg">
+          <p className="p-8 text-3xl font-black text-white uppercase bg-gradient-to-br from-white/20 to-white/0 backdrop-blur-lg">
             {card.title}
           </p>
         </div>

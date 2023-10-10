@@ -5,7 +5,7 @@ const Sponsor = () => {
   return (
     <div id="sponsor">
       <div className="mt-[-4rem]">
-        <div className="flex justify-center mt-16 mb-2 text-3xl text-white font-meth">
+        <div className="flex justify-center mt-16 mb-2 text-3xl text-white font-meth component_title">
           Sponsors
         </div>
         <div className="flex flex-wrap justify-center">

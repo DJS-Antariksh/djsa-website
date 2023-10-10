@@ -3,8 +3,8 @@ import AbhyaanPic from "../../assets/Abhyaan.png";
 
 const Abhyaan = () => {
   return (
-    <div className="page ">
-      <div className="flex justify-center mt-16 mb-2 text-3xl text-white font-meth">
+    <div className="page">
+      <div className="flex justify-center mt-16 mb-2 text-3xl text-white font-meth component_title">
         Our Martian Rover
       </div>
       <div className="flex flex-row ">

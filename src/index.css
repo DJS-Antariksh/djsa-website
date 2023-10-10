@@ -17,6 +17,7 @@ code {
     monospace;
 }
 
+/* Custom Scrollbar */
 ::-webkit-scrollbar{
   width: 12px;
   background-color: black;
@@ -27,27 +28,25 @@ code {
   border-radius: 6px;
 }
 
-/* ::-webkit-scrollbar-thumb:hover{
-  background: linear-gradient(transparent,rgb(238, 125, 64));
-  border-radius: 6px;
-} */
-
-/* Global */
+/* Custom Font */
 @font-face {
   font-family: 'Methanerse';
   src: url('../public/fonts/methanerse.ttf') format('truetype');
 }
 
+/* Background of the whole webpage*/
 .bg-star{
   background-image: url("./assets/darkplainstar.jpg");
   background-size: cover;
   background-attachment: fixed;
-  /* background-repeat: no-repeat; */
-  /* background-image: url("./assets/2k_stars.jpg"); */
 }
 
+/* Styling for every components title */
+.component_title{
+  letter-spacing: 0.4rem;
+}
 
-/* Achievements */
+/* Achievements Component*/
 @keyframes slideFromLeft {
   0% {
     transform: translateX(0%);

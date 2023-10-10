@@ -61,7 +61,7 @@ function Slider() {
 
   return (
     <div id="department">
-      <div className="flex justify-center mt-20  text-3xl text-white font-meth">
+      <div className="flex justify-center mt-20 text-3xl text-white font-meth component_title">
         Departments
       </div>
 
