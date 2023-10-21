@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as echarts from "echarts";
 import "echarts-gl";
 import earth from "../assets/8k_mars.jpg";
@@ -9,6 +9,7 @@ import { Link } from "react-scroll";
 function App() {
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
+  const [canvasSize, setCanvasSize] = useState({ width: "100vw", height: "100vh" });
 
   useEffect(() => {
     const chartDom = chartRef.current;
@@ -40,19 +41,30 @@ function App() {
 
     option && myChart.setOption(option);
 
+    function handleResize() {
+      setCanvasSize({
+        width: `${window.innerWidth}px`,
+        height: `${window.innerHeight}px`,
+      });
+    }
+
+    // Attach the resize event listener
+    window.addEventListener("resize", handleResize);
+
     // Cleanup: Remove the event listener when the component unmounts
     return () => {
+      window.removeEventListener("resize", handleResize);
       myChart.dispose();
     };
-  }, []);
+  }, [canvasSize]);
 
   return (
     <div style={{ width: "100vw", height: "100vh" }} id="/">
       <div
         ref={chartRef}
         style={{
-          width: "100vw",
-          height: "100vh",
+          width: canvasSize.width,
+          height: canvasSize.height,
           position: "absolute",
           top: 0,
           left: 0,
@@ -83,7 +95,7 @@ function App() {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
               >
                 Home
               </Link>
@@ -94,7 +106,7 @@ function App() {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
               >
                 About
               </Link>
@@ -105,7 +117,7 @@ function App() {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
               >
                 Achievements
               </Link>
@@ -116,7 +128,7 @@ function App() {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
               >
                 Department
               </Link>
@@ -127,7 +139,7 @@ function App() {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-lg font-light text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer md:text-xl xxl:text-5xl sm:text-sm"
+                className="text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
               >
                 ContactUs
               </Link>
