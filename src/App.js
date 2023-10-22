@@ -14,8 +14,8 @@ import Competitions from "./components/Competitions"
 export default function App() {
   let slides = [ Abhyaan, Prayaan ];
   return (
-    <div>
-      <LandingPage/>
+    <div className="overflow-hidden" >
+      {/* <LandingPage/> */}
       <AboutTeam/>
       <OurRover slides={slides}/>
       <Competitions/>

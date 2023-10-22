@@ -48,10 +48,10 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <div id="achievements">
-      <div className="flex justify-center mt-24 text-3xl text-white font-meth component_title">
+      <div className="flex justify-center mt-20 text-3xl text-white font-meth component_title">
         Achievements
       </div>
-      <section ref={targetRef} className="relative h-[200vh]">
+      <section ref={targetRef} className="relative h-[80vh]">
         <div className="sticky top-0 flex items-center h-screen overflow-hidden">
           <motion.div style={{ x }} className="flex gap-4">
             {cards.map((card) => {
@@ -79,16 +79,6 @@ const cards = [
     title: "8th rank IRC'2023",
     id: 3,
   },
-  {
-    url: "https://th.bing.com/th/id/OIP.ts14J2Z7Q8DYNohIc6ndJQAAAA?pid=ImgDet&w=450&h=311&rs=1",
-    title: "Title 4",
-    id: 4,
-  },
-  {
-    url: "https://wallpapercave.com/wp/wp3386769.jpg",
-    title: "Title 5",
-    id: 5,
-  },
 ];
 
 const Card = ({ card }) => {
@@ -96,7 +86,7 @@ const Card = ({ card }) => {
     <>
       <div
         key={card.id}
-        className="group mr-14 relative h-[450px] w-[450px] overflow-hidden bg-neutral-200"
+        className="group mr-14 relative h-[25rem] w-[25rem] overflow-hidden bg-neutral-200"
       >
         <div
           style={{
