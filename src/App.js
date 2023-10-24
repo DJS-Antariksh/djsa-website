@@ -1,34 +1,27 @@
-// import LandingPage from "./components/LandingPage"
-// import Department from "./components/Department/Department"
-// import Core from "./components/Core"
+import LandingPage from "./components/LandingPage"
+import AboutTeam from "./components/AboutTeam/AboutTeam"
 import Rover from "./components/OurRovers/Rover"
-
-// import OurRover from "./components/OurRovers/OurRover"
-// import Abhyaan from "./components/OurRovers/Abhyaan"
-// import Prayaan from "./components/OurRovers/Prayaan"
-
-// import Sponsor from "./components/Sponsor/Sponsor"
-// import Footer from "./components/Sponsor/Footer"
-// import ContactUs from "./components/ContactUs"
-// import Achievements from "./components/Achievements/Achievements"
-// import AboutTeam from "./components/AboutTeam/AboutTeam"
-// import Competitions from "./components/Competitions"
+import Achievements from "./components/Achievements/Achievements"
+import Competitions from "./components/Competitions"
+import Department from "./components/Department/Department"
+import Core from "./components/Core"
+import ContactUs from "./components/ContactUs"
+import Footer from "./components/Sponsor/Footer"
+import Sponsor from "./components/Sponsor/Sponsor"
 
 export default function App() {
-  // let slides = [ Abhyaan, Prayaan ];
   return (
     <div className="overflow-hidden" >
-      {/* <LandingPage/> */}
-      {/* <AboutTeam/> */}
-      {/* <OurRover slides={slides}/> */}
+      <LandingPage/>
+      <AboutTeam/>
       <Rover/>
-      {/* <Competitions/> */}
-      {/* <Achievements/> */}
-      {/* <Department/> */}
-      {/* <Core/> */}
-      {/* <ContactUs/> */}
-      {/* <Sponsor/> */}
-      {/* <Footer/> */}
+      <Competitions/>
+      <Achievements/>
+      <Department/>
+      <Core/>
+      <ContactUs/>
+      <Sponsor/>
+      <Footer/>
     </div>
   )
 }
