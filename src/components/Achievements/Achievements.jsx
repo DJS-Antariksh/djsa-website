@@ -44,11 +44,11 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-50%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
 
   return (
-    <div id="achievements">
-      <div className="flex justify-center mt-20 text-3xl text-white font-meth component_title">
+    <div id="achievements" className="mt-[4rem] mb-[8rem]">
+      <div className="flex justify-center text-3xl text-white font-meth component_title mb-[-5rem]">
         Achievements
       </div>
       <section ref={targetRef} className="relative h-[80vh]">

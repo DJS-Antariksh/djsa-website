@@ -1,6 +1,21 @@
 import React from "react";
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 function ContactUs() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('gmail', 'template_5irlloe', form.current, 'mUxoWB6DcmwUjyR-v')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  };
+
   return (
     <div
       className="flex items-center justify-center h-screen mr-4 mt-[-3rem] component_title"
@@ -10,7 +25,7 @@ function ContactUs() {
         <h1 className="mb-4 text-2xl text-center text-white font-meth">
           Contact Us
         </h1>
-        <form className="max-w-3xl p-8 mx-auto">
+        <form ref={form} onSubmit={sendEmail} className="max-w-3xl p-8 mx-auto">
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col mb-4">
               <label
@@ -90,6 +105,7 @@ function ContactUs() {
             <button
               className="px-8 py-3 mx-auto mt-5 text-lg text-white bg-transparent border border-white font-poppins 3xl ml-14 focus:outline-none focus:shadow-outline-blue active:bg-white-800"
               type="submit"
+              value="Send"
             >
               Submit
             </button>
