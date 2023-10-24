@@ -3,18 +3,18 @@ import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
 import * as THREE from "three";
 
 function Model(props) {
-  const { scene } = useGLTF("/rover6C.glb");
+  const { scene } = useGLTF("/abhyan.glb");
   return <primitive object={scene} {...props} />;
 }
 
 function Abhyan3D() {
   return (
     <>
-    <div className="flex justify-center mt-16 mb-2 text-3xl text-white font-meth component_title">
+    <div className="flex justify-center mt-8 mb-2 text-3xl text-white font-meth component_title">
         Abhyan
       </div>
     <div className="flex justify-center">
-      <div className="hidden md:block">
+      <div>
         <Canvas
           dpr={[1, 2]}
           shadows

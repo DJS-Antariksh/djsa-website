@@ -8,9 +8,10 @@ import {
 import core1 from "../assets/20-21demo.png";
 import core2 from "../assets/21-22demo.png";
 import core3 from "../assets/22-23.png";
+import core4 from "../assets/23-24.png";
 
 function Core() {
-  const [fillActive, setFillActive] = useState("tab3");
+  const [fillActive, setFillActive] = useState("tab4");
 
   const handleFillClick = (value) => {
     if (value === fillActive) {
@@ -40,6 +41,12 @@ function Core() {
         >
           Core 2022-2023
         </TETabsItem>
+        <TETabsItem
+          onClick={() => handleFillClick("tab4")}
+          active={fillActive === "tab4"}
+        >
+          Core 2023-2024
+        </TETabsItem>
       </TETabs>
 
       <TETabsContent>
@@ -51,6 +58,9 @@ function Core() {
         </TETabsPane>
         <TETabsPane show={fillActive === "tab3"} className="text-white">
           <img src={core3} alt={"core3"} />
+        </TETabsPane>
+        <TETabsPane show={fillActive === "tab4"} className="text-white">
+          <img src={core4} alt={"core4"} />
         </TETabsPane>
       </TETabsContent>
     </div>

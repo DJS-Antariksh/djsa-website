@@ -46,6 +46,33 @@ code {
   letter-spacing: 0.4rem;
 }
 
+@media (width >= 2560px) {
+  .component_title{
+    font-size: 5rem !important;
+  }
+}
+@media (width >= 1440px) {
+  .component_title{
+    font-size: 4rem !important;
+  }
+}
+@media (width >= 1024px) {
+  .component_title{
+    font-size: 2.5rem !important;
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .component_title {
+    font-size: 2rem !important;
+  }
+}
+@media (width >= 320px) {
+  .component_title{
+    font-size: 24px !important;
+  }
+}
+
+
 /* Achievements Component*/
 @keyframes slideFromLeft {
   0% {

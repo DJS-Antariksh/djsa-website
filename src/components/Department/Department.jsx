@@ -60,11 +60,11 @@ function Slider() {
 
   return (
     <div id="department">
-      <div className="flex justify-center mt-20 text-3xl text-white font-meth component_title">
+      <div className="flex justify-center mt-10 text-3xl text-white font-meth component_title">
         Departments
       </div>
 
-      <div style={{ width: "100vw", height: "100vh" }} className="my-9">
+      <div style={{ width: "100vw", height: "100vh" }} className="my-2">
         <div className="container">
           <div id="slide">
             {items.map((item, index) => (
@@ -76,7 +76,7 @@ function Slider() {
                 <div className="content">
                   <div className="name font-meth">{item.name}</div>
                   <div className="des">{item.description}</div>
-                  <button>See more</button>
+                  {/* <button><p className="see-more">See more</p></button> */}
                 </div>
               </div>
             ))}
