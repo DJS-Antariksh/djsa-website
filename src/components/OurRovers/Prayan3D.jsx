@@ -8,9 +8,24 @@ function Model(props) {
 }
 
 function Abhyan3D() {
+  
+  const canvasStyle = {
+    width: "800px", // Default width for screens greater than 1024px
+    height: "600px",
+  };
+
+  if (window.innerWidth <= 1024) {
+    canvasStyle.width = "600px";
+    canvasStyle.height = "400px"; 
+  }
+  if (window.innerWidth <= 550) {
+    canvasStyle.width = "500px";
+    canvasStyle.height = "400px"; 
+  }
+  
   return (
     <>
-      <div className="flex justify-center mt-8 mb-2 text-3xl text-white font-meth component_title">
+      <div className="flex justify-center mt-8 text-3xl text-white font-meth component_title">
         Prayan
       </div>
       <div className="flex justify-center">
@@ -19,7 +34,8 @@ function Abhyan3D() {
             dpr={[1, 2]}
             shadows
             camera={{ fov: 45 }}
-            style={{ width: "800px", height: "600px" }}
+            // style={{ width: "800px", height: "600px" }}
+            style={canvasStyle}
           >
             <PresentationControls
               speed={1.5}
@@ -33,7 +49,7 @@ function Abhyan3D() {
             </PresentationControls>
           </Canvas>
         </div>
-        <div>
+        <div className="hidden md:block">
           <div className="flex flex-col mt-16 mb-8">
             <p className="font-thin text-white font-poppins">Rover Name</p>
             <p className="font-light text-white font-poppins">Prayan</p>
