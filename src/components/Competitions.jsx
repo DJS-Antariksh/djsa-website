@@ -54,7 +54,7 @@ function Competitions() {
               className="w-[5rem] rounded-full"
             ></img>
           </div>
-          <div className="ml-[25%] sm:ml-9 flex flex-col justify-center w-[25rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
+          <div className="ml-[29%] sm:ml-9 flex flex-col justify-center w-[25rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
             <div className="inline-flex items-start relative flex-[0_0_auto] rounded-half">
               <div className="font-poppins relative w-fit font-light text-white text-[0.9rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
                 {competitionsData[0].name}
@@ -75,9 +75,9 @@ function Competitions() {
               className="w-[5rem] rounded-full"
             ></img>
           </div>
-          <div className="ml-[25%] sm:ml-9 flex flex-col justify-center w-[30rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
+          <div className="ml-[29%] sm:ml-9 flex flex-col justify-center w-[25rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
             <div className="inline-flex items-start relative flex-[0_0_auto] rounded-half">
-              <div className="font-poppins relative w-fit font-light text-white text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
+              <div className="font-poppins relative w-fit font-light text-white text-[0.9rem] sm:text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
                 {competitionsData[1].name}
               </div>
             </div>
@@ -95,7 +95,7 @@ function Competitions() {
               className="w-[5rem] rounded-full"
             ></img>
           </div>
-          <div className="ml-[25%] sm:ml-9 flex flex-col justify-center w-[30rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
+          <div className="ml-[32%] sm:ml-9 flex flex-col justify-center w-[34rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
             <div className="inline-flex items-start relative flex-[0_0_auto] rounded-half">
               <div className="font-poppins relative w-fit font-light text-white text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
                 {competitionsData[2].name}
@@ -115,9 +115,9 @@ function Competitions() {
               className="w-[5rem] rounded-full"
             ></img>
           </div>
-          <div className="ml-[25%] sm:ml-9 flex flex-col justify-center w-[30rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
+          <div className="ml-[29%] sm:ml-9 flex flex-col justify-center w-[25rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
             <div className="inline-flex items-start relative flex-[0_0_auto] rounded-half">
-              <div className="font-poppins relative w-fit font-light text-white text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
+              <div className="font-poppins relative w-fit font-light text-white text-[0.9rem] sm:text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
                 {competitionsData[3].name}
               </div>
             </div>
@@ -135,9 +135,9 @@ function Competitions() {
               className="w-[5rem] rounded-full"
             ></img>
           </div>
-          <div className="ml-[25%] sm:ml-9 flex flex-col justify-center w-[30rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
+          <div className="ml-[29%] sm:ml-9 flex flex-col justify-center w-[26rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
             <div className="inline-flex items-start relative flex-[0_0_auto] rounded-half">
-              <div className="font-poppins relative w-fit font-light text-white text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
+              <div className="font-poppins relative w-fit font-light text-white text-[0.9rem] sm:text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
                 {competitionsData[4].name}
               </div>
             </div>

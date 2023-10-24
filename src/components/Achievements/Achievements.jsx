@@ -1,6 +1,6 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import videoBg from "../../assets/valo.mp4";
+import videoBg from "../../assets/Announcement.mp4";
 
 const Competitions = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -44,7 +44,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["-50%", "1%"]);
 
   return (
     <div id="achievements" className="mt-[4rem] mb-[8rem]">
