@@ -1,5 +1,5 @@
 import React from "react";
-import ERC from "../assets/erc.jpg";
+import ERC from "../assets/ERC.jpg";
 import IRC from "../assets/IRC.png";
 import ISDC from "../assets/ISDC.jpg";
 import IRDC from "../assets/IRDC.png";
@@ -40,7 +40,7 @@ const competitionsData = [
 function Competitions() {
   return (
     <div className="flex flex-col items-center">
-      <div className="ml-6 md:ml-20 overflow-hidden">
+      <div className="ml-6 overflow-hidden md:ml-20">
         <div className="flex justify-center mt-5 md:mt-16 ml-5 md:ml-[-6%] mb-5 md:mb-12 sm:mb-10 text-[2.5%] md:text-3xl text-white font-meth component_title">
           Competitions
         </div>
