@@ -48,7 +48,7 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <div id="achievements" className="mt-[4rem] mb-[8rem]">
-      <div className="flex justify-center text-3xl text-white font-meth component_title mb-[-5rem]">
+      <div className=" justify-center text-center text-3xl text-white font-meth component_title mb-[-5rem]">
         Achievements
       </div>
       <section ref={targetRef} className="relative h-[80vh]">
