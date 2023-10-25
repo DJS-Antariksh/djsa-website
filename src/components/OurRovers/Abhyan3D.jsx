@@ -21,6 +21,10 @@ function Abhyan3D() {
     canvasStyle.width = "500px";
     canvasStyle.height = "400px"; 
   }
+  if (window.innerWidth <= 400) {
+    canvasStyle.width = "300px";
+    canvasStyle.height = "300px";
+  }
   
   return (
     <>
