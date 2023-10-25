@@ -89,5 +89,10 @@ code {
   animation: slideFromLeft 3s ease-in ;
 }
 
+.customTab:hover{
+  background-color: transparent !important;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
 
 

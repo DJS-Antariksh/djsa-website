@@ -24,24 +24,28 @@ function Core() {
     <div id="core">
       <TETabs fill>
         <TETabsItem
+        className="customTab"
           onClick={() => handleFillClick("tab1")}
           active={fillActive === "tab1"}
         >
           Core 2020-2021
         </TETabsItem>
         <TETabsItem
+        className="customTab"
           onClick={() => handleFillClick("tab2")}
           active={fillActive === "tab2"}
         >
           Core 2021-2022
         </TETabsItem>
         <TETabsItem
+        className="customTab"
           onClick={() => handleFillClick("tab3")}
           active={fillActive === "tab3"}
         >
           Core 2022-2023
         </TETabsItem>
         <TETabsItem
+        className="customTab"
           onClick={() => handleFillClick("tab4")}
           active={fillActive === "tab4"}
         >
