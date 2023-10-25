@@ -29,10 +29,10 @@ function ContactUs() {
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col mb-4">
               <label
-                className="block mb-4 text-sm text-white text-gray-700 font-poppins"
+                className="block mb-4 text-sm text-white text-gray-700 font-poppins tracking-widest"
                 htmlFor="name"
               >
-                Company Name
+                Name
               </label>
               <input
                 className="w-full px-3 py-2 text-white bg-transparent border border-white border-opacity-40 focus:border-white"
@@ -44,7 +44,7 @@ function ContactUs() {
             </div>
             <div className="flex flex-col mb-4 ">
               <label
-                className="block mb-4 text-sm text-white text-gray-700 font-poppins ml-14"
+                className="block mb-4 text-sm text-white text-gray-700 font-poppins ml-14 tracking-widest"
                 htmlFor="email"
               >
                 Email
@@ -59,7 +59,7 @@ function ContactUs() {
             </div>
             <div className="flex flex-col mb-10">
               <label
-                className="block mb-4 text-sm text-white text-gray-700 font-poppins"
+                className="block mb-4 text-sm text-white text-gray-700 font-poppins tracking-widest"
                 htmlFor="nationality"
               >
                 Nationality
@@ -74,10 +74,10 @@ function ContactUs() {
             </div>
             <div className="flex flex-col mb-4">
               <label
-                className="block mb-4 text-sm text-white text-gray-700 font-poppins ml-14"
+                className="block mb-4 text-sm text-white text-gray-700 font-poppins ml-14 tracking-widest"
                 htmlFor="phone"
               >
-                Phone Number
+                Number
               </label>
               <input
                 className="w-full px-3 py-2 text-white bg-transparent border border-white border-opacity-40 ml-14 focus:border-white"
@@ -90,7 +90,7 @@ function ContactUs() {
           </div>
           <div className="mb-4">
             <label
-              className="block mb-4 text-sm text-white text-gray-700 font-poppins"
+              className="block mb-4 text-sm text-white text-gray-700 font-poppins tracking-widest"
               htmlFor="message"
             >
               Message

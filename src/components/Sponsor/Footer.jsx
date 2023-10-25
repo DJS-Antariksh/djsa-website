@@ -12,7 +12,7 @@ const Footer = () => (
     <img src={bg} alt="footerbg" className="absolute z-0 object-cover w-full h-[30rem]" />
     <section className="flex flex-col items-center justify-center py-6 sm:py-16 z-99 relative">
       <div className="relative z-10 w-full flex flex-row justify-evenly items-start md:flex-row mb-8">
-        <div className="flex-[1] sm:px-16 px-6 text-white flex flex-col justify-start mr-10">
+        <div className="hidden md:flex-[1] sm:px-16 px-6 text-white md:flex flex-col justify-start mr-10">
           <img src={logo} alt="AntarikshLogo" className="w-[266px] h-[90px] relative object-contain" />
           <p className="font-poppins relative font-extralight text-white text-[18px] z-99 ml-10 leading-[30.8px] mt-4 max-w-[312px]">
             The official Rover challenge team of Dwarkadas J. Sanghvi College of Engineering.
@@ -80,7 +80,7 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div className="hidden md:flex flex-col relative ss:my-0 my-4 min-w-[15rem]">
+        <div className="hidden sm:flex flex-col relative ss:my-0 my-4 min-w-[15rem]">
           <h4 className="font-poppins font-normal text-[18px] leading-[27px] text-white">About the Team</h4>
           <ul className="list-none mt-4 font-poppins font-extralight text-[16px] leading-[24px] text-white">
             <li className="mt-4 hover:text-secondary">
@@ -120,7 +120,7 @@ const Footer = () => (
         </div>
 
         <div className="flex relative flex-col ss:my-0  sm:px-10 my-4 min-w-[3rem] mr-12">
-          <h4 className="font-poppins font-normal text-[18px] leading-[27px] text-white">Follow Us On</h4>
+          <h4 className="font-poppins font-normal text-[18px] leading-[27px] text-white ml-12">Follow Us On</h4>
           <ul className="list-none flex flex-row mt-4 font-poppins font-normal text-[16px] leading-[24px] text-white">
             <li className="m-2 hover:text-secondary">
               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">

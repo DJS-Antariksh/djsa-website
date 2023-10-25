@@ -44,7 +44,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["-50%", "1%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["-75%", "1%"]);
 
   return (
     <div id="achievements" className="mt-[4rem] mb-[8rem]">
@@ -65,19 +65,49 @@ const HorizontalScrollCarousel = () => {
 };
 const cards = [
   {
-    url: "https://th.bing.com/th/id/R.7cdf60c7cd8b2b14995694dcd7c99e06?rik=3obl%2fhI6QdNIMA&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f01%2ffree-beautiful-place-wallpaper-hd-173.jpg&ehk=92RRpT4hrYheMDBZkK0HhLLXx9%2fGDjnafeDmbgjE1K8%3d&risl=1&pid=ImgRaw&r=0",
-    title: "2nd rank ERC Remote",
+    url: require("../../assets/ERCremote_2023.jpeg"),
+    title: "2nd rank ERC Remote 2023",
     id: 1,
   },
   {
-    url: "https://wallpaperaccess.com/full/809523.jpg",
-    title: "10th rank ERC Onsite",
+    url: require("../../assets/ERConsite_2023.jpeg"),
+    title: "10th rank ERC Onsite 2023",
     id: 2,
   },
   {
-    url: "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
+    url: require("../../assets/irc-2023.jpg"),
     title: "8th rank IRC'2023",
     id: 3,
+  },
+  {
+    url: require("../../assets/IRDC.jpeg"),
+    title: "3rd rank IRDC 2022",
+    id: 4,
+  },
+  {
+    url: require("../../assets/erc_remote_2022.JPG"),
+    title: "1st rank ERC Remote 2022",
+    id: 5,
+  },
+  {
+    url: require("../../assets/irc-2023.jpg"),
+    title: "1st rank ERC Remote 2021",
+    id: 6,
+  },
+  {
+    url: require("../../assets/2nd_IPASC.jpeg"),
+    title: "2nd rank IPASC 2021",
+    id: 7,
+  },
+  {
+    url: require("../../assets/MarsHackathon.jpeg"),
+    title: "8th International Mars hackathon 2020",
+    id: 8,
+  },
+  {
+    url: require("../../assets/irc-2023.jpg"),
+    title: "3rd rank ERC remote 2020",
+    id: 9,
   },
 ];
 
@@ -90,14 +120,23 @@ const Card = ({ card }) => {
       >
         <div
           style={{
-            backgroundImage: `url(${card.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+            width: "100%", // Set the width to 100% of the container
+            height: "100%", // Set the height to 100% of the container
           }}
           className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
-        ></div>
+        >
+          <img
+            src={card.url}
+            alt={card.title}
+            style={{
+              width: "100%", // Set the width to 100% of the container
+              height: "100%", // Set the height to 100% of the container
+              objectFit: "cover", // Ensure the image covers the container
+            }}
+          />
+        </div>
         <div className="absolute inset-0 z-10 grid place-content-center">
-          <p className="p-8 text-3xl font-black text-white uppercase bg-gradient-to-br from-white/20 to-white/0 backdrop-blur-lg">
+          <p className="p-8 text-3xl font-black text-white uppercase bg-gradient-to-br from-white/20 to-white/0 backdrop-blur-sm">
             {card.title}
           </p>
         </div>
@@ -105,3 +144,5 @@ const Card = ({ card }) => {
     </>
   );
 };
+
+

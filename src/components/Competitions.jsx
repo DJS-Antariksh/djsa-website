@@ -45,7 +45,6 @@ function Competitions() {
         <div className="flex justify-center mt-16 ml-[2rem] lg:ml-[-18rem] mb-12 text-3xl text-white font-meth component_title">
           Competitions
         </div>
-  
         <div className="flex flex-row items-center mt-5 animate-slide-from-left ml-[-7rem] lg:ml-[-20rem]">
           <div className="absolute sm:flex flex-col items-center justify-center ml-[-10rem] sm:ml-0 w-10 gap-5 border border-white border-solid rounded-full">
             <img
@@ -65,7 +64,7 @@ function Competitions() {
             </p>
           </div>
         </div>
-        
+
         {/* Second Set of Competitions */}
         <div className="flex flex-row items-center mt-5 animate-slide-from-left ml-[-7rem] lg:ml-[-12.5rem]">
         <div className="absolute sm:flex flex-col items-center justify-center ml-[-10rem] sm:ml-0 w-10 gap-5 border border-white border-solid rounded-full">
@@ -95,7 +94,7 @@ function Competitions() {
               className="w-[5rem] rounded-full"
             ></img>
           </div>
-          <div className="ml-[32%] sm:ml-9 flex flex-col justify-center w-[34rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
+          <div className="ml-[29%] sm:ml-9 flex flex-col justify-center w-[35rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
             <div className="inline-flex items-start relative flex-[0_0_auto] rounded-half">
               <div className="font-poppins relative w-fit font-light text-white text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
                 {competitionsData[2].name}
