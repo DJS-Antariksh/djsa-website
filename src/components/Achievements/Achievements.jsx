@@ -105,7 +105,7 @@ const cards = [
     id: 8,
   },
   {
-    url: require("../../assets/irc-2023.jpg"),
+    url: require("../../assets/erc_remote_3rrd.jpg"),
     title: "3rd rank ERC remote 2020",
     id: 9,
   },
