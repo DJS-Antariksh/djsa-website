@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Department.css";
-import coding from "../../assets/coding.jpg";
+import coding from "../../assets/coding.png";
 import elex from "../../assets/elex.jpg";
-import mechanical from "../../assets/mechanical.jpeg";
+import mechanical from "../../assets/mechanical.jpg";
 import science from "../../assets/science.jpeg";
 import marketing from "../../assets/marketing.jpeg";
 
@@ -14,16 +14,16 @@ function Slider() {
       bgImg: coding,
     },
     {
-      name: "Electronics",
-      description:
-        "The Electronics Department spearheads the development and integration of the rover's electronic systems and the circuit design. This team designs and assembles critical components such as sensors, cameras, communication systems, and control units, ensuring that they work seamlessly together to enable the rover's functions.",
-      bgImg: elex,
-    },
-    {
       name: "Mechanical",
       description:
         "Responsible for the rover's physical structure, the Mechanical Department focuses on designing and analyzing the rover's mechanical structure. This includes crafting the rover's chassis, wheels, suspension, and more. Collaborating closely with the Electronics Department, they ensure the physical and electronic components integrate seamlessly.",
       bgImg: mechanical,
+    },
+    {
+      name: "Electronics",
+      description:
+        "The Electronics Department spearheads the development and integration of the rover's electronic systems and the circuit design. This team designs and assembles critical components such as sensors, cameras, communication systems, and control units, ensuring that they work seamlessly together to enable the rover's functions.",
+      bgImg: elex,
     },
     {
       name: "Science",

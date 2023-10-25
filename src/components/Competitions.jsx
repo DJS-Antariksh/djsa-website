@@ -42,7 +42,7 @@ function Competitions() {
   return (
     <div className="flex justify-center items-center mb-[7rem] w-[120%]">
       <div className="ml-[-10rem] lg:ml-20">
-        <div className="flex justify-center mt-16 ml-[2rem] lg:ml-[-10rem] mb-12 text-3xl text-white font-meth component_title">
+        <div className="flex justify-center mt-16 ml-[2rem] lg:ml-[-18rem] mb-12 text-3xl text-white font-meth component_title">
           Competitions
         </div>
   
