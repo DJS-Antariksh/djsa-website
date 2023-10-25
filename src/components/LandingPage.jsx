@@ -3,8 +3,7 @@ import * as echarts from "echarts";
 import "echarts-gl";
 import earth from "../assets/8k_mars.jpg";
 import stars from "../assets/2k_stars.jpg";
-import AntarikshLogo from "../assets/AntarikshLogo.png";
-import { Link } from "react-scroll";
+import Navbar from "./Navbar";
 
 function App() {
   const chartRef = useRef(null);
@@ -70,120 +69,20 @@ function App() {
           left: 0,
         }}
       ></div>
-      <nav
-        className="flex items-center justify-around mx-auto"
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          zIndex: 1,
-        }}
-      >
-        <div>
-          <img
-            className="w-48 cursor-pointer"
-            src={AntarikshLogo}
-            alt="AntarikshLogo"
-          />
-        </div>
-        <div>
-          <ul className="flex md:flex-row md:items-center md:gap-[4vw] gap-8 sm:gap-[2vw] ml-96">
-            <li>
-              <Link
-                to="/"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="achievements"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
-              >
-                Achievements
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="department"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
-              >
-                Department
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="contactUs"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm"
-              >
-                ContactUs
-              </Link>
-            </li>
-          </ul>
-        </div>
-        {/* <div className="flex gap-6">
-          <button
-            onClick={toggleMenu}
-            name={menuOpen ? "close" : "menu"}
-            className={`text-3xl text-white cursor-pointer md:hidden ${
-              menuOpen ? "hidden" : ""
-            }`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          </button>
-        </div> */}
-      </nav>
+      <Navbar/>
       <div
         className="absolute leading-6 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         style={{ zIndex: 1 }}
       >
-        <p className="text-6xl text-center text-white font-meth tracking-1">
+        <p className="text-6xl text-center text-white font-meth tracking-1 heroText">
           TO
         </p>
         <br />
-        <p className="text-6xl text-center text-white font-meth tracking-1">
+        <p className="text-6xl text-center text-white font-meth tracking-1 heroText">
           DECIPHER
         </p>
         <br />
-        <p className="text-6xl text-center text-white font-meth tracking-1">
+        <p className="text-6xl text-center text-white font-meth tracking-1 heroText">
           UNIMAGINABLE
         </p>
       </div>

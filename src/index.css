@@ -4,60 +4,60 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;  
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 /* Custom Scrollbar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 12px;
   background-color: black;
 }
 
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(transparent,rgba(241, 153, 105));
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, rgba(241, 153, 105));
   border-radius: 6px;
 }
 
 /* Custom Font */
 @font-face {
-  font-family: 'Methanerse';
-  src: url('../public/fonts/methanerse.ttf') format('truetype');
+  font-family: "Methanerse";
+  src: url("../public/fonts/methanerse.ttf") format("truetype");
 }
 
 /* Background of the whole webpage*/
-.bg-star{
+.bg-star {
   background-image: url("./assets/darkplainstar.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 
 /* Styling for every components title */
-.component_title{
+.component_title {
   letter-spacing: 0.4rem;
 }
 
 @media (width >= 2560px) {
-  .component_title{
+  .component_title {
     font-size: 5rem !important;
   }
 }
 @media (width >= 1440px) {
-  .component_title{
+  .component_title {
     font-size: 4rem !important;
   }
 }
 @media (width >= 1024px) {
-  .component_title{
+  .component_title {
     font-size: 2.5rem !important;
   }
 }
@@ -67,11 +67,10 @@ code {
   }
 }
 @media (width >= 320px) {
-  .component_title{
+  .component_title {
     font-size: 24px !important;
   }
 }
-
 
 /* Achievements Component*/
 @keyframes slideFromLeft {
@@ -86,13 +85,72 @@ code {
 }
 
 .animate-slide-from-left {
-  animation: slideFromLeft 3s ease-in ;
+  animation: slideFromLeft 3s ease-in;
 }
 
-.customTab:hover{
+/* Core */
+.customTab:hover {
   background-color: transparent !important;
   color: #fff;
   border-bottom: 1px solid #fff;
 }
 
+/* Landing Page */
+@media (width <= 425px) {
+  .heroText {
+    font-size: 2rem !important;
+  }
+}
 
+@media (width > 768px) {
+  .hamburgerMenu {
+    display: hidden !important;
+  }
+}
+
+@media (width <=768px) {
+  .antarikshLogo{
+    height: 100px !important;
+    width: 100px !important;
+  }
+  ul{
+    margin-left: 0 !important;
+  }
+  .navLinkDisplay {
+    display: none !important;
+    gap: 0.5 !important;
+  }
+  .hamburgerMenu {
+    display: block !important;
+  }
+}
+
+@media (width <= 320px) {
+  .antarikshLogo{
+    height: 60px !important;
+    width: 60px !important;
+  }
+}
+
+@media (width <= 820px) {
+  ul{
+    margin-left: 4rem !important;
+  }
+}
+
+@media (width <= 912px) {
+  ul{
+    margin-left: 2rem !important;
+  }
+}
+
+@media (width <= 1024px) {
+  ul{
+    margin-left: 2rem !important;
+  }
+}
+@media (width <= 1280px) {
+  ul{
+    margin-left: -10rem !important;
+  }
+}

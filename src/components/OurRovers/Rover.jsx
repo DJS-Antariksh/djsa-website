@@ -5,7 +5,7 @@ import * as THREE from 'three';
 
 function Rover() {
   return (
-    <Carousel
+    <Carousel id="rover"
       className="rounded-xl"
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute z-50 flex gap-2 bottom-4 left-2/4 -translate-x-2/4">
