@@ -10,8 +10,8 @@ import { Link } from "react-scroll";
 const Footer = () => (
   <div className="relative">
     <img src={bg} alt="footerbg" className="absolute z-0 object-cover w-full h-[30rem]" />
-    <section className="flex flex-col items-center justify-center py-6 sm:py-16 z-99 relative">
-      <div className="relative z-10 w-full flex flex-row justify-evenly items-start md:flex-row mb-8">
+    <section className="relative flex flex-col items-center justify-center py-6 sm:py-16 z-99">
+      <div className="relative z-10 flex flex-row items-start w-full mb-8 justify-evenly md:flex-row">
         <div className="hidden md:flex-[1] sm:px-16 px-6 text-white md:flex flex-col justify-start mr-10">
           <img src={logo} alt="AntarikshLogo" className="w-[266px] h-[90px] relative object-contain" />
           <p className="font-poppins relative font-extralight text-white text-[18px] z-99 ml-10 leading-[30.8px] mt-4 max-w-[312px]">
@@ -24,55 +24,55 @@ const Footer = () => (
           <ul className="list-none mt-4 font-poppins relative text-[16px] leading-[24px] text-white">
             <li className="mt-4">
               <Link
-                to="home" // Replace with the actual link for the Home section
+                to="/"
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
               >
                 Home
               </Link>
             </li>
             <li className="mt-4">
               <Link
-                to="about" // Replace with the actual link for the About Us section
+                to="about"
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
               >
                 About Us
               </Link>
             </li>
             <li className="mt-4">
               <Link
-                to="achievements" // Replace with the actual link for the Achievements section
+                to="achievements" 
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
               >
                 Achievements
               </Link>
             </li>
             <li className="mt-4">
               <Link
-                to="contactUs" // Replace with the actual link for the Contact Us section
+                to="contactUs"
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
               >
                 Contact Us
               </Link>
             </li>
             <li className="mt-4">
               <Link
-                to="sponsor" // Replace with the actual link for the Sponsor section
+                to="sponsor"
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
               >
                 Sponsor
               </Link>
@@ -85,33 +85,33 @@ const Footer = () => (
           <ul className="list-none mt-4 font-poppins font-extralight text-[16px] leading-[24px] text-white">
             <li className="mt-4 hover:text-secondary">
               <Link
-                to="ourRover" // Replace with the actual link for the Our Rover section
+                to="ourRover"
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
               >
                 Our Rover
               </Link>
             </li>
             <li className="mt-4 hover:text-secondary">
               <Link
-                to="department" // Replace with the actual link for the Department section
+                to="department"
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
               >
                 Department
               </Link>
             </li>
             <li className="mt-4 hover:text-secondary">
               <Link
-                to="core" // Replace with the actual link for the Core section
+                to="core" 
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="font-extralight text-white font-poppins hover:text-gray-500 hover:decoration-white/30 cursor-pointer"
+                className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
               >
                 Core
               </Link>

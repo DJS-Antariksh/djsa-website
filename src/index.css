@@ -131,3 +131,26 @@ code {
     width: 60px !important;
   }
 }
+
+@media (width <= 820px) {
+  ul{
+    margin-left: 4rem !important;
+  }
+}
+
+@media (width <= 912px) {
+  ul{
+    margin-left: 2rem !important;
+  }
+}
+
+@media (width <= 1024px) {
+  ul{
+    margin-left: 2rem !important;
+  }
+}
+@media (width <= 1280px) {
+  ul{
+    margin-left: -10rem !important;
+  }
+}

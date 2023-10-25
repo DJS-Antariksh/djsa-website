@@ -10,7 +10,7 @@ function Model(props) {
 function Abhyan3D() {
   
   const canvasStyle = {
-    width: "800px", // Default width for screens greater than 1024px
+    width: "800px",
     height: "600px",
   };
 
