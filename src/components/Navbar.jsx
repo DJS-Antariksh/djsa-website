@@ -27,7 +27,7 @@ function Navbar() {
         }}
       >
         <img
-          className="w-48 cursor-pointer antarikshLogo"
+          className={`w-48 cursor-pointer antarikshLogo ${isOpen ? '' : ''}`}
           src={AntarikshLogo}
           alt="AntarikshLogo"
         />

@@ -85,7 +85,7 @@ const Footer = () => (
           <ul className="list-none mt-4 font-poppins font-extralight text-[16px] leading-[24px] text-white">
             <li className="mt-4 hover:text-secondary">
               <Link
-                to="ourRover"
+                to="rover"
                 spy={true}
                 smooth={true}
                 duration={500}
@@ -102,7 +102,7 @@ const Footer = () => (
                 duration={500}
                 className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
               >
-                Department
+                Departments
               </Link>
             </li>
             <li className="mt-4 hover:text-secondary">

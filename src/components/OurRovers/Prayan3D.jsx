@@ -30,7 +30,7 @@ function Abhyan3D() {
   return (
     <>
       <div className="flex justify-center mt-8 text-3xl text-white font-meth component_title">
-        Prayan
+        Our Rover
       </div>
       <div className="flex justify-center">
         <div >

@@ -46,7 +46,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["-75%", "1%"]);
+  const x = useTransform(scrollYProgress, [1, 0], ["-75%", "1%"]);
 
   return (
     <div id="achievements" className="mt-[4rem] mb-[8rem]">
