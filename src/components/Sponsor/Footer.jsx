@@ -119,7 +119,7 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div className="flex relative flex-col ss:my-0  sm:px-10 my-4 min-w-[3rem] ml-[45%] sm:ml-0">
+        <div className="flex relative flex-col ss:my-0  sm:px-10 my-4 min-w-[3rem] ml-[25%] sm:ml-0">
           <h4 className="hidden sm:block font-poppins font-normal text-[18px] leading-[27px] text-white ml-0">Follow Us On</h4>
           <ul className="list-none flex flex-row mt-4 font-poppins font-normal text-[16px] leading-[24px] text-white">
             <li className="m-2 hover:text-secondary">

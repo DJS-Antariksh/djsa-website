@@ -9,7 +9,7 @@ const Competitions = () => {
 
   useEffect(() => {
     // Simulate the video ending after a certain time (e.g., 5 seconds)
-    const videoDuration = 50000; // 5 seconds
+    const videoDuration = 90000; // 5 seconds
     const timer = setTimeout(() => {
       setIsVideoPlaying(false);
     }, videoDuration);
@@ -18,17 +18,24 @@ const Competitions = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  const videoRef = useRef(null);
+
+  const playVideo = () => {
+    const video = videoRef.current;
+    if (video) {
+      video.play();
+    }
+  };
   return (
     <div className="mt-14" id="achievements">
       {isVideoPlaying ? (
         <div className="w-screen h-screen">
           <video controls
-          autoPlay  
+          autoPlay
           src={videoBg}
           type="video/mp4"
           onEnded={() => setIsVideoPlaying(false)}
           className="object-cover w-full h-full"
-          volume={1}
         ></video>
         </div>
       ) : (
@@ -46,7 +53,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [1, 0], ["-75%", "1%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["-75%", "1%"]);
 
   return (
     <div id="achievements" className="mt-[4rem] mb-[8rem]">
