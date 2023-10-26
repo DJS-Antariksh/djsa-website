@@ -18,14 +18,13 @@ const Sponsor = () => {
           Sponsors
         </div>
         <div className="flex flex-wrap justify-center">
-          <img className="m-12 w-[25%] h-[5rem] sm:h-[10rem]" src={solidworks} alt="sponsor img"></img>
-          <img className="m-12 w-[25%] h-[5rem] sm:h-[10rem]" src={WOL} alt="sponsor img"></img>
-          <img className="m-12 w-[25%] h-[5rem] sm:h-[10rem]" src={PA} alt="sponsor img"></img>
-          <img className="m-12 w-[25%] h-[5rem] sm:h-[10rem]" src={PBC} alt="sponsor img"></img>
-          <img className="m-12 w-[25%] h-[5rem] sm:h-[10rem]" src={ANYSYS} alt="sponsor img"></img>
-          <img className="m-12 w-[25%] h-[5rem] sm:h-[10rem]" src={spectra} alt="sponsor img"></img>
-          <img className="m-12 w-[25%] h-[5rem] sm:h-[10rem]" src={tesseract} alt="sponsor img"></img>
-          <img className="m-12 w-[25%] h-[5rem] sm:h-[10rem]" src={seshasai} alt="sponsor img"></img>
+          <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem]" src={solidworks} alt="sponsor img"></img>
+          <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem]" src={PA} alt="sponsor img"></img>
+          <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem]" src={PBC} alt="sponsor img"></img>
+          <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem]" src={ANYSYS} alt="sponsor img"></img>
+          <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem]" src={spectra} alt="sponsor img"></img>
+          <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem]" src={tesseract} alt="sponsor img"></img>
+          <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem]" src={seshasai} alt="sponsor img"></img>
 
 
           {/* <img className='m-12' src={solidworks} alt='sponsor img'>

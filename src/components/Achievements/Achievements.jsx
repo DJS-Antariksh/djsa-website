@@ -1,6 +1,8 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import videoBg from "../../assets/Announcement.mp4";
+import { Player, ControlBar, VolumeMenuButton } from 'video-react';
+
 
 const Competitions = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -20,14 +22,14 @@ const Competitions = () => {
     <div className="mt-14" id="achievements">
       {isVideoPlaying ? (
         <div className="w-screen h-screen">
-          <video
-            muted
-            autoPlay
-            src={videoBg}
-            type="video/mp4"
-            onEnded={() => setIsVideoPlaying(false)}
-            className="object-cover w-full h-full"
-          ></video>
+          <video controls
+          autoPlay  
+          src={videoBg}
+          type="video/mp4"
+          onEnded={() => setIsVideoPlaying(false)}
+          className="object-cover w-full h-full"
+          volume={1}
+        ></video>
         </div>
       ) : (
         <HorizontalScrollCarousel />

@@ -14,7 +14,7 @@ export default function App() {
     <div className="overflow-hidden">
       <LandingPage/>
       <AboutTeam/>
-      <Rover/>
+      {/* <Rover/> */}
       <Competitions/>
       <Achievements/>
       <Department/>

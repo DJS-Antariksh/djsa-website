@@ -5,8 +5,8 @@ import {
   TETabsItem,
   TETabsPane,
 } from "tw-elements-react";
-import core1 from "../assets/20-21demo.png";
-import core2 from "../assets/21-22demo.png";
+import core1 from "../assets/20-21.png";
+import core2 from "../assets/21-22.png";
 import core3 from "../assets/22-23.png";
 import core4 from "../assets/23-24.png";
 

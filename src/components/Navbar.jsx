@@ -84,7 +84,7 @@ function Navbar() {
               duration={500}
               className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
             >
-              {isOpen ? <img src={contactUs} alt="contactUs"/> : 'ContactUs'}
+              {isOpen ? <img src={contactUs} alt="contactUs"/> : 'Contact'}
             </Link>
           </li>
         </ul>

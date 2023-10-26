@@ -74,13 +74,13 @@ const Footer = () => (
                 duration={500}
                 className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
               >
-                Sponsor
+                Sponsors
               </Link>
             </li>
           </ul>
         </div>
 
-        <div className="hidden sm:flex flex-col relative ss:my-0 my-4 min-w-[15rem]">
+        <div className="hidden md:flex flex-col relative ss:my-0 my-4 min-w-[15rem]">
           <h4 className="font-poppins font-normal text-[18px] leading-[27px] text-white">About the Team</h4>
           <ul className="list-none mt-4 font-poppins font-extralight text-[16px] leading-[24px] text-white">
             <li className="mt-4 hover:text-secondary">
@@ -119,31 +119,32 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div className="flex relative flex-col ss:my-0  sm:px-10 my-4 min-w-[3rem] mr-12">
-          <h4 className="font-poppins font-normal text-[18px] leading-[27px] text-white ml-12">Follow Us On</h4>
+        <div className="flex relative flex-col ss:my-0  sm:px-10 my-4 min-w-[3rem] ml-[45%] sm:ml-0">
+          <h4 className="hidden sm:block font-poppins font-normal text-[18px] leading-[27px] text-white ml-0">Follow Us On</h4>
           <ul className="list-none flex flex-row mt-4 font-poppins font-normal text-[16px] leading-[24px] text-white">
             <li className="m-2 hover:text-secondary">
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com/djs_antariksh?igshid=MXQxZ2thMXZob3poYQ==
+              " target="_blank" rel="noopener noreferrer">
                 <AiFillInstagram className="w-[30px] h-[30px]" />
               </a>
             </li>
             <li className="m-2 hover:text-secondary">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://m.facebook.com/p/DJS-Antariksh-100063880216755/" target="_blank" rel="noopener noreferrer">
                 <AiFillFacebook className="w-[30px] h-[30px]" />
               </a>
             </li>
             <li className="m-2 hover:text-secondary">
-              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/djs_antariksh?lang=en" target="_blank" rel="noopener noreferrer">
                 <AiOutlineTwitter className="w-[30px] h-[30px]" />
               </a>
             </li>
             <li className="m-2 hover:text-secondary">
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/djs-antariksh/" target="_blank" rel="noopener noreferrer">
                 <AiFillLinkedin className="w-[30px] h-[30px]" />
               </a>
             </li>
             <li className="m-2 hover:text-secondary">
-              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://youtube.com/@djsantariksh9095?si=YVUA4NdSvCpViWYG" target="_blank" rel="noopener noreferrer">
                 <AiFillYoutube className="w-[30px] h-[30px]" />
               </a>
             </li>

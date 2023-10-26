@@ -96,7 +96,7 @@ function ContactUs() {
               Message
             </label>
             <textarea
-              className="border text-white lg py-2 px-3 border-opacity-40  w-[111%] bg-transparent h-16  focus:border-white"
+              className="border text-white lg py-2 px-3 border-opacity-40  w-[108%] bg-transparent h-16  focus:border-white"
               id="message"
               name="message"
             ></textarea>
