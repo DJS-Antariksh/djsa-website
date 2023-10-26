@@ -162,6 +162,16 @@ code {
     margin-left: 2rem !important;
   }
 }
+@media (width <= 375px) {
+  .hamburgerMenu{
+    margin-right: -4rem !important;
+  }
+}
+@media (width <= 414px) {
+  .hamburgerMenu{
+    margin-right: -6rem !important;
+  }
+}
 
 @media (width <= 1024px) {
   ul{
