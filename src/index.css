@@ -124,6 +124,9 @@ code {
 }
 
 @media (width <=768px) {
+  .heroText {
+    font-size: 3rem !important;
+  }
   .antarikshLogo{
     height: 100px !important;
     width: 100px !important;
