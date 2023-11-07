@@ -30,8 +30,9 @@ const Competitions = () => {
     <div className="mt-14" id="achievements">
       {isVideoPlaying ? (
         <div className="w-screen h-screen">
-          <video controls
+          <video
           autoPlay
+          controls
           src={videoBg}
           type="video/mp4"
           onEnded={() => setIsVideoPlaying(false)}
@@ -53,7 +54,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["-75%", "1%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["-85%", "1%"]);
 
   return (
     <div id="achievements" className="mt-[4rem] mb-[8rem]">
