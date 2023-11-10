@@ -1,8 +1,8 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import videoBg from "../../assets/Announcement.mp4";
-import { Player, ControlBar, VolumeMenuButton } from 'video-react'
-import {  useDragControls } from "framer-motion";;
+import { Player, ControlBar, VolumeMenuButton } from 'video-react';
+import {  useDragControls } from "framer-motion";
 
 
 const Competitions = () => {
