@@ -4,7 +4,6 @@ import videoBg from "../../assets/Announcement.mp4";
 import { Player, ControlBar, VolumeMenuButton } from 'video-react';
 import {  useDragControls } from "framer-motion";
 
-
 const Competitions = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
 

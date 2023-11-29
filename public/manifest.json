@@ -8,13 +8,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "AntarikshLogo.png",
-      "type": "image/png",
+      "src": "AntarikshLogo.jpeg",
+      "type": "image/jpeg",
       "sizes": "192x192"
     },
     {
-      "src": "AntarikshLogo.png",
-      "type": "image/png",
+      "src": "AntarikshLogo.jpeg",
+      "type": "image/jpeg",
       "sizes": "512x512"
     }
   ],
