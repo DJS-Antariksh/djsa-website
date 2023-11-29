@@ -5,7 +5,6 @@ import { Player, ControlBar, VolumeMenuButton } from 'video-react';
 import {  useDragControls } from "framer-motion";
 import Carousel from "./Carousel"
 
-
 const Competitions = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
 

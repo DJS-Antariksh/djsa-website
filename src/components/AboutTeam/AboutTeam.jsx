@@ -29,7 +29,7 @@ const AboutTeam = () => {
           Sanghvi College of Engineering, Mumbai, India. It was founded in the
           year 2019-20. The team comprises 100+ passionate undergraduate students
           from various domains of engineering, working together to explore rover
-          technologies. The team's motto, 'To Decipher Unimaginable,' embodies
+          technologies. The team's motto, 'To Decipher Unimaginable', embodies
           its commitment to space exploration. Its vision is to expand the
           boundaries of innovation through the optimal utilization of
           technology, culminating in the creation of a cutting-edge Martian
