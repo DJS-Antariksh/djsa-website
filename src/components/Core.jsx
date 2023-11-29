@@ -5,8 +5,8 @@ import {
   TETabsItem,
   TETabsPane,
 } from "tw-elements-react";
-import core1 from "../assets/20-21demo.png";
-import core2 from "../assets/21-22demo.png";
+import core1 from "../assets/20-21.png";
+import core2 from "../assets/21-22.png";
 import core3 from "../assets/22-23.png";
 import core4 from "../assets/23-24.png";
 
@@ -28,28 +28,28 @@ function Core() {
           onClick={() => handleFillClick("tab1")}
           active={fillActive === "tab1"}
         >
-          Core 2020-2021
+          2020-2021
         </TETabsItem>
         <TETabsItem
         className="customTab"
           onClick={() => handleFillClick("tab2")}
           active={fillActive === "tab2"}
         >
-          Core 2021-2022
+          2021-2022
         </TETabsItem>
         <TETabsItem
         className="customTab"
           onClick={() => handleFillClick("tab3")}
           active={fillActive === "tab3"}
         >
-          Core 2022-2023
+          2022-2023
         </TETabsItem>
         <TETabsItem
         className="customTab"
           onClick={() => handleFillClick("tab4")}
           active={fillActive === "tab4"}
         >
-          Core 2023-2024
+          2023-2024
         </TETabsItem>
       </TETabs>
 

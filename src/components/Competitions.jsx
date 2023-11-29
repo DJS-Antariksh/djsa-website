@@ -1,18 +1,18 @@
 import React from "react";
-import ERC from "../assets/ERC.jpg";
+import ERC from "../assets/erc.jpg";
 import IRC from "../assets/IRC.png";
 import ISDC from "../assets/ISDC.jpg";
 import IRDC from "../assets/IRDC.png";
 
 const competitionsData = [
   {
-    name: "European Rover Challenge(Onsite-Formula)",
+    name: "European Rover Challenge (Onsite-Formula)",
     image: ERC,
     description:
       "European Rover Challenge (ERC, ERC Space & Robotics) is an annual international Martian robot competition that has been organized since 2014 in Poland. In the on-site formula, student teams from all over the world work hard to prepare a fully functional Mars rover of their design. The rover has to be a standalone, mobile platform.",
   },
   {
-    name: "European Rover Challenge(Remote-Formula)",
+    name: "European Rover Challenge (Remote-Formula)",
     image: ERC,
     description:
       "European Rover Challenge (ERC, ERC Space & Robotics) is an annual international Martian robot competition that has been organized since 2014 in Poland. In the remote formula, teams taking part in the remote formula will all use standardized equipment during the competition, with which they will connect remotely via the Internet from anywhere on Earth.",

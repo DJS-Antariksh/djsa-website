@@ -68,6 +68,7 @@ function App() {
           top: 0,
           left: 0,
         }}
+        className="hidden md:block mainModel"
       ></div>
       <Navbar/>
       <div

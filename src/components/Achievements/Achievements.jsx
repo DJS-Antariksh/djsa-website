@@ -1,13 +1,16 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import videoBg from "../../assets/Announcement.mp4";
+import { Player, ControlBar, VolumeMenuButton } from 'video-react';
+import {  useDragControls } from "framer-motion";
+
 
 const Competitions = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
 
   useEffect(() => {
     // Simulate the video ending after a certain time (e.g., 5 seconds)
-    const videoDuration = 50000; // 5 seconds
+    const videoDuration = 90000; // 5 seconds
     const timer = setTimeout(() => {
       setIsVideoPlaying(false);
     }, videoDuration);
@@ -16,18 +19,26 @@ const Competitions = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  const videoRef = useRef(null);
+
+  const playVideo = () => {
+    const video = videoRef.current;
+    if (video) {
+      video.play();
+    }
+  };
   return (
     <div className="mt-14" id="achievements">
       {isVideoPlaying ? (
         <div className="w-screen h-screen">
           <video
-            muted
-            autoPlay
-            src={videoBg}
-            type="video/mp4"
-            onEnded={() => setIsVideoPlaying(false)}
-            className="object-cover w-full h-full"
-          ></video>
+          autoPlay
+          controls
+          src={videoBg}
+          type="video/mp4"
+          onEnded={() => setIsVideoPlaying(false)}
+          className="object-cover w-full h-full"
+        ></video>
         </div>
       ) : (
         <HorizontalScrollCarousel />
@@ -39,21 +50,29 @@ const Competitions = () => {
 export default Competitions;
 
 const HorizontalScrollCarousel = () => {
-  const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-  });
-
-  const x = useTransform(scrollYProgress, [0, 1], ["-75%", "1%"]);
-
+  const carousel = useRef();
+  const [width, setwidth] = useState(5)
+  useEffect(() => {
+    const current = carousel.current;
+    if (current) {
+      const calculatedWidth = current.scrollWidth + current.offsetWidth;
+      setwidth(calculatedWidth);
+    }
+  }, []);
+  
   return (
     <div id="achievements" className="mt-[4rem] mb-[8rem]">
       <div className=" justify-center text-center text-3xl text-white font-meth component_title mb-[-5rem]">
         Achievements
       </div>
-      <section ref={targetRef} className="relative h-[80vh]">
+      <section ref={carousel} className="relative h-[80vh]">
         <div className="sticky top-0 flex items-center h-screen overflow-hidden">
-          <motion.div style={{ x }} className="flex gap-4">
+          <motion.div
+          className="flex gap-4 inner-corousel"
+          drag='x'
+          dragConstraints={{right:0,left:-width}}
+          whileTap={{cursor:"grabbing"}}
+          >
             {cards.map((card) => {
               return <Card card={card} key={card.id} />;
             })}
@@ -144,5 +163,3 @@ const Card = ({ card }) => {
     </>
   );
 };
-
-
