@@ -38,6 +38,7 @@ function Abhyan3D() {
             dpr={[1, 2]}
             shadows
             camera={{ fov: 45 }}
+            gl={{ preserveDrawingBuffer: true, alpha: true }}
             // style={{ width: "800px", height: "600px" }}
             style={canvasStyle}
           >
