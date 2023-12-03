@@ -26,11 +26,40 @@ const CarouselMain = () => {
   };
 
   const items = [
-    
     {
-      img: require("../../assets/erc_remote_3rrd.jpg"),
-      title: "3rd rank ERC remote 2020",
-      id: 1,
+      img: require("../../assets/ERCremote_2023.jpeg"),
+      title: "2nd Rank ERC Remote 2023",
+      id: 9,
+    },
+    {
+      img: require("../../assets/ERConsite_2023.jpeg"),
+      title: "10th Rank ERC Onsite 2023",
+      id: 8,
+    },
+    {
+      img: require("../../assets/irc-2023.jpg"),
+      title: "8th Rank IRC'2023",
+      id: 7,
+    },
+    {
+      img: require("../../assets/IRDC.jpeg"),
+      title: "3rd Rank IRDC 2022",
+      id: 6,
+    },
+    {
+      img: require("../../assets/erc_remote_2022.JPG"),
+      title: "1st Rank ERC Remote 2022",
+      id: 5,
+    },
+    {
+      img: require("../../assets/irc-2023.jpg"),
+      title: "1st Rank ERC Remote 2021",
+      id: 4,
+    },
+    {
+      img: require("../../assets/2nd_IPASC.jpeg"),
+      title: "2nd Rank IPASC 2021",
+      id: 3,
     },
     {
       img: require("../../assets/MarsHackathon.jpeg"),
@@ -38,42 +67,12 @@ const CarouselMain = () => {
       id: 2,
     },
     {
-      img: require("../../assets/2nd_IPASC.jpeg"),
-      title: "2nd rank IPASC 2021",
-      id: 3,
+      img: require("../../assets/erc_remote_3rrd.jpg"),
+      title: "3rd Rank ERC remote 2020",
+      id: 1,
     },
-    {
-      img: require("../../assets/irc-2023.jpg"),
-      title: "1st rank ERC Remote 2021",
-      id: 4,
-    },
-    {
-      img: require("../../assets/erc_remote_2022.JPG"),
-      title: "1st rank ERC Remote 2022",
-      id: 5,
-    },
-    {
-      img: require("../../assets/IRDC.jpeg"),
-      title: "3rd rank IRDC 2022",
-      id: 6,
-    },
-    {
-      img: require("../../assets/irc-2023.jpg"),
-      title: "8th rank IRC'2023",
-      id: 7,
-    },
-    {
-      img: require("../../assets/ERConsite_2023.jpeg"),
-      title: "10th rank ERC Onsite 2023",
-      id: 8,
-    },
-    {
-      img: require("../../assets/ERCremote_2023.jpeg"),
-      title: "2nd rank ERC Remote 2023",
-      id: 9,
-    },
-    
   ];
+  
   return (
     <>
       <h1 className='justify-center text-center text-3xl text-white font-meth component_title mb-[5rem]'>ACHIEVEMENTS</h1>

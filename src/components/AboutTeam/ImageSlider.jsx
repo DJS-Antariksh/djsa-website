@@ -38,6 +38,7 @@ const sliderStyles = {
 const dotsContainerStyles = {
   display: "flex",
   justifyContent: "center",
+  
 };
 
 const dotStyle = {
@@ -75,7 +76,7 @@ const ImageSlider = ({ slides }) => {
 
   useEffect(() => {
     // Set up an interval to automatically change slides every 5 seconds (5000 milliseconds)
-    const intervalId = setInterval(autoGoToNextSlide, 3000);
+    const intervalId = setInterval(autoGoToNextSlide, 5000);
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(intervalId);
@@ -92,7 +93,7 @@ const ImageSlider = ({ slides }) => {
         </div>
       </div>
       <div style={slideStylesWidthBackground}></div>
-      <div style={dotsContainerStyles}>
+      <div className="ml-11" style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
           <div
             style={dotStyle}
