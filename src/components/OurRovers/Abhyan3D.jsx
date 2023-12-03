@@ -1,6 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
 import * as THREE from "three";
+import Abhyaan from "../../assets/Abhyaan.png"
 
 function Model(props) {
   const { scene } = useGLTF("/abhyan.glb");
@@ -33,7 +34,7 @@ function Abhyan3D() {
       </div>
     <div className="flex justify-center">
       <div>
-        <Canvas
+        {/* <Canvas
           dpr={[1, 2]}
           shadows
           camera={{ fov: 45 }}
@@ -51,7 +52,8 @@ function Abhyan3D() {
               <Model scale={0.01} />
             </Stage>
           </PresentationControls>
-        </Canvas>
+        </Canvas> */}
+        <img src={Abhyaan} alt="Abhyaan" />
       </div>
       <div className="hidden md:block">
         <div className="flex flex-col mt-16 mb-8">

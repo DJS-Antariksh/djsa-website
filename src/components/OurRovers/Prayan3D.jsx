@@ -1,13 +1,14 @@
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
 import * as THREE from "three";
+import Prayaan from "../../assets/Prayaan.png"
 
 function Model(props) {
   const { scene } = useGLTF("/prayan.glb");
   return <primitive object={scene} {...props} />;
 }
 
-function Abhyan3D() {
+function Prayan3D() {
   
   const canvasStyle = {
     width: "800px",
@@ -33,8 +34,8 @@ function Abhyan3D() {
         Our Rover
       </div>
       <div className="flex justify-center">
-        <div >
-          <Canvas
+        <div className="h-100">
+          {/* <Canvas
             dpr={[1, 2]}
             shadows
             camera={{ fov: 45 }}
@@ -52,7 +53,8 @@ function Abhyan3D() {
                 <Model scale={0.01} />
               </Stage>
             </PresentationControls>
-          </Canvas>
+          </Canvas> */}
+          <img src={Prayaan} alt="Prayaan"/>
         </div>
         <div className="hidden md:block">
           <div className="flex flex-col mt-16 mb-8">
@@ -95,4 +97,4 @@ function Abhyan3D() {
   );
 }
 
-export default Abhyan3D;
+export default Prayan3D;
