@@ -24,7 +24,7 @@
     "react-slick": "^0.29.0",
     "react-swipeable": "^7.0.1",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^6.1.0",
+    "styled-components": "^5.3.11",
     "swiper": "^6.8.4",
     "three": "^0.157.0",
     "three-stdlib": "^2.28.0",
