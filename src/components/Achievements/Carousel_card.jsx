@@ -88,7 +88,6 @@
 
 // export default CarouselCard;
 
-
 const Card = ({ card }) => {
     return (
       <>
@@ -122,6 +121,5 @@ const Card = ({ card }) => {
       </>
     );
   };
-  
-  
+
   export default Card;
