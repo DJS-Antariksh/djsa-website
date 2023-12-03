@@ -1,5 +1,5 @@
 import React from 'react'
-import Carousel , { consts } from "react-elastic-carousel";
+import Carousel , { consts } from "@itseasy21/react-elastic-carousel";
 import "./Carousel.css"
 import { FaArrowCircleRight , FaArrowCircleLeft } from "react-icons/fa";
 

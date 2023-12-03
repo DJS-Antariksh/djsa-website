@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@itseasy21/react-elastic-carousel": "^0.12.3",
     "@material-tailwind/react": "^2.1.4",
     "@react-three/drei": "^9.88.4",
     "@react-three/fiber": "^8.15.3",
@@ -16,7 +17,6 @@
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-elastic-carousel": "^0.11.5",
     "react-icons": "^4.11.0",
     "react-player": "^2.13.0",
     "react-scripts": "5.0.1",
