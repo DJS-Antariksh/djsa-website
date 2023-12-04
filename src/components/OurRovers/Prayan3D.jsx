@@ -59,7 +59,7 @@ function Prayan3D() {
         <div className="hidden md:block">
           <div className="flex flex-col mt-16 mb-8">
             <p className="font-thin text-white font-poppins">Rover Name</p>
-            <p className="font-light text-white font-poppins">Prayan</p>
+            <p className="font-light text-white font-poppins">Prayaan</p>
           </div>
           <div className="flex flex-col mb-8">
             <p className="font-thin text-white font-poppins">Dimension</p>
@@ -77,7 +77,7 @@ function Prayan3D() {
           <div className="flex flex-col mb-8">
             <p className="font-thin text-white font-poppins">Visual system</p>
             <p className="font-light text-white font-poppins">
-              zed2, Intel depth camera, Logitech camera
+              ZED2, Intel depth camera, Logitech camera
             </p>
           </div>
           <div className="flex flex-col mb-8">

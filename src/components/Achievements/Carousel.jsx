@@ -75,7 +75,7 @@ const CarouselMain = () => {
   
   return (
     <>
-      <h1 className='justify-center text-center text-3xl text-white font-meth component_title mb-[5rem]'>ACHIEVEMENTS</h1>
+      <p className='justify-center text-center text-3xl text-white font-meth component_title mb-[5rem]'>Achievements</p>
       <div className="carousel_elastic ">
         <Carousel renderArrow = {myArrow} {...settings} breakPoints={breakPoints}>
           {items.map((item) => (

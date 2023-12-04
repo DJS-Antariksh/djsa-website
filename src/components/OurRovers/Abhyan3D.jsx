@@ -78,7 +78,7 @@ function Abhyan3D() {
           <p className="font-thin text-white font-poppins">Visual system</p>
           <p className="font-light text-white font-poppins">
             {" "}
-            zed2, Intel depth camera, Logitech camera
+            ZED2, Intel depth camera, Logitech camera
           </p>
         </div>
         <div className="flex flex-col mb-8">
