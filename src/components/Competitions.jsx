@@ -9,13 +9,13 @@ const competitionsData = [
     name: "European Rover Challenge (Onsite-Formula)",
     image: ERC,
     description:
-      "European Rover Challenge (ERC, ERC Space & Robotics) is an annual international Martian robot competition that has been organized since 2014 in Poland. In the on-site formula, student teams from all over the world work hard to prepare a fully functional Mars rover of their design. The rover has to be a standalone, mobile platform.",
+      "European Rover Challenge is an annual international Martian Rover competition. In the on-site formula, student teams from all over the world work hard to prepare a fully functional Mars rover of their design.",
   },
   {
     name: "European Rover Challenge (Remote-Formula)",
     image: ERC,
     description:
-      "European Rover Challenge (ERC, ERC Space & Robotics) is an annual international Martian robot competition that has been organized since 2014 in Poland. In the remote formula, teams taking part in the remote formula will all use standardized equipment during the competition, with which they will connect remotely via the Internet from anywhere on Earth.",
+      "European Rover Challenge (ERC, ERC Space & Robotics) is an annual international Martian robot competition that has been organized since 2014 in Poland. In the remote formula, teams taking part in the remote formula will all use standardized equipment during the competition.",
   },
   {
     name: "International Rover Challenge (IRC)",
@@ -27,7 +27,7 @@ const competitionsData = [
     name: "International Rover Design Challenge (IRDC)",
     image: IRDC,
     description:
-      "International Rover Design Challenge is an online space engineering design and research-oriented competition by Space Robotics Society. Teams must carefully plan each sub-system of the Rover considering various extra-terrestrial parameters in their design. This competition allows students to explore and spark the innovative design thinking of individuals, free from constraints on available physical resources.",
+      "International Rover Design Challenge is an online space engineering design and research-oriented competition by Space Robotics Society. Teams must carefully plan each sub-system of the Rover considering various extra-terrestrial parameters in their design.",
   },
   {
     name: "International Space Drone Challenge (ISDC)",
@@ -46,20 +46,20 @@ function Competitions() {
           Competitions
         </div>
         <div className="flex flex-row items-center mt-5 animate-slide-from-left ml-[-7rem] lg:ml-[-20rem]">
-          <div className="absolute sm:flex flex-col items-center justify-center ml-[-10rem] sm:ml-0 w-10 gap-5 border border-white border-solid rounded-full">
+        <div className="absolute sm:flex flex-col items-center justify-center ml-[-10rem] sm:ml-0 w-10 gap-5 border border-white border-solid rounded-full">
             <img
               src={competitionsData[0].image}
               alt="erc"
               className="w-[5rem] rounded-full"
             ></img>
           </div>
-          <div className="ml-[29%] sm:ml-9 flex flex-col justify-center w-[25rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
+          <div className="ml-[29%] sm:ml-[7%] flex flex-col justify-center w-[25rem] md:w-[54rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
             <div className="inline-flex items-start relative flex-[0_0_auto] rounded-half">
-              <div className="font-poppins relative w-fit font-light text-white text-[0.9rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
+              <div className="font-poppins relative w-fit font-light text-white text-[0.9rem] sm:text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
                 {competitionsData[0].name}
               </div>
             </div>
-            <p className="font-poppins relative sm:w-[50rem] font-extralight text-white text-[0.8rem] tracking-[0.80px] leading-[normal]">
+            <p className="font-poppins relative w-full sm:w-[50rem] font-extralight text-white text-[0.8rem] tracking-[0.80px] leading-[normal]">
               {competitionsData[0].description}
             </p>
           </div>
@@ -74,7 +74,7 @@ function Competitions() {
               className="w-[5rem] rounded-full"
             ></img>
           </div>
-          <div className="ml-[29%] sm:ml-9 flex flex-col justify-center w-[25rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
+          <div className="ml-[29%] sm:ml-[7%] flex flex-col justify-center w-[25rem] md:w-[54rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
             <div className="inline-flex items-start relative flex-[0_0_auto] rounded-half">
               <div className="font-poppins relative w-fit font-light text-white text-[0.9rem] sm:text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
                 {competitionsData[1].name}
@@ -94,7 +94,7 @@ function Competitions() {
               className="w-[5rem] rounded-full"
             ></img>
           </div>
-          <div className="ml-[29%] sm:ml-9 flex flex-col justify-center w-[35rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
+          <div className="ml-[29%] sm:ml-[7%] flex flex-col justify-center w-[35rem] md:w-[54rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
             <div className="inline-flex items-start relative flex-[0_0_auto] rounded-half">
               <div className="font-poppins relative w-fit font-light text-white text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
                 {competitionsData[2].name}
@@ -114,7 +114,7 @@ function Competitions() {
               className="w-[5rem] rounded-full"
             ></img>
           </div>
-          <div className="ml-[29%] sm:ml-9 flex flex-col justify-center w-[25rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
+          <div className="ml-[29%] sm:ml-[7%] flex flex-col justify-center w-[25rem] md:w-[54rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
             <div className="inline-flex items-start relative flex-[0_0_auto] rounded-half">
               <div className="font-poppins relative w-fit font-light text-white text-[0.9rem] sm:text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
                 {competitionsData[3].name}
@@ -134,7 +134,7 @@ function Competitions() {
               className="w-[5rem] rounded-full"
             ></img>
           </div>
-          <div className="ml-[29%] sm:ml-9 flex flex-col justify-center w-[26rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
+          <div className="ml-[29%] sm:ml-[7%] flex flex-col justify-center w-[26rem] md:w-[54rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
             <div className="inline-flex items-start relative flex-[0_0_auto] rounded-half">
               <div className="font-poppins relative w-fit font-light text-white text-[0.9rem] sm:text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
                 {competitionsData[4].name}
