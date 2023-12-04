@@ -77,7 +77,7 @@ function Prayan3D() {
           <div className="flex flex-col mb-8">
             <p className="font-thin text-white font-poppins">Visual system</p>
             <p className="font-light text-white font-poppins">
-              ZED2, Intel depth camera, Logitech camera
+              ZED2, Intel Depth camera, Logitech camera
             </p>
           </div>
           <div className="flex flex-col mb-8">
@@ -88,7 +88,7 @@ function Prayan3D() {
           <div className="flex flex-col mb-8">
             <p className="font-thin text-white font-poppins">USP</p>
             <p className="font-light text-white font-poppins">
-              Rocker bogie suspension can climb incline of 60 degree
+              Rocker boogie suspension, Can climb incline of 60 degree
             </p>
           </div>
         </div>

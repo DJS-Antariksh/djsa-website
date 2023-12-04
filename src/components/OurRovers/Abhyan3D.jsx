@@ -78,7 +78,7 @@ function Abhyan3D() {
           <p className="font-thin text-white font-poppins">Visual system</p>
           <p className="font-light text-white font-poppins">
             {" "}
-            ZED2, Intel depth camera, Logitech camera
+            ZED2, Intel Depth camera, Logitech camera
           </p>
         </div>
         <div className="flex flex-col mb-8">
@@ -89,7 +89,7 @@ function Abhyan3D() {
         <div className="flex flex-col mb-8">
           <p className="font-thin text-white font-poppins">USP</p>
           <p className="font-light text-white font-poppins">
-            Double rocker suspension system Can climb inclination of 60 degree
+            Double-Rocker Suspension System, Can climb inclination of 60 degree
           </p>
         </div>
       </div>

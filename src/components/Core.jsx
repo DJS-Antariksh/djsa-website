@@ -28,7 +28,7 @@ function Core() {
           onClick={() => handleFillClick("tab1")}
           active={fillActive === "tab1"}
         >
-          2020-2021
+          2020-2021 (Founding Team)
         </TETabsItem>
         <TETabsItem
         className="customTab"
