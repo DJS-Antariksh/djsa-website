@@ -52,7 +52,7 @@ const CarouselMain = () => {
       id: 5,
     },
     {
-      img: require("../../assets/irc-2023.jpg"),
+      img: require("../../assets/erc_2021.png"),
       title: "1st Rank ERC Remote 2021",
       id: 4,
     },
