@@ -39,7 +39,7 @@ const AboutTeam = () => {
       </div>
 
       <section className="mb-40 events ">
-        <div className="events-carousel w-[50%] h-[10rem] md:w-[35%] md:h-[20rem]  m-auto">
+        <div className="justify-center md:mr-[35%] events-carousel w-[50%] h-[10rem] md:w-[35%] md:h-[20rem]  m-auto">
           <ImageSlider slides={slides} />
         </div>
       </section>
