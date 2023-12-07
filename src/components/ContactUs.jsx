@@ -6,12 +6,15 @@ function ContactUs() {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('gmail', 'template_5irlloe', form.current, 'mUxoWB6DcmwUjyR-v')
+    
+    // emailjs.sendForm('gmail', 'template_5irlloe', form.current, 'mUxoWB6DcmwUjyR-v')
+    emailjs.sendForm('service_6pg2m7k', 'template_541qwtb', form.current, 'FekiuU5kNyJbIt6XZ')
       .then((result) => {
           console.log(result.text);
+          alert("Thank you. We will get back to you as soon as possible.")
       }, (error) => {
           console.log(error.text);
+          alert("Ahh, something went wrong. Please try again.")
       });
       e.target.reset();
   };

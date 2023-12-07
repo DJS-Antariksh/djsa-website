@@ -1,5 +1,5 @@
 import React from "react";
-import ERC from "../assets/erc.jpg";
+import ERC from "../assets/ERC.jpg";
 import IRC from "../assets/IRC.png";
 import ISDC from "../assets/ISDC.jpg";
 import IRDC from "../assets/IRDC.png";
