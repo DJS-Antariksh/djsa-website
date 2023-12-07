@@ -75,13 +75,13 @@ const CarouselMain = () => {
   
   return (
     <>
-      <p className='justify-center text-center text-3xl text-white font-meth component_title mb-[5rem]'>Achievements</p>
+      <p className='justify-center text-center text-3xl text-white font-meth component_title mb-[10rem] sm:mb-[5rem]'>Achievements</p>
       <div className="carousel_elastic ">
         <Carousel renderArrow = {myArrow} {...settings} breakPoints={breakPoints}>
           {items.map((item) => (
             <div className='item_set' key={item.id}>
               <img className='item_img' src={item.img} alt="" />
-              <h2 className='item_head text-white font-poppins'>{item.title}</h2>
+              <h2 className='item_head sm:text-[9xl] text-2xl  font-poppins'>{item.title}</h2>
             </div>
           ))}
         </Carousel>

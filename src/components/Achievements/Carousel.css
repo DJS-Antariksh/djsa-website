@@ -86,6 +86,7 @@ button.rec-dot:focus {
     }
 }
 
+
 @media only screen and (max-width: 720px) {
     .item_img {
         width: 60vw;

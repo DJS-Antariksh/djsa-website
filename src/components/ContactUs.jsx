@@ -28,11 +28,11 @@ function ContactUs() {
         <h1 className="mb-4 text-2xl text-center text-white font-meth">
           Contact Us
         </h1>
-        <form ref={form} onSubmit={sendEmail} className="max-w-3xl p-8 mx-auto">
+        <form ref={form} onSubmit={sendEmail} className="max-w-4xl p-8 mr-[10%] sm:mx-auto">
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col mb-4">
               <label
-                className="block mb-4 text-sm text-white text-gray-700 font-poppins tracking-widest"
+                className="block mb-4 text-sm  text-white text-gray-700 font-poppins tracking-widest"
                 htmlFor="name"
               >
                 Name
@@ -41,8 +41,7 @@ function ContactUs() {
                 className="w-full px-3 py-2 text-white bg-transparent border border-white border-opacity-40 focus:border-white"
                 type="text"
                 id="name"
-                name="name"
-                // placeholder="Your Company Name"
+                name="name" 
               />
             </div>
             <div className="flex flex-col mb-4 ">
