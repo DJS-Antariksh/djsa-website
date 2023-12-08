@@ -141,6 +141,9 @@ code {
   .hamburgerMenu {
     display: block !important;
   }
+  .customTab{
+    display: none !important;
+  }
 }
 
 @media (width <= 320px) {
