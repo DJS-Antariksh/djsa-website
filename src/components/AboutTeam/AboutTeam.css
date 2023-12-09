@@ -1,0 +1,50 @@
+/* 
+
+.about-team-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-content {
+    width: 100%;
+    max-width: 800px; 
+    padding: 20px;
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 2rem;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .events {
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto;
+  }
+  
+  .events-carousel {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2rem;
+    }
+    .about-description {
+      font-size: 0.9rem;
+    }
+  }
+   */
