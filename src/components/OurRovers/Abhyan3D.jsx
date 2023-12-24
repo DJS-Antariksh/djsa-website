@@ -1,12 +1,12 @@
-import { Canvas } from "@react-three/fiber";
-import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
-import * as THREE from "three";
+// import { Canvas } from "@react-three/fiber";
+// import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
+// import * as THREE from "three";
 import Abhyaan from "../../assets/Abhyaan.png"
 
-function Model(props) {
-  const { scene } = useGLTF("/abhyan.glb");
-  return <primitive object={scene} {...props} />;
-}
+// function Model(props) {
+//   const { scene } = useGLTF("/abhyan.glb");
+//   return <primitive object={scene} {...props} />;
+// }
 
 function Abhyan3D() {
   const canvasStyle = {
