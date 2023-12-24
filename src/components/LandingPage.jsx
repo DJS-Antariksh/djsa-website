@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as echarts from "echarts";
 import "echarts-gl";
 import earth from "../assets/8k_mars.jpg";
@@ -8,69 +8,75 @@ import Navbar from "./Navbar";
 function App() {
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
-  const [canvasSize, setCanvasSize] = useState({ width: "100vw", height: "100vh" });
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const chartDom = chartRef.current;
-    const myChart = echarts.init(chartDom);
-    chartInstance.current = myChart;
-
-    const option = {
-      globe: {
-        baseTexture: earth,
-        heightTexture: earth,
-        environment: stars,
-        // shading: "lambert",
-        shading: "realistic",
-        atmosphere: {
-          show: true,
-        },
-        light: {
-          ambient: {
-            intensity: 0.1,
-          },
-          displacementQuality: "ultra",
-          main: {
-            intensity: 1,
-          },
-        },
-      },
-      series: [],
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
     };
 
-    option && myChart.setOption(option);
+    handleResize();
 
-    function handleResize() {
-      setCanvasSize({
-        width: `${window.innerWidth}px`,
-        height: `${window.innerHeight}px`,
-      });
-    }
-
-    // Attach the resize event listener
     window.addEventListener("resize", handleResize);
 
-    // Cleanup: Remove the event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
-      myChart.dispose();
+      if (chartInstance.current) {
+        chartInstance.current.dispose();
+      }
     };
-  }, [canvasSize]);
+  }, []);
+
+  useEffect(() => {
+    if (!isMobile) {
+      const chartDom = chartRef.current;
+      if (chartDom) {
+        const myChart = echarts.init(chartDom);
+
+        const option = {
+          globe: {
+            baseTexture: earth,
+            heightTexture: earth,
+            environment: stars,
+            shading: "realistic",
+            atmosphere: {
+              show: true,
+            },
+            light: {
+              ambient: {
+                intensity: 0.1,
+              },
+              displacementQuality: "ultra",
+              main: {
+                intensity: 1,
+              },
+            },
+          },
+          series: [],
+        };
+
+        myChart.setOption(option);
+        chartInstance.current = myChart;
+      }
+    }
+  }, [isMobile]);
 
   return (
     <div style={{ width: "100vw", height: "100vh" }} id="/">
-      <div
-        ref={chartRef}
-        style={{
-          width: canvasSize.width,
-          height: canvasSize.height,
-          position: "absolute",
-          top: 0,
-          left: 0,
-        }}
-        className="hidden md:block mainModel"
-      ></div>
-      <Navbar/>
+      {!isMobile && (
+        <div
+          ref={chartRef}
+          style={{
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            top: 0,
+            left: 0,
+          }}
+          className="mainModel"
+        ></div>
+      )}
+      <Navbar />
       <div
         className="absolute leading-6 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         style={{ zIndex: 1 }}
