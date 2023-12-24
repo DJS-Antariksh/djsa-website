@@ -10,7 +10,7 @@ import Abhyaan from "../../assets/Abhyaan.png"
 
 function Abhyan3D() {
   const canvasStyle = {
-    width: "800px", // Default width for screens greater than 1024px
+    width: "800px",
     height: "600px",
   };
 
@@ -60,14 +60,12 @@ function Abhyan3D() {
           <p className="font-thin text-white font-poppins">Rover Name</p>
           <p className="font-light text-white font-poppins">Abhyaan</p>
         </div>
-
         <div className="flex flex-col mb-8">
           <p className="font-thin text-white font-poppins">Dimension</p>
           <p className="font-light text-white font-poppins">
             1056.83mm X 816.6mm
           </p>
         </div>
-
         <div className="flex flex-col mb-8">
           <p className="font-thin text-white font-poppins">
             Weight Specifications
@@ -77,7 +75,6 @@ function Abhyan3D() {
         <div className="flex flex-col mb-8">
           <p className="font-thin text-white font-poppins">Visual system</p>
           <p className="font-light text-white font-poppins">
-            {" "}
             ZED2, Intel Depth camera, Logitech camera
           </p>
         </div>
@@ -85,7 +82,6 @@ function Abhyan3D() {
           <p className="font-thin text-white font-poppins">Max Speed</p>
           <p className="font-light text-white font-poppins">1m/s</p>
         </div>
-
         <div className="flex flex-col mb-8">
           <p className="font-thin text-white font-poppins">USP</p>
           <p className="font-light text-white font-poppins">

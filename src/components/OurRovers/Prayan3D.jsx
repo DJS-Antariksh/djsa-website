@@ -1,12 +1,12 @@
-import { Canvas } from "@react-three/fiber";
-import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
-import * as THREE from "three";
+// import { Canvas } from "@react-three/fiber";
+// import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
+// import * as THREE from "three";
 import Prayaan from "../../assets/Prayaan.png"
 
-function Model(props) {
-  const { scene } = useGLTF("/prayan.glb");
-  return <primitive object={scene} {...props} />;
-}
+// function Model(props) {
+//   const { scene } = useGLTF("/prayan.glb");
+//   return <primitive object={scene} {...props} />;
+// }
 
 function Prayan3D() {
   
@@ -67,7 +67,6 @@ function Prayan3D() {
               1040.911mm X 1143.984
             </p>
           </div>
-
           <div className="flex flex-col mb-8">
             <p className="font-thin text-white font-poppins">
               Weight Specifications
@@ -84,7 +83,6 @@ function Prayan3D() {
             <p className="font-thin text-white font-poppins">Max Speed</p>
             <p className="font-light text-white font-poppins">1m/s</p>
           </div>
-
           <div className="flex flex-col mb-8">
             <p className="font-thin text-white font-poppins">USP</p>
             <p className="font-light text-white font-poppins">
