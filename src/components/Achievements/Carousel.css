@@ -43,7 +43,7 @@ button.rec-dot:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 57vh;
+    height: 55vh;
     width: 40vw;
     margin: 0 15px;
     transition: all 0.25s ease-in-out;
@@ -64,10 +64,21 @@ button.rec-dot:focus {
     margin-top: 1rem;
 }
 
+@media only screen and (max-width: 1200px) {
+    .item_img {
+        width: 38vw;
+        height: 40vh;
+    }
+
+    .carousel_elastic {
+        height: 50vh;
+    }
+}
+
 @media only screen and (max-width: 1100px) {
     .item_img {
         width: 38vw;
-        height: 48vh;
+        height: 35vh;
     }
 
     .carousel_elastic {
@@ -78,7 +89,7 @@ button.rec-dot:focus {
 @media only screen and (max-width: 900px) {
     .item_img {
         width: 35vw;
-        height: 40vh;
+        height: 30vh;
     }
 
     .carousel_elastic {
@@ -90,7 +101,7 @@ button.rec-dot:focus {
 @media only screen and (max-width: 720px) {
     .item_img {
         width: 60vw;
-        height: 45vh;
+        height: 30vh;
     }
 
     .carousel_elastic {
@@ -101,11 +112,11 @@ button.rec-dot:focus {
 @media only screen and (max-width: 525px) {
     .item_img {
         width: 55vw;
-        height: 35vh;
+        height: 30vh;
     }
 
     .carousel_elastic {
-        height: 45vh;
+        height: 35vh;
     }
 }
 

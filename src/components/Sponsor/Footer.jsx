@@ -19,7 +19,7 @@ const Footer = () => (
           </p>
         </div>
 
-        <div className="hidden md:flex flex-col ss:my-0 my-4 min-w-[350px]">
+        <div className="hidden sm:flex flex-col ss:my-0 my-4 min-w-[350px]">
           <h4 className="font-poppins relative font-normal text-[18px] leading-[27px] text-white">Useful Links</h4>
           <ul className="list-none mt-4 font-poppins relative text-[16px] leading-[24px] text-white">
             <li className="mt-4">
@@ -80,7 +80,7 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div className="hidden md:flex flex-col relative ss:my-0 my-4 min-w-[15rem]">
+        <div className="hidden sm:flex flex-col relative ss:my-0 my-4 min-w-[15rem]">
           <h4 className="font-poppins font-normal text-[18px] leading-[27px] text-white">About the Team</h4>
           <ul className="list-none mt-4 font-poppins font-extralight text-[16px] leading-[24px] text-white">
             <li className="mt-4 hover:text-secondary">
