@@ -76,17 +76,22 @@ function Navbar() {
                 {isOpen ? <img src={departmentLogo} alt="departmentLogo"/> : 'Department'}
             </Link>
           </li>
+  
           <li>
-            <Link
-              to="contactUs"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
-            >
-              {isOpen ? <img src={contactUs} alt="contactUs"/> : 'Contact'}
-            </Link>
-          </li>
+      <Link
+        to="irc"
+        spy={true}
+        smooth={true}
+        duration={500}
+        className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
+        target="_blank" // Add this line to open the link in a new tab or window
+        rel="noopener noreferrer" // Recommended for security, especially when using target="_blank"
+      >
+        {isOpen ? <img src={contactUs} alt="contactUs"/> : 'Contact'}
+      {/* <Rover /> */}
+
+      </Link>
+    </li>
         </ul>
         <p onClick={toggleDropdown} className="flex flex-col hidden hamburgerMenu">
               {/* <svg

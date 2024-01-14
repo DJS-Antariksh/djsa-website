@@ -8,6 +8,7 @@
   import ContactUs from "./components/ContactUs"
   import Sponsor from "./components/Sponsor/Sponsor"
   import Footer from "./components/Sponsor/Footer"
+  import Irc from "./components/IRC/irc"
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Rover/>
       <Competitions/>
       <Achievements/>
+      <Irc/>
       <Department/>
       <Core/>
       <ContactUs/>
