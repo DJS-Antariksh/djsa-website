@@ -2,33 +2,31 @@ import ImageSlider from "../AboutTeam/ImageSlider";
 
 import Autex from "../../assets/Autex.jpeg";
 import Abex from "../../assets/Abex.jpeg";
+import irc23 from "../../assets/irc-2023.jpg";
 import "./irc.css";
 
 const Irc = () => {
   const slides = [{ url: Autex }, { url: Abex }];
 
   return (
-    <div className="flex h-[100vh] overflow-scroll">
-      {/* Image Slider */}
-      <div className="w-1/3 ml-[5%] h-[60vh] mt-24">
-        <ImageSlider slides={slides} />
+    <>
+      <div className="flex justify-center mt-4 text-3xl font-bold text-white md:text-2xl sm:text-1xl font-meth component_title">
+        International Rover Challenge - IRC
+      </div>
+      <div className="flex flex-row justify-center mt-4 mb-6 ml-8 mr-8 font-light text-white font-poppins align-items">
+        The International Rover Challenge (IRC) is an annual competition held by
+        Space Robotics Society (SPROS) for university teams all across the
+        globe. It tests the Martian rover prototypes created by these teams by
+        putting them through a variety of tasks carefully simulated to prepare
+        them for real-world missions.
       </div>
 
-      {/* Content */}
-      <div className="w-2/3 ml-[5%] mt-8">
-        <div>
-          <div className="flex justify-center text-3xl font-bold text-white md:text-2xl sm:text-1xl font-meth component_title">
-            International Rover Challenge - IRC
-          </div>
-          <div className="flex flex-row justify-center mt-4 font-light text-white font-poppins align-items">
-            The International Rover Challenge (IRC) is an annual competition
-            held by Space Robotics Society (SPROS) for university teams all
-            across the globe. It tests the Martian rover prototypes created by
-            these teams by putting them through a variety of tasks carefully
-            simulated to prepare them for real-world missions.
-          </div>
-          <br />
-          <ul className="mt-2 font-light text-white flex-column font-poppins align-items irc-task">
+      <div className="flex mt-8">
+        <div className="w-1/3 ml-[5%] h-[60vh] ">
+          <ImageSlider slides={slides} />
+        </div>
+        <div className="w-2/3 ml-[5%]">
+          <ul className="font-light text-white flex-column font-poppins align-items irc-task">
             <li>
               <h4 className="font-bold">Astrobiology Expedition</h4>
               <p className="text-sm">
@@ -90,44 +88,61 @@ const Irc = () => {
               </p>
             </li>
           </ul>
-          <br />
-          <div className="mt-4 font-light text-white font-poppins align-items">
-            <h4 className="font-meth component_title">Contribution</h4>
-            <ul className="text-sm">
-              <li>
-                - Establishing the Indian Rover Community, successfully brought
-                together rover teams across India for mutual support.
-              </li>
-              <li>
-                - Recently, we unveiled our impressive Martian rover at our
-                college, sharing our journey and inspiring newcomers while
-                highlighting our team's achievements in the IRC.
-              </li>
-              <li>
-                - Notably, our engaging #IRC2024 & #SPROS posts on social media
-                garnered significant attention, maintaining an active global
-                presence across major platforms. Personally, we advocate for
-                peers to vote in the EU Registry web awards.
-              </li>
-              <li>
-                - Media recognition in leading local and national newspapers has
-                spotlighted our project and involvement in the International
-                Rover Challenge, showcasing our team's remarkable
-                accomplishments.
-              </li>
-              <li>
-                - Additionally, we conducted multiple orientations throughout
-                the year, informing students and the college's management about
-                our team and the IRC.
-              </li>
-            </ul>
-          </div>
-          <div className="mt-4 font-light text-white font-poppins align-items">
-            <h4 className="font-meth component_title">8th Rank Worldwide IRC'23</h4>
-            </div>
         </div>
       </div>
-    </div>
+
+      <div className="m-16 font-light text-white font-poppins align-items">
+        <h4 className="flex justify-center align-items font-meth component_title">Previous IRC Experience</h4>
+        <div class="flex justify-center flex-wrap">
+          <img
+            class="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg m-2"
+            src={irc23}
+            alt="irc23"
+          ></img>
+          <img
+            class="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg m-2"
+            src={irc23}
+            alt="irc23"
+          ></img>
+          <img
+            class="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg m-2"
+            src={irc23}
+            alt="irc23"
+          ></img>
+        </div>
+      </div>
+
+      <div className="m-8 font-light text-white font-poppins align-items">
+        <h4 className="flex justify-center font-meth component_title align-items">Outreach</h4>
+        <ul className="mt-2 ml-16 mr-16 list-disc">
+          <li>
+            Establishing the Indian Rover Community, successfully brought
+            together rover teams across India for mutual support.
+          </li>
+          <li>
+            Recently, we unveiled our impressive Martian rover at our college,
+            sharing our journey and inspiring newcomers while highlighting our
+            team's achievements in the IRC.
+          </li>
+          <li>
+            Notably, our engaging #IRC2024 & #SPROS posts on social media
+            garnered significant attention, maintaining an active global
+            presence across major platforms. Personally, we advocate for peers
+            to vote in the EU Registry web awards.
+          </li>
+          <li>
+            Media recognition in leading local and national newspapers has
+            spotlighted our project and involvement in the International Rover
+            Challenge, showcasing our team's remarkable accomplishments.
+          </li>
+          <li>
+            Additionally, we conducted multiple orientations throughout the
+            year, informing students and the college's management about our team
+            and the IRC.
+          </li>
+        </ul>
+      </div>
+    </>
   );
 };
 
