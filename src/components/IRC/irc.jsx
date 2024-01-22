@@ -10,7 +10,7 @@ const Irc = () => {
   return (
     <div className="flex h-[100vh] overflow-scroll">
       {/* Image Slider */}
-      <div className="w-1/3 ml-[5%] h-[50vh] mt-24">
+      <div className="w-1/3 ml-[5%] h-[60vh] mt-24">
         <ImageSlider slides={slides} />
       </div>
 
