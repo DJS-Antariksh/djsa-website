@@ -22,8 +22,8 @@ const Irc = () => {
         them for real-world missions.
       </div>
 
-      <div className="flex mt-8">
-        <div className="w-1/3 ml-[5%] h-[60vh] ">
+      <div className="flex mt-8 overflow-hidden">
+        <div className="w-1/3 ml-[5%]">
           <ImageSlider slides={ircTasks} />
         </div>
         <div className="w-2/3 ml-[5%]">
@@ -92,42 +92,20 @@ const Irc = () => {
         </div>
       </div>
 
-      <div className="m-16 font-light text-white font-poppins align-items">
-        <h4 className="flex justify-center align-items font-meth component_title">
-          International Rover Challenge Experience
+      <div className="mt-16 overflow-hidden">
+        <h4 className="flex justify-center text-white font-meth component_title align-items">
+          Outreach
         </h4>
-        <div class="flex justify-center flex-wrap">
-          <img
-            class="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg m-2"
-            src={irc23}
-            alt="irc23"
-          ></img>
-          <img
-            class="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg m-2"
-            src={irc23}
-            alt="irc23"
-          ></img>
-          <img
-            class="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg m-2"
-            src={irc23}
-            alt="irc23"
-          ></img>
-        </div>
-      </div>
-
-      <h4 className="flex justify-center text-white font-meth component_title align-items">
-        Outreach
-      </h4>
-      <div className="flex mt-4 mb-16">
-          <ul className="ml-16 mr-16 text-white">
+        <div className="flex mt-4 mb-16">
+          <ul className="ml-[5%] mr-[5%] text-white">
             <li>
               - Establishing the Indian Rover Community, successfully brought
               together rover teams across India for mutual support.
             </li>
             <li>
-              - Recently, we unveiled our impressive Martian rover at our college,
-              sharing our journey and inspiring newcomers while highlighting our
-              team's achievements in the IRC.
+              - Recently, we unveiled our impressive Martian rover at our
+              college, sharing our journey and inspiring newcomers while
+              highlighting our team's achievements in the IRC.
             </li>
             <li>
               - Notably, our engaging #IRC2024 & #SPROS posts on social media
@@ -146,8 +124,34 @@ const Irc = () => {
               team and the IRC.
             </li>
           </ul>
-        <div className="w-3/4 h-[40vh] mr-16">
-          <ImageSlider slides={outreach} />
+          <div className="w-3/4 mr-[5%]">
+            <ImageSlider slides={outreach} />
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8 mb-4">
+        <h4 className="flex justify-center mt-32 text-white align-items font-meth component_title">
+          International Rover Challenge Experience
+        </h4>
+        <div className="font-light text-white font-poppins align-items">
+          <div class="flex justify-center flex-wrap">
+            <img
+              class="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg m-2"
+              src={irc23}
+              alt="irc23"
+            ></img>
+            <img
+              class="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg m-2"
+              src={irc23}
+              alt="irc23"
+            ></img>
+            <img
+              class="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg m-2"
+              src={irc23}
+              alt="irc23"
+            ></img>
+          </div>
         </div>
       </div>
     </>
