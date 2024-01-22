@@ -1,30 +1,89 @@
 import ImageSlider from "../AboutTeam/ImageSlider";
 
-import about4 from "../../assets/about4.jpg";
-import about5 from "../../assets/about5.jpg";
+import Autex from "../../assets/Autex.jpeg";
+import Abex from "../../assets/Abex.jpeg";
+import "./irc.css";
 
 const Irc = () => {
-  const slides = [
-    { url: about4 },
-    
-  ];
+  const slides = [{ url: Autex }, { url: Abex }];
 
   return (
-    <div id="about" className="overflow-x-hidden flex h-[60vh]">
+    <div className="flex h-[100vh] overflow-scroll">
       {/* Image Slider */}
-      <div className="w-1/3 ml-[10%] h-[40vh]">
+      <div className="w-1/3 ml-[5%] h-[50vh] mt-24">
         <ImageSlider slides={slides} />
       </div>
 
       {/* Content */}
-      <div className="w-1/2 ml-[5%]">
+      <div className="w-2/3 ml-[5%] mt-8">
         <div>
-          <div className="flex justify-center mt-16 mb-2 text-3xl text-white md:text-2xl sm:text-1xl font-meth component_title">
-            IRC
+          <div className="flex justify-center text-3xl font-bold text-white md:text-2xl sm:text-1xl font-meth component_title">
+          International Rover Challenge - IRC
           </div>
-          <div className="flex flex-row justify-center m-5 mt-16  font-light text-white lg:m-20 font-poppins align-items md:m-10 sm:m-5 sm:my-10">
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+          <div className="flex flex-row justify-center mt-4 font-light text-white font-poppins align-items">
+            The International Rover Challenge (IRC) is an annual competition
+            held by Space Robotics Society (SPROS) for university teams all
+            across the globe. It tests the Martian rover prototypes created by
+            these teams by putting them through a variety of tasks carefully
+            simulated to prepare them for real-world missions.
           </div>
+          <br/>
+          <ul className="mt-2 font-light text-white list-disc flex-column font-poppins align-items irc-task">
+            <li>
+              <h4 className="font-bold">Astrobiology Expedition</h4>
+              <p className="text-sm">An astrobiological expedition task involves exploring
+              extraterrestrial environments to search for signs of life or
+              conditions conducive to life beyond Earth.</p>
+            </li>
+            <br/>
+            <li>
+              <h4 className="font-bold">Autonomous Expedition</h4>
+              <p className="text-sm">The autonomous expedition task involves deploying self-navigating
+              systems to explore, navigate, and complete missions in various
+              environments without human intervention.</p>
+            </li>
+            <br/>
+            <li>
+              <h4 className="font-bold">
+                Reconnaissance and Delivery Operation
+              </h4>
+              <p className="text-sm">Reconnaissance and delivery tasks encompass searching for items
+              and transporting them to specific locations using unmanned systems
+              or autonomous vehicles.</p>
+            </li>
+            <br/>
+            <li>
+              <h4 className="font-bold">
+                Instrument Deployment and Maintenance Operation
+              </h4>
+              <p className="text-sm">Instrument deployment and maintenance tasks entail placing and
+              maintaining scientific equipment in designated locations for data
+              collection and analysis.</p>
+            </li>
+            <br/>
+            <li>
+              <h4 className="font-bold">
+                Project Implementation Management Assessment
+              </h4>
+              <p className="text-sm">PIMA will have one-to-one interaction between the teams and the
+              judges. The teams will have to give a presentation to the judges
+              about their rover development.</p>
+            </li>
+            <br/>
+            <li>
+              <h4 className="font-bold">
+                Business and Partnership Plan
+              </h4>
+              <p className="text-sm">The objective of the BPP is to evaluate the team's ability to
+              develop the business acumen of the team and encourage them to
+              build partnerships with the industry and academia which aids them
+              in the development of their project.</p>
+            </li>
+          </ul>
+          <br/>
+          <div className="mt-4 font-light text-white font-poppins align-items">
+          <h4 className="font-meth component_title">Contribution</h4>
+          <p className="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias saepe ipsum, esse voluptatibus tenetur molestiae quaerat dicta illo unde laboriosam numquam dolor impedit porro reiciendis accusantium nesciunt praesentium, minus explicabo?</p></div>
         </div>
       </div>
     </div>
