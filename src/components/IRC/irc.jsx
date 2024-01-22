@@ -6,7 +6,8 @@ import irc23 from "../../assets/irc-2023.jpg";
 import "./irc.css";
 
 const Irc = () => {
-  const slides = [{ url: Autex }, { url: Abex }];
+  const ircTasks = [{ url: Autex }, { url: Abex }];
+  const outreach = [{ url: irc23 }, { url: Abex }, { url: irc23 }];
 
   return (
     <>
@@ -23,7 +24,7 @@ const Irc = () => {
 
       <div className="flex mt-8">
         <div className="w-1/3 ml-[5%] h-[60vh] ">
-          <ImageSlider slides={slides} />
+          <ImageSlider slides={ircTasks} />
         </div>
         <div className="w-2/3 ml-[5%]">
           <ul className="font-light text-white flex-column font-poppins align-items irc-task">
@@ -92,7 +93,9 @@ const Irc = () => {
       </div>
 
       <div className="m-16 font-light text-white font-poppins align-items">
-        <h4 className="flex justify-center align-items font-meth component_title">Previous IRC Experience</h4>
+        <h4 className="flex justify-center align-items font-meth component_title">
+          International Rover Challenge Experience
+        </h4>
         <div class="flex justify-center flex-wrap">
           <img
             class="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg m-2"
@@ -112,35 +115,40 @@ const Irc = () => {
         </div>
       </div>
 
-      <div className="m-8 font-light text-white font-poppins align-items">
-        <h4 className="flex justify-center font-meth component_title align-items">Outreach</h4>
-        <ul className="mt-2 ml-16 mr-16 list-disc">
-          <li>
-            Establishing the Indian Rover Community, successfully brought
-            together rover teams across India for mutual support.
-          </li>
-          <li>
-            Recently, we unveiled our impressive Martian rover at our college,
-            sharing our journey and inspiring newcomers while highlighting our
-            team's achievements in the IRC.
-          </li>
-          <li>
-            Notably, our engaging #IRC2024 & #SPROS posts on social media
-            garnered significant attention, maintaining an active global
-            presence across major platforms. Personally, we advocate for peers
-            to vote in the EU Registry web awards.
-          </li>
-          <li>
-            Media recognition in leading local and national newspapers has
-            spotlighted our project and involvement in the International Rover
-            Challenge, showcasing our team's remarkable accomplishments.
-          </li>
-          <li>
-            Additionally, we conducted multiple orientations throughout the
-            year, informing students and the college's management about our team
-            and the IRC.
-          </li>
-        </ul>
+      <h4 className="flex justify-center text-white font-meth component_title align-items">
+        Outreach
+      </h4>
+      <div className="flex mt-4 mb-16">
+          <ul className="ml-16 mr-16 text-white">
+            <li>
+              - Establishing the Indian Rover Community, successfully brought
+              together rover teams across India for mutual support.
+            </li>
+            <li>
+              - Recently, we unveiled our impressive Martian rover at our college,
+              sharing our journey and inspiring newcomers while highlighting our
+              team's achievements in the IRC.
+            </li>
+            <li>
+              - Notably, our engaging #IRC2024 & #SPROS posts on social media
+              garnered significant attention, maintaining an active global
+              presence across major platforms. Personally, we advocate for peers
+              to vote in the EU Registry web awards.
+            </li>
+            <li>
+              - Media recognition in leading local and national newspapers has
+              spotlighted our project and involvement in the International Rover
+              Challenge, showcasing our team's remarkable accomplishments.
+            </li>
+            <li>
+              - Additionally, we conducted multiple orientations throughout the
+              year, informing students and the college's management about our
+              team and the IRC.
+            </li>
+          </ul>
+        <div className="w-3/4 h-[40vh] mr-16">
+          <ImageSlider slides={outreach} />
+        </div>
       </div>
     </>
   );
