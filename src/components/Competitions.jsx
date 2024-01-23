@@ -105,14 +105,12 @@ function Competitions() {
           
           <div className="ml-[29%] sm:ml-[7%] flex flex-col justify-center w-[35rem] md:w-[54rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
           <div className="flex items-start relative">
-  <Link to={`/irc`} className="flex items-start"> {/* Added flex class */}
     <div className="font-poppins relative font-light text-white text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
       {competitionsData[2].name}
     </div>
-  </Link>
   <a href="/irc" className="ml-4"> {/* Added ml-4 for margin */}
-  <button className="bg-blue-500  text-white p-1.5 rounded-full  no-underline inline-block text-sm cursor-pointer">
-  Link Here
+  <button className="font-poppins bg-gradient-to-r from-indigo-400 to-blue-500 text-white rounded-full no-underline cursor-pointer text-sm" style={{ width: '6em', height: '1.5em' }}>
+  Click Here
 </button>
 
   </a>
