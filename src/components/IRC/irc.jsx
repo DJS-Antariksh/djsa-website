@@ -2,16 +2,25 @@ import ImageSlider from "../AboutTeam/ImageSlider";
 
 import Autex from "../../assets/Autex.jpeg";
 import Abex from "../../assets/Abex.jpeg";
+import abex1 from "../../assets/abex1.jpg";
+
 import irc23 from "../../assets/irc-2023.jpg";
+import outreach1 from "../../assets/outreach1.jpg"
+import outreach2 from "../../assets/outreach2.jpg"
+
+import task1 from "../../assets/1.jpg"
+import task2 from "../../assets/2.jpg"
+import task3 from "../../assets/3.jpg"
+
 import "./irc.css";
 
 const Irc = () => {
-  const ircTasks = [{ url: Autex }, { url: Abex }];
-  const outreach = [{ url: irc23 }, { url: Abex }, { url: irc23 }];
+  const ircTasks = [{ url: abex1 }, { url: task2 },{ url: task1 }];
+  const outreach = [{ url: outreach2 }, { url: irc23 }];
 
   return (
     <>
-      <div className="flex justify-center mt-4 text-3xl font-bold text-white md:text-2xl sm:text-1xl font-meth component_title">
+      <div className="mb-[5rem] flex justify-center mt-4 text-[9rem] font-bold text-white md:text-2xl sm:text-1xl font-meth component_title">
         International Rover Challenge - IRC
       </div>
       <div className="flex flex-row justify-center mt-4 mb-6 ml-8 mr-8 font-light text-white font-poppins align-items">
@@ -96,8 +105,8 @@ const Irc = () => {
         <h4 className="flex justify-center text-white font-meth component_title align-items">
           Outreach
         </h4>
-        <div className="flex mt-4 mb-16">
-          <ul className="ml-[5%] mr-[5%] text-white">
+        <div className="flex mt-8 mb-16">
+          <ul className="ml-[5%] mr-[5%] mt-[5%] text-white text-xl">
             <li>
               - Establishing the Indian Rover Community, successfully brought
               together rover teams across India for mutual support.
@@ -124,13 +133,13 @@ const Irc = () => {
               team and the IRC.
             </li>
           </ul>
-          <div className="w-3/4 mr-[5%]">
+          <div className="w-3/4 mr-[7%] mb-[5%] h-[30rem]">
             <ImageSlider slides={outreach} />
           </div>
         </div>
       </div>
 
-      <div className="mt-8 mb-4">
+      {/* <div className="mt-8 mb-4">
         <h4 className="flex justify-center mt-32 text-white align-items font-meth component_title">
           International Rover Challenge Experience
         </h4>
@@ -153,7 +162,7 @@ const Irc = () => {
             ></img>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
