@@ -92,7 +92,7 @@ function Competitions() {
             </p>
           </div>
         </div>
-
+        
         <div className="flex flex-row items-center mt-5 animate-slide-from-left ml-[-7rem] lg:ml-[-5rem]">
           <div className="absolute sm:flex flex-col items-center justify-center ml-[-10rem] sm:ml-0 w-10 gap-5 border border-white border-solid rounded-full">
             <img
@@ -101,14 +101,23 @@ function Competitions() {
               className="w-[5rem] rounded-full"
             ></img>
           </div>
+          
+          
           <div className="ml-[29%] sm:ml-[7%] flex flex-col justify-center w-[35rem] md:w-[54rem] sm:w-[54rem] items-start gap-0 p-3 px-10 relative bg-[#ffe8a31a] rounded-2xl">
-            <div className="inline-flex items-start relative flex-[0_0_auto] rounded-half">
-            <Link to={`/irc`}>
-              <div className="font-poppins relative w-fit font-light text-white text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
-                {competitionsData[2].name}
-              </div>
-              </Link>
-            </div>
+          <div className="flex items-start relative">
+  <Link to={`/irc`} className="flex items-start"> {/* Added flex class */}
+    <div className="font-poppins relative font-light text-white text-[1rem] tracking-[0.05rem] leading-[normal] whitespace-nowrap">
+      {competitionsData[2].name}
+    </div>
+  </Link>
+  <a href="/irc" className="ml-4"> {/* Added ml-4 for margin */}
+  <button className="bg-blue-500  text-white p-1.5 rounded-full  no-underline inline-block text-sm cursor-pointer">
+  Link Here
+</button>
+
+  </a>
+</div>
+
             <p className="font-poppins relative w-full sm:w-[50rem] font-extralight text-white text-[0.8rem] tracking-[0.80px] leading-[normal]">
               {competitionsData[2].description}
             </p>
