@@ -108,27 +108,27 @@ const Irc = () => {
         <div className="flex mt-8 mb-16">
           <ul className="ml-[5%] mr-[5%] mt-[5%] text-white text-xl">
             <li>
-              - Establishing the Indian Rover Community, successfully brought
+              • Establishing the Indian Rover Community, successfully brought
               together rover teams across India for mutual support.
             </li>
             <li>
-              - Recently, we unveiled our impressive Martian rover at our
+              • Recently, we unveiled our impressive Martian rover at our
               college, sharing our journey and inspiring newcomers while
               highlighting our team's achievements in the IRC.
             </li>
             <li>
-              - Notably, our engaging #IRC2024 & #SPROS posts on social media
+              • Notably, our engaging #IRC2024 & #SPROS posts on social media
               garnered significant attention, maintaining an active global
               presence across major platforms. Personally, we advocate for peers
               to vote in the EU Registry web awards.
             </li>
             <li>
-              - Media recognition in leading local and national newspapers has
+              • Media recognition in leading local and national newspapers has
               spotlighted our project and involvement in the International Rover
               Challenge, showcasing our team's remarkable accomplishments.
             </li>
             <li>
-              - Additionally, we conducted multiple orientations throughout the
+              • Additionally, we conducted multiple orientations throughout the
               year, informing students and the college's management about our
               team and the IRC.
             </li>
