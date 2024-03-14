@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import erc from "../../assets/ERC.jpg";
+import erc from "../../assets/ERC.jpeg";
 import irc from "../../assets/IRC.png";
 import irdc from "../../assets/IRDC.png";
-import isdc from "../../assets/ISDC.jpg";
+import isdc from "../../assets/spros.jpeg";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -47,7 +47,7 @@ export default function App() {
         <SwiperSlide>
           <div className='flex flex-col items-center justify-evenly w-full text-justify h-full absolute gap-4  z-20 backdrop-blur-md opacity-0 hover:opacity-100'>
           <div className='font-poppins title text-center relative z-40 font-black text-lg'>European Rover Challenge (Onsite Formula)</div>
-          <div className='font-poppins content relative text-center z-30 w-full left-8 px-4'>European Rover Challenge is an annual international Martian Rover competition. In the on-site formula, student teams from all over the world work hard to prepare a fully functional Mars rover of their design.
+          <div className='font-poppins content relative text-center z-30 w-full left-8 px-4'>European Rover Challenge is an annual International Martian Rover competition. In the on-site formula, student teams from all over the world work hard to prepare a fully functional Mars rover of their design.
           </div>
           </div>
           <img src={erc} className='image absolute'/>
