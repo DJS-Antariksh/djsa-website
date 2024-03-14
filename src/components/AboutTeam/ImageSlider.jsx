@@ -38,7 +38,6 @@ const sliderStyles = {
 const dotsContainerStyles = {
   display: "flex",
   justifyContent: "center",
-  
 };
 
 const dotStyle = {
@@ -93,7 +92,7 @@ const ImageSlider = ({ slides }) => {
         </div>
       </div>
       <div style={slideStylesWidthBackground}></div>
-      <div className="ml-11" style={dotsContainerStyles}>
+      <div className="ml-5" style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
           <div
             style={dotStyle}

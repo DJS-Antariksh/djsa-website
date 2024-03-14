@@ -5,23 +5,28 @@ import {
   TETabsItem,
   TETabsPane,
 } from "tw-elements-react";
-import core1 from "../assets/20-21.png";
-import core2 from "../assets/21-22.png";
-import core3 from "../assets/22-23.png";
-import core4 from "../assets/23-24_new.png";
+
+import Core_20_21 from './Core_20_21'
+import Core_21_22 from "./Core_21_22";
+import Core_22_23 from './Core_22_23'
+import Core_23_24 from './Core_23_24'
+
+import "./Core.css"; 
+
 
 function Core() {
   const [fillActive, setFillActive] = useState("tab4");
-
   const handleFillClick = (value) => {
     if (value === fillActive) {
       return;
     }
     setFillActive(value);
   };
+  
 
   return (
     <div id="core">
+      <p className='justify-center text-center text-3xl text-white font-meth component_title sm:mb-[5rem]'>Team</p>
       <TETabs fill>
         <TETabsItem
         className="customTab"
@@ -55,16 +60,20 @@ function Core() {
 
       <TETabsContent>
         <TETabsPane show={fillActive === "tab1"} className="text-white">
-          <img src={core1} alt={"core1"} />
+          {/* <img src={core1} alt={"core1"} className="core-image" /> */}
+          <Core_20_21 />
         </TETabsPane>
         <TETabsPane show={fillActive === "tab2"} className="text-white">
-          <img src={core2} alt={"core2"} />
+          {/* <img src={core2} alt={"core2"} className="core-image" /> */}
+          <Core_21_22 />
         </TETabsPane>
         <TETabsPane show={fillActive === "tab3"} className="text-white">
-          <img src={core3} alt={"core3"} />
+          {/* <img src={core3} alt={"core3"} className="core-image" /> */}
+          <Core_22_23 />
         </TETabsPane>
         <TETabsPane show={fillActive === "tab4"} className="text-white">
-          <img src={core4} alt={"core4"} />
+          {/* <img src={core4} alt={"core4"} className="core-image" /> */}
+          <Core_23_24 />
         </TETabsPane>
       </TETabsContent>
     </div>

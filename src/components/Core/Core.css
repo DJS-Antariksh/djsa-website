@@ -1,0 +1,20 @@
+/* Core.css */
+
+/* Core container styles */
+.core-container {
+  max-width: 100%;
+  padding: 0 0.5rem; /* Adjust padding as needed */
+}
+
+/* Responsive styles for core images */
+.core-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .core-container {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+}

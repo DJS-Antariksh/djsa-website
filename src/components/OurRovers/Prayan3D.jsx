@@ -1,7 +1,7 @@
 // import { Canvas } from "@react-three/fiber";
 // import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
 // import * as THREE from "three";
-import Prayaan from "../../assets/Prayaan.png"
+import Prayaan from "../../assets/prayan1.png"
 
 // function Model(props) {
 //   const { scene } = useGLTF("/prayan.glb");
@@ -34,7 +34,7 @@ function Prayan3D() {
         Our Rover
       </div>
       <div className="flex justify-center">
-        <div className="h-100">
+        <div className="h-100 mt-20 lg:mr-5 md:mr-5">
           {/* { <Canvas
             dpr={[1, 2]}
             shadows

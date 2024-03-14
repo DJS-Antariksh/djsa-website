@@ -73,13 +73,13 @@ function Navbar() {
               duration={500}
               className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
             >
-                {isOpen ? <img src={departmentLogo} alt="departmentLogo"/> : 'Department'}
+                {isOpen ? <img src={departmentLogo} alt="departmentLogo"/> : 'Departments'}
             </Link>
           </li>
   
           <li>
       <Link
-        to="irc"
+        to="contactUs"
         spy={true}
         smooth={true}
         duration={500}

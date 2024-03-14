@@ -3,14 +3,14 @@ import "./Department.css";
 import coding from "../../assets/coding.png";
 import elex from "../../assets/elex.jpg";
 import mechanical from "../../assets/mechanical.jpg";
-import science from "../../assets/science.jpeg";
+import science from "../../assets/science_24.jpg";
 import marketing from "../../assets/marketing.jpeg";
 
 function Slider() {
   const initialItems = [
     {
       name: "Coding",
-      description:"The Coding Department plays a pivotal role in providing the rover with autonomy. This team is responsible for writing the software that controls the rover's movements, interprets sensor data, makes autonomous decisions, and facilitates communication with the ground station.",
+      description:"The Coding Department plays a pivotal role in providing the rover with autonomy. This team is responsible for writing the software that controls the rover's movements, interprets sensor data and makes autonomous decisions using stacks including Robotics, Artificial Intelligence and Web Development.",
       bgImg: coding,
     },
     {

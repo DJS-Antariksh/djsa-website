@@ -27,6 +27,16 @@ const CarouselMain = () => {
 
   const items = [
     {
+      img: require("../../assets/ISDC_2024.jpg"),
+      title: "1st Runner Up ISDC 2024",
+      id: 11,
+    },
+    {
+      img: require("../../assets/IRC_2024.jpg"),
+      title: "2nd Runner Up IRC 2024",
+      id: 10,
+    },
+    {
       img: require("../../assets/ERCremote_2023.jpeg"),
       title: "2nd Rank ERC Remote 2023",
       id: 9,

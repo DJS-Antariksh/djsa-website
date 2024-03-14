@@ -1,5 +1,4 @@
 .carousel_elastic {
-    font-family: sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,16 +8,15 @@
 }
 
 .carousel_head {
-    font-size: 3.5rem;
-    color:  rgba(241, 153, 105);
-    font-family: 'Orbitron', sans-serif;
+    font-size: 20.5rem;
+    color: white;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
 
 button.rec-dot {
-    background-color: rgb(241, 153, 105);
+    background-color: white;
 }
 
 button.rec-dot:hover,
@@ -28,14 +26,14 @@ button.rec-dot:focus {
 }
 
 .custom_icon {
-    color:  rgba(241, 153, 105);
+    color: white;
     font-size: 2.6rem;
     transition: all 0.25s ease-in-out;
     border-radius: 50%;
 }
 
 .custom_icon:hover {
-    box-shadow: 0px 0px 10px 4px rgba(230, 167, 133, 0.4);
+    box-shadow: 0px 0px 10px 4px white;
     transform: scale(1.1);
 }
 
@@ -59,7 +57,7 @@ button.rec-dot:focus {
 
 .item_head {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-top: 1rem;
 }
@@ -128,7 +126,7 @@ button.rec-dot:focus {
 
 @media only screen and (max-width: 450px) {
     .item_head {
-        font-size: 2.0rem;
+        font-size: 1.0rem;
     }
 }
 
@@ -149,7 +147,7 @@ button.rec-dot:focus {
 
 @media only screen and (max-width: 400px) {
     .item_head {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .item_img {
@@ -164,6 +162,6 @@ button.rec-dot:focus {
 
 @media only screen and (max-width: 354px) {
     .item_head {
-        font-size: 1.75rem;
+        font-size: 1rem;
     }
 }

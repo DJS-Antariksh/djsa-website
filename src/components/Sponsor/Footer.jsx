@@ -1,35 +1,30 @@
-import { AiFillInstagram } from "react-icons/ai";
-import { AiFillFacebook } from "react-icons/ai";
-import { AiOutlineTwitter } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillYoutube } from "react-icons/ai";
+import { AiFillInstagram, AiFillFacebook, AiOutlineTwitter, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import logo from "../../assets/AntarikshLogo.png";
 import bg from "../../assets/footerbg.png";
 import { Link } from "react-scroll";
+import {FaXTwitter} from 'react-icons/fa6';
+
+
 
 const Footer = () => (
   <div className="relative">
-    <img src={bg} alt="footerbg" className="absolute z-0 object-cover w-full h-[30rem]" />
+    <img src={bg} alt="footerbg" className="absolute z-0 object-cover w-full h-[26rem]" />
     <section className="relative flex flex-col items-center justify-center py-6 sm:py-16 z-99">
-      <div className="relative z-10 flex flex-row items-start w-full mb-8 justify-evenly md:flex-row">
-        <div className="hidden md:flex-[1] sm:px-16 px-6 text-white md:flex flex-col justify-start mr-10">
-          <img src={logo} alt="AntarikshLogo" className="w-[266px] h-[90px] relative object-contain" />
-          <p className="font-poppins relative font-extralight text-white text-[18px] z-99 ml-10 leading-[30.8px] mt-4 max-w-[312px]">
-            The official Rover challenge team of Dwarkadas J. Sanghvi College of Engineering.
+      <div className="relative z-10 flex flex-col md:flex-row items-center w-full mb-8 justify-center">
+
+        <div className="flex flex-col items-center md:items-center lg:mr-20">
+          <img src={logo} alt="AntarikshLogo" className="h-[90px] object-contain mb-4" />
+          <p className="font-poppins font-extralight text-white text-[18px] max-w-[312px] text-center md:text-center">
+            The Official Martian Rover Team of Dwarkadas J. Sanghvi College of Engineering.
           </p>
         </div>
 
-        <div className="hidden sm:flex flex-col ss:my-0 my-4 min-w-[350px]">
-          <h4 className="font-poppins relative font-normal text-[18px] leading-[27px] text-white">Useful Links</h4>
-          <ul className="list-none mt-4 font-poppins relative text-[16px] leading-[24px] text-white">
-            <li className="mt-4">
-              <Link
-                to="/"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
-              >
+        {/* Hide the Useful Links section on small screens */}
+        {/* <div className="hidden sm:flex flex-col items-center md:items-start mt-8 md:mt-0">
+          <h4 className="font-poppins font-normal text-[18px] leading-[27px] text-white mb-4">Useful Links</h4>
+          <ul className="list-none font-poppins text-[16px] leading-[24px] text-white">
+            <li className="mt-2 md:mt-4">
+              <Link to="/" spy={true} smooth={true} duration={500} className="text-white cursor-pointer hover:text-gray-500">
                 Home
               </Link>
             </li>
@@ -78,51 +73,27 @@ const Footer = () => (
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
-        <div className="hidden sm:flex flex-col relative ss:my-0 my-4 min-w-[15rem]">
-          <h4 className="font-poppins font-normal text-[18px] leading-[27px] text-white">About the Team</h4>
-          <ul className="list-none mt-4 font-poppins font-extralight text-[16px] leading-[24px] text-white">
-            <li className="mt-4 hover:text-secondary">
-              <Link
-                to="rover"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
-              >
+        {/* Hide the About the Team section on small screens */}
+        {/* <div className="hidden sm:flex flex-col items-center md:items-start mt-4 md:mt-0">
+          <h4 className="font-poppins font-normal text-[18px] leading-[27px] text-white mb-4">About the Team</h4>
+          <ul className="list-none font-poppins text-[16px] leading-[24px] text-white">
+            <li className="mt-2 md:mt-4 hover:text-secondary">
+              <Link to="rover" spy={true} smooth={true} duration={500} className="text-white cursor-pointer hover:text-gray-500">
                 Our Rover
               </Link>
             </li>
-            <li className="mt-4 hover:text-secondary">
-              <Link
-                to="department"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
-              >
-                Departments
-              </Link>
-            </li>
-            <li className="mt-4 hover:text-secondary">
-              <Link
-                to="core" 
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="text-white cursor-pointer font-extralight font-poppins hover:text-gray-500 hover:decoration-white/30"
-              >
-                Core
-              </Link>
-            </li>
+           
           </ul>
-        </div>
+        </div> */}
 
-        <div className="flex relative flex-col ss:my-0  sm:px-10 my-4 min-w-[3rem] ml-[25%] sm:ml-0">
-          <h4 className="hidden sm:block font-poppins font-normal text-[18px] leading-[27px] text-white ml-0">Follow Us On</h4>
-          <ul className="list-none flex flex-row mt-4 font-poppins font-normal text-[16px] leading-[24px] text-white">
-            <li className="m-2 hover:text-secondary">
+<div className="flex flex-col items-center md:items-center mt-9 md:mt-0 md:pt-57 lg:ml-20">
+
+
+          {/* <h4 className="font-poppins font-normal text-[18px] leading-[27px] text-white mb-4">Follow Us On</h4> */}
+          <ul className="list-none flex flex-row text-white">
+          <li className="m-2 hover:text-secondary">
               <a href="https://instagram.com/djs_antariksh?igshid=MXQxZ2thMXZob3poYQ==
               " target="_blank" rel="noopener noreferrer">
                 <AiFillInstagram className="w-[30px] h-[30px]" />
@@ -135,7 +106,7 @@ const Footer = () => (
             </li>
             <li className="m-2 hover:text-secondary">
               <a href="https://twitter.com/djs_antariksh?lang=en" target="_blank" rel="noopener noreferrer">
-                <AiOutlineTwitter className="w-[30px] h-[30px]" />
+                <FaXTwitter className="w-[30px] h-[30px]" />
               </a>
             </li>
             <li className="m-2 hover:text-secondary">
@@ -152,9 +123,11 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="w-full flex justify-between relative items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
-        <p className="font-poppins font-thin text-center text-[18px] ml-24 leading-[27px] text-white">Copyright Ⓒ 2023 DJS Antariksh</p>
-      </div>
+      <div className="w-[100vw] mx-[10vw] flex flex-row justify-center md:justify-start p-0 pt-0 border-t-[1px] border-t-[#3F3E45]">
+  <p className="font-poppins font-thin text-center md:text-left text-[18px] leading-[27px] text-white md:pl-[28vw]">
+    Copyright Ⓒ 2024 DJS Antariksh
+  </p>
+</div>
     </section>
   </div>
 );
