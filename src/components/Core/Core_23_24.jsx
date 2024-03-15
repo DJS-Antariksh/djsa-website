@@ -84,7 +84,7 @@ function Core_23_24(){
                 }}>
                     <Card2Line
                         image = {ElexH}
-                        name = {'Aniruddh Vishwanathan'}
+                        name = {'Aniruddh Viswanathan'}
                         role = {'Electronics Head'}
                     />
                     <Card
