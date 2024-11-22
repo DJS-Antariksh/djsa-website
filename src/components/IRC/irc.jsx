@@ -14,6 +14,8 @@ import task3 from "../../assets/3.jpg"
 
 import "./irc.css";
 
+// Hi from agrim
+
 const Irc = () => {
   const ircTasks = [{ url: abex1 }, { url: task2 },{ url: task1 }];
   const outreach = [{ url: outreach2 }, { url: irc23 }];
