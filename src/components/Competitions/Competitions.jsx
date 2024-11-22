@@ -62,6 +62,8 @@ export default function App() {
           <img src={isdc} className='image absolute'/> 
         </SwiperSlide>
         
+        {/* ADD A BUTTON HERE LINKED TO /irc */}
+
         <SwiperSlide >
         <div className='flex flex-col items-center justify-evenly w-full text-justify h-full absolute gap-4 z-20 backdrop-blur-md opacity-0 hover:opacity-100'>
           <div className='title font-poppins relative text-center z-40 font-black text-lg'>International Rover Challenge</div>
