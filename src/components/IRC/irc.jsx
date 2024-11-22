@@ -15,7 +15,6 @@ import task3 from "../../assets/3.jpg"
 import "./irc.css";
 
 // new change
-
 // new change 2
 
 const Irc = () => {
