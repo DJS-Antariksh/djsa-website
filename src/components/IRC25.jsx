@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from './Navbar'
 import AboutIrc from './AboutIrc'
 import Missions from './Missions'
+import OurExp from './OurExp'
+
 const IRC25 = () => {
   return (
     <div className="h-full flex flex-col justify-center items-center">
@@ -12,8 +14,11 @@ const IRC25 = () => {
             <div className="mt-[25%]">
                 <AboutIrc />
             </div>
-            <div>
+            <div className=''>
                 <Missions/>
+            </div>
+            <div>
+                <OurExp/>
             </div>
         </div>
     </div>
