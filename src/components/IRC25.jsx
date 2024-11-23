@@ -3,6 +3,8 @@ import Navbar from './Navbar'
 import AboutIrc from './AboutIrc'
 import Missions from './Missions'
 import OurExp from './OurExp'
+import Footer from "./Sponsor/Footer.jsx"
+
 
 const IRC25 = () => {
   return (
@@ -17,8 +19,11 @@ const IRC25 = () => {
             <div className=''>
                 <Missions/>
             </div>
-            <div>
+            <div className='mb-4'>
                 <OurExp/>
+            </div>
+            <div>
+                <Footer />
             </div>
         </div>
     </div>
