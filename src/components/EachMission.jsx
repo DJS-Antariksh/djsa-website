@@ -56,14 +56,14 @@ const EachMission = ({ title, description, imgSrc, imagePosition }) => {
   }, [imagePosition]);
 
   return (
-    <div ref={containerRef} className="w-full mb-12 overflow-hidden">
-      <div className={`flex ${imagePosition === 'right' ? 'md:flex-row' : 'md:flex-row-reverse'} gap-[5%] justify-items-center`}>
-        <div ref={imageRef} className="w-full md:w-1/3">
-          <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg">
+    <div ref={containerRef} className="w-full mb-12 overflow-hidden ">
+      <div className={`flex items-center ${imagePosition === 'right' ? 'md:flex-row' : 'md:flex-row-reverse'} gap-[5%] items-center`}>
+        <div ref={imageRef} className="flex w-full md:w-1/3 justify-center items-center">
+          <div className="flex justify-center items-center aspect-square overflow-hidden rounded-lg shadow-lg">
             <img
               src={imgSrc}
               alt={`${title} mission`}
-              className={`w-[80%] h-[80%] object-cover transform hover:scale-105 transition-transform duration-300`}
+              className={`w-[80%] h-[80%] object-cover transform hover:scale-105 transition-transform duration-300 rounded-2xl`}
             />
           </div>
         </div>
