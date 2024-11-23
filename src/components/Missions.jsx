@@ -4,27 +4,27 @@ import EachMission from './EachMission';
 const Missions = () => {
   const missionData = [
     {
-      title: 'ABEX',
+      title: 'A B E X ',
       description: `The rover will serve as a mobile science lab to investigate Martian-like sites for signs of extinct or extant life.The rover must be equipped with at least one instrument or assay capable of detecting life, chosen by the team. It will collect and analyze subsurface samples of at least 10g from depths of 10 cm or more.The rover must also document sites using wide-angle panoramas (1:3 height-to-width ratio) with GPS coordinates, elevation, and scale, alongside close-up, high-resolution images.The rover will drop this sample at a designated location for future retrieval during the Reconnaissance and Delivery Mission.`,
       imgSrc: '/abex.jpg',
       imagePosition: 'left'
 
     },
     {
-      title: 'RDO',
+      title: 'R D O',
       description: `RDO DESCRIPTION GOES HERE`,
       imgSrc: '/abex.jpg',
       imagePosition: 'right'
     },
     {
-      title: 'AUTEX',
+      title: 'A U T E X',
       description: `AUTEX DESCRIPTION GOES HERE`,
       imgSrc: '/abex.jpg',
       imagePosition: 'left'
 
     },
     {
-      title: 'IDMO',
+      title: 'I D M O',
       description: `IDMO DESCRIPTION GOES HERE`,
       imgSrc: '/abex.jpg',
       imagePosition: 'right'
