@@ -192,3 +192,10 @@ code {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+#map {
+  width: 35%;
+  height: 45vh; /* Takes 90% of the viewport height */
+  margin: 0 auto;
+  border: 5px solid #fff;
+}
