@@ -19,16 +19,12 @@ const IRC25 = () => {
             <div className=''>
                 <Missions/>
             </div>
-            <div id='map' className='hidden sm:block'>
-                <Map />
-            </div>
             <div className='mb-4'>
                 <OurExp/>
             </div>
             <div>
                 <Footer />
             </div>
-
         </div>
     </div>
 
