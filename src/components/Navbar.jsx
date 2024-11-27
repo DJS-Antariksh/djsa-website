@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AntarikshLogo from "../assets/AntarikshLogo.png";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom"
 import home from "../assets/home.png"
 import medal from "../assets/medal.png"
 import group from "../assets/group.png"
@@ -55,15 +56,13 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link
-              to="irc"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
-            >
-              {isOpen ? <img src={medal} alt="medal"/> : 'IRC'}
-            </Link>
+          <RouterLink
+            to="/irc"
+            className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
+          >
+            {isOpen ? <img src={medal} alt="medal" /> : 'IRC'}
+          </RouterLink>
+
           </li>
           <li>
             <Link

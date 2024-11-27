@@ -58,22 +58,25 @@ const EachMission = ({ title, description, imgSrc, imagePosition }) => {
   return (
     <div ref={containerRef} className="w-full mb-12 overflow-hidden ">
       <div className={`flex items-center ${imagePosition === 'right' ? 'md:flex-row' : 'md:flex-row-reverse'} gap-[5%] items-center`}>
-        <div ref={imageRef} className="flex w-full md:w-1/3 justify-center items-center">
-          <div className="flex justify-center items-center aspect-square overflow-hidden rounded-lg shadow-lg">
-            <img
-              src={imgSrc}
-              alt={`${title} mission`}
-              className={`w-[80%] h-[80%] object-cover transform hover:scale-105 transition-transform duration-300 rounded-2xl`}
-            />
+          <div
+            ref={imageRef}
+            className="hidden md:flex w-full md:w-1/3 justify-center sm:block items-center"
+          >
+            <div className="flex justify-center items-center aspect-square overflow-hidden rounded-lg shadow-lg">
+              <img
+                src={imgSrc}
+                alt={`${title} mission`}
+                className="w-[80%] h-[80%] object-cover transform hover:scale-105 transition-transform duration-300 rounded-2xl"
+              />
+            </div>
           </div>
-        </div>
 
         <div ref={contentRef} className="w-full md:w-2/3 space-y-4 flex flex-col items-center">
-          <h2 className="text-white font-meth text-3xl font-semibold tracking-wide">
+          <h2 className="text-white font-meth text-3xl font-semibold sm:tracking-wide">
             {title}
           </h2>
           
-          <p className="text-gray-300 font-poppins text-xl leading-relaxed text-justify">
+          <p className="text-gray-300 font-poppins sm:text-xl text-md px-2 mx-6 sm:mx-0 sm:px-0 sm:leading-relaxed text-justify">
             {description}
           </p>
         </div>

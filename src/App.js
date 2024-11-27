@@ -32,16 +32,6 @@ export default function App() {
           </>
         } />
       <Route path="/irc" element={<IRC25 />} />
-      {/* <LandingPage/> */}
-      {/* <AboutTeam/> */}
-      {/* <Rover/> */}
-      {/* <Competitions/> */}
-      {/* <Achievements/> */}
-      {/* <Department/> */}
-      {/* <Core/> */}
-      {/* <ContactUs/> */}
-      {/* <Sponsor/> */}
-      {/* <Footer/> */}
     </Routes>
     </div>
   )
