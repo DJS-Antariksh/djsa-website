@@ -27,14 +27,16 @@ function Navbar() {
           zIndex: 1,
         }}
       >
+        <RouterLink to="/">
         <img
           className={`w-48 cursor-pointer antarikshLogo ${isOpen ? '' : ''}`}
           src={AntarikshLogo}
           alt="AntarikshLogo"
         />
+        </RouterLink>
         <ul className={`flex gap-8 ml-96 `}>
           <li>
-            <Link
+            <RouterLink
               to="/"
               spy={true}
               smooth={true}
@@ -42,7 +44,7 @@ function Navbar() {
               className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
             >
               {isOpen ? <img src={home} alt="home"/> : 'Home'}
-            </Link>
+            </RouterLink>
           </li>
           <li>
             <Link
@@ -76,6 +78,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
+            <RouterLink to="/irc">
             <Link
               to="department"
               spy={true}
@@ -85,6 +88,7 @@ function Navbar() {
             >
                 {isOpen ? <img src={departmentLogo} alt="departmentLogo"/> : 'Departments'}
             </Link>
+            </RouterLink>
           </li>
   
           <li>
