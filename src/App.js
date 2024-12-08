@@ -11,6 +11,7 @@
   import Irc from "./components/IRC/irc"
   import {Routes, Route } from "react-router-dom";
   import Competition from "./components/Competitions/Competitions"
+  import IRC25 from "./components/IRC25"
 
 export default function App() {
   return (
@@ -30,17 +31,7 @@ export default function App() {
             <Footer />
           </>
         } />
-      <Route path="/irc" element={<Irc />} />
-      {/* <LandingPage/> */}
-      {/* <AboutTeam/> */}
-      {/* <Rover/> */}
-      {/* <Competitions/> */}
-      {/* <Achievements/> */}
-      {/* <Department/> */}
-      {/* <Core/> */}
-      {/* <ContactUs/> */}
-      {/* <Sponsor/> */}
-      {/* <Footer/> */}
+      <Route path="/irc" element={<IRC25 />} />
     </Routes>
     </div>
   )
