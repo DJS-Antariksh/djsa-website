@@ -4,14 +4,20 @@ import about2 from "../../assets/about2.jpg"
 import about3 from "../../assets/about3.jpg"
 import about4 from "../../assets/about4.jpg"
 import about5 from "../../assets/about5.jpg"
+import about6 from "../../assets/about6.jpg"
+import about7 from "../../assets/about7.jpg"
+import about8 from "../../assets/about8.JPG"
 
 const AboutTeam = () => {
   const slides = [
+    {url: about7},
+    {url: about6},
+    {url: about8},
     {url: about1},
     {url: about2},
     {url: about3},
     {url: about4},
-    {url: about5},
+    {url: about5}
   ];
   const containerStyles = {
     width: "30rem",

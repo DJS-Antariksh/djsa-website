@@ -36,6 +36,7 @@ function Core_24_25(){
                         image = {CP}
                         name = {'Shubham Vyas'}
                         role = {'Captain'}
+                        linkedin={'https://www.linkedin.com/in/shubham-vyas-4b738428b/'}
                     />
                 </div>
                 <div className='vice-cap-manager' style={{
@@ -47,7 +48,7 @@ function Core_24_25(){
                     gap: '20px',
                     marginBottom:'-5px',
                 }}>
-                    <div style={{
+                    {/* <div style={{
                         width: '150px',
                         height: '175px',
                         borderRadius: '20px',
@@ -60,19 +61,28 @@ function Core_24_25(){
                         border: '4px solid white',
                         padding: '10px'
                     }}>
-                        <img src={VCP1} alt="img" style={{ width: '150px', height: '85px', border: '2px solid white' , borderRadius: '15px', position: 'relative',top:'-1px'}} />
+                        <img src={VCP1} alt="img" style={{ width: '150px', height: '85px', border: '2px solid white' , borderRadius: '15px', position: 'relative',top:'-1px', objectFit:''}} />
                         <div style={{color: 'white', fontWeight: '700', fontSize: '14px', marginTop: '10px', textAlign: 'center'}}>Spoorthi Shetty</div>
                         <div style={{color: 'white', fontWeight: '500', fontSize: '13px', margin: '4px', marginTop:'10px'}}>Vice Captain</div>
-                    </div>
+                    </div> */}
+                    <Card
+                        image = {VCP1}
+                        name = {'Spoorthi Shetty'}
+                        role = {'Vice Captain'}
+                        linkedin={'https://www.linkedin.com/in/spoorthi-shetty-13b196323/'}
+                       
+                    />
                     <Card
                         image = {TM}
                         name = {'Krupali Furia'}
                         role = {'Team Manager'}
+                        linkedin={'https://www.linkedin.com/in/krupali-furia-0bb490289/'}
                     />
-                    <Card2Line
+                    <Card
                         image = {VCP2}
                         name = {'Rachit Garg'}
                         role = {'Vice Captain'}
+                        linkedin={'https://www.linkedin.com/in/rachitgarg6326/'}
                     />
                 </div>
                 <div className='heads' style={{
@@ -84,10 +94,11 @@ function Core_24_25(){
                     alignItems: 'center',
                     gap: '20px',
                 }}>
-                    <Card2Line
+                    <Card
                         image = {ElexH}
                         name = {'Janay Asher'}
                         role = {'Electronics Head'}
+                        linkedin={'https://www.linkedin.com/in/janay-asher-56a8551b0/'}
                     />
                     <Card
                         image = {MH}
@@ -98,16 +109,19 @@ function Core_24_25(){
                         image = {CDH}
                         name = {'Atharv Mendhe'}
                         role = {'Coding Head'}
+                        linkedin= {'https://www.linkedin.com/in/atharv-mendhe-118442237/'}
                     />
                     <Card
                         image = {SH}
                         name = {'Rachit Garg'}
                         role = {'Science Head'}
+                        linkedin={'https://www.linkedin.com/in/rachitgarg6326/'}
                     />
                     <Card
                         image = {MH1}
                         name = {'Harsh Thakur'}
                         role = {'Marketing Head'}
+                        linkedin={'https://www.linkedin.com/in/harsh-thakur-388982249/'}
                     />
                     {/* <div style={{
                         width: '150px',
@@ -128,18 +142,20 @@ function Core_24_25(){
                     {/* </div> */}
                     <Card
                         image = {IH1}
-                        name = {'Eshaan Saawant'}
+                        name = {'Eshaan Sawant'}
                         role = {'Integration Head'}
                     />
                     <Card
                         image = {IH2}
                         name = {'Shraavya Bharti'}
                         role = {'Integration Head'}
+                        linkedin={'https://www.linkedin.com/in/shraavya-bharti-000a25250/'}
                     />
                     <Card
                         image = {IH3}
                         name = {'Aryan Singh'}
                         role = {'Integration Head (Aerosystem)'}
+                        linkedin={'https://www.linkedin.com/in/aryan-singh-348277299/'}
                     />
                 </div>
             </div>
