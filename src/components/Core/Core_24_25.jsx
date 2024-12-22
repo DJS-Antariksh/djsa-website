@@ -81,7 +81,7 @@ function Core_24_25(){
                     <Card
                         image = {VCP2}
                         name = {'Rachit Garg'}
-                        role = {'Vice Captain'}
+                        role = {'Vice Captain & Science Head'}
                         linkedin={'https://www.linkedin.com/in/rachitgarg6326/'}
                     />
                 </div>
@@ -111,12 +111,12 @@ function Core_24_25(){
                         role = {'Coding Head'}
                         linkedin= {'https://www.linkedin.com/in/atharv-mendhe-118442237/'}
                     />
-                    <Card
+                    {/* <Card
                         image = {SH}
                         name = {'Rachit Garg'}
                         role = {'Science Head'}
                         linkedin={'https://www.linkedin.com/in/rachitgarg6326/'}
-                    />
+                    /> */}
                     <Card
                         image = {MH1}
                         name = {'Harsh Thakur'}
@@ -143,18 +143,18 @@ function Core_24_25(){
                     <Card
                         image = {IH1}
                         name = {'Eshaan Sawant'}
-                        role = {'Integration Head'}
+                        role = {'Integrations Head'}
                     />
                     <Card
                         image = {IH2}
                         name = {'Shraavya Bharti'}
-                        role = {'Integration Head'}
+                        role = {'Integrations Head'}
                         linkedin={'https://www.linkedin.com/in/shraavya-bharti-000a25250/'}
                     />
                     <Card
                         image = {IH3}
                         name = {'Aryan Singh'}
-                        role = {'Integration Head (Aerosystem)'}
+                        role = {'Integrations Head (Aerosystem)'}
                         linkedin={'https://www.linkedin.com/in/aryan-singh-348277299/'}
                     />
                 </div>
