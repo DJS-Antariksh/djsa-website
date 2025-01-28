@@ -30,7 +30,7 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.11",
     "swiper": "^11.0.7",
-    "three": "^0.172.0",
+    "three": "^0.169.0",
     "three-stdlib": "^2.28.0",
     "tw-elements-react": "^1.0.0-alpha1",
     "video-react": "^0.16.0",
