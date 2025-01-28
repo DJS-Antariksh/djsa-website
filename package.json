@@ -38,7 +38,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm install three@0.172.0 --force && npm run start",
+    "build": "npm install three@0.172.0 --force && npm start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
