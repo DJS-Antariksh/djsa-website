@@ -38,7 +38,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm install --legacy-peer-deps && npm run start",
+    "build": "npm install --force && npm run start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
