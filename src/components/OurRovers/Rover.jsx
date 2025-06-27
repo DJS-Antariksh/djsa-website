@@ -2,6 +2,7 @@ import { Carousel } from "@material-tailwind/react";
 import Vidyaan3D from "./Vidyaan3D";
 import Abhyan3D from "./Abhyan3D";
 import Prayan3D from "./Prayan3D";
+import Avyaan3D from "./Avyaan3D";
 import * as THREE from 'three';
 
 function Rover() {
@@ -27,6 +28,7 @@ function Rover() {
         alt="image 1"
         className="object-cover w-full h-full"
       /> */}
+      <Avyaan3D />
       <Vidyaan3D />
       <Abhyan3D />
       <Prayan3D/>
