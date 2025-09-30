@@ -7,13 +7,13 @@ import about5 from "../../assets/about5.jpg"
 import about6 from "../../assets/about6.jpg"
 import about7 from "../../assets/about7.jpg"
 import about8 from "../../assets/about8.JPG"
-import ERC_2025_TRADS from "../../assets/ERC_2025_TRADS.jpg"
-import IRC_exhibition from "../../assets/IRC25_exhibition.jpg"
+// import ERC_2025_TRADS from "/ERC_2025_TRADS.jpg"
+// import IRC_exhibition from "../../assets/IRC25_exhibition.jpg"
 
 const AboutTeam = () => {
   const slides = [
-    {url: ERC_2025_TRADS},
-    {url: IRC_exhibition},
+    {url: "/ERC_2025_TRADS.jpg"},
+    {url: "/IRC25_exhibition.jpg"},
     {url: about7},
     {url: about6},
     {url: about8},
