@@ -27,6 +27,16 @@ const CarouselMain = () => {
 
   const items = [
     {
+      img: require("../../assets/ERC_2025_ACHIEVEMENTS.jpg"),
+      title: "7th Rank ERC Onsite 2025",
+      id: 13,
+    },
+    {
+      img: require("../../assets/IRC_2025.jpg"),
+      title: "2nd Runner Up IRC 2025",
+      id: 12,
+    },
+    {
       img: require("../../assets/ISDC_2024.jpg"),
       title: "1st Runner Up ISDC 2024",
       id: 11,
