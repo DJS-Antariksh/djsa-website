@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AntarikshLogo from "../assets/AntarikshLogo.png";
 import { Link } from "react-scroll";
-import { Link as RouterLink } from "react-router-dom"
+import { Link as RouterLink, useLocation } from "react-router-dom"
 import home from "../assets/home.png"
 import medal from "../assets/medal.png"
 import group from "../assets/group.png"
@@ -11,6 +11,8 @@ import hamburgerMenu from "../assets/hamburgerMenu.png"
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
+    const isHome = location.pathname === '/';
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -47,15 +49,24 @@ function Navbar() {
             </RouterLink>
           </li>
           <li>
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
-            >
-              {isOpen ? <img src={group} alt="group"/> : 'About'}
-            </Link>
+            {isHome ? (
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
+              >
+                {isOpen ? <img src={group} alt="group"/> : 'About'}
+              </Link>
+            ) : (
+              <RouterLink
+                to="/"
+                className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
+              >
+                {isOpen ? <img src={group} alt="group"/> : 'About'}
+              </RouterLink>
+            )}
           </li>
           <li>
           <RouterLink
@@ -67,44 +78,67 @@ function Navbar() {
 
           </li>
           <li>
-            <Link
-              to="achievements"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
-            >
-              {isOpen ? <img src={medal} alt="medal"/> : 'Achievements'}
-            </Link>
+            {isHome ? (
+              <Link
+                to="achievements"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
+              >
+                {isOpen ? <img src={medal} alt="medal"/> : 'Achievements'}
+              </Link>
+            ) : (
+              <RouterLink
+                to="/"
+                className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
+              >
+                {isOpen ? <img src={medal} alt="medal"/> : 'Achievements'}
+              </RouterLink>
+            )}
           </li>
           <li>
-            <RouterLink to="/irc">
-            <Link
-              to="department"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
-            >
+            {isHome ? (
+              <Link
+                to="department"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
+              >
                 {isOpen ? <img src={departmentLogo} alt="departmentLogo"/> : 'Departments'}
-            </Link>
-            </RouterLink>
+              </Link>
+            ) : (
+              <RouterLink
+                to="/"
+                className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
+              >
+                {isOpen ? <img src={departmentLogo} alt="departmentLogo"/> : 'Departments'}
+              </RouterLink>
+            )}
           </li>
   
           <li>
-      <Link
-        to="contactUs"
-        spy={true}
-        smooth={true}
-        duration={500}
-        className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
-        target="_blank" // Add this line to open the link in a new tab or window
-        rel="noopener noreferrer" // Recommended for security, especially when using target="_blank"
-      >
-        {isOpen ? <img src={contactUs} alt="contactUs"/> : 'Contact'}
-      {/* <Rover /> */}
-
-      </Link>
+            {isHome ? (
+              <Link
+                to="contactUs"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
+                target="_blank" 
+                rel="noopener noreferrer" 
+              >
+                {isOpen ? <img src={contactUs} alt="contactUs"/> : 'Contact'}
+              </Link>
+            ) : (
+              <RouterLink
+                to="/"
+                className={`text-lg font-light text-white cursor-pointer font-poppins hover:text-gray-500 hover:decoration-white/30 md:text-xl xxl:text-5xl sm:text-sm ${isOpen ? '' : 'navLinkDisplay'}`}
+              >
+                {isOpen ? <img src={contactUs} alt="contactUs"/> : 'Contact'}
+              </RouterLink>
+            )}
     </li>
         </ul>
         <p onClick={toggleDropdown} className="flex flex-col hidden hamburgerMenu">

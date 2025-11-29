@@ -16,13 +16,37 @@ const Sponsor = () => {
           Sponsors
         </div>
         <div className="flex flex-wrap justify-center">
-          <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem]" src={solidworks} alt="sponsor img"></img>
-          {/* <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem]" src={PA} alt="sponsor img"></img> */}
-          <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem] " src={alpha} alt="sponsor img"></img>
-          <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem]" src={ANYSYS} alt="sponsor img"></img>
-          <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem]" src={spectra} alt="sponsor img"></img>
-          <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem]" src={tesseract} alt="sponsor img"></img>
-          {/* <img className="m-12 w-[20%] h-[5rem] sm:h-[10rem]" src={seshasai} alt="sponsor img"></img> */}
+
+          <img
+            className="m-12 w-[20%] h-[5rem] sm:h-[10rem] rounded-[5%] transition-transform duration-300 hover:scale-110"
+            src={solidworks}
+            alt="sponsor img"
+          />
+
+          <img
+            className="m-12 w-[20%] h-[5rem] sm:h-[10rem] rounded-[5%] transition-transform duration-300 hover:scale-110"
+            src={alpha}
+            alt="sponsor img"
+          />
+
+          <img
+            className="m-12 w-[20%] h-[5rem] sm:h-[10rem] rounded-[5%] transition-transform duration-300 hover:scale-110"
+            src={ANYSYS}
+            alt="sponsor img"
+          />
+
+          <img
+            className="m-12 w-[20%] h-[5rem] sm:h-[10rem] rounded-[5%] transition-transform duration-300 hover:scale-110"
+            src={spectra}
+            alt="sponsor img"
+          />
+
+          <img
+            className="m-12 w-[20%] h-[5rem] sm:h-[10rem] rounded-[5%] transition-transform duration-300 hover:scale-110"
+            src={tesseract}
+            alt="sponsor img"
+          />
+
         </div>
       </div>
     </div>

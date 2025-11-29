@@ -11,6 +11,7 @@ import Core_21_22 from "./Core_21_22";
 import Core_22_23 from './Core_22_23'
 import Core_23_24 from './Core_23_24'
 import Core_24_25 from './Core_24_25'
+import Core_25_26 from './Core_25_26'
 
 import "./Core.css"; 
 
@@ -64,6 +65,13 @@ function Core() {
         >
           2024-2025
         </TETabsItem>
+        <TETabsItem
+        className="customTab"
+          onClick={() => handleFillClick("tab6")}
+          active={fillActive === "tab6"}
+        >
+          2025-2026
+        </TETabsItem>
       </TETabs>
 
       <TETabsContent>
@@ -86,6 +94,10 @@ function Core() {
         <TETabsPane show={fillActive === "tab5"} className="text-white">
           {/* <img src={core1} alt={"core1"} className="core-image" /> */}
           <Core_24_25 />
+        </TETabsPane>
+        <TETabsPane show={fillActive === "tab6"} className="text-white">
+          {/* <img src={core1} alt={"core1"} className="core-image" /> */}
+          <Core_25_26 />
         </TETabsPane>
       </TETabsContent>
     </div>

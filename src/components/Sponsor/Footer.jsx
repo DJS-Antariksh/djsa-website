@@ -115,7 +115,7 @@ const Footer = () => (
               </a>
             </li>
             <li className="m-2 hover:text-secondary">
-              <a href="https://youtube.com/@djsantariksh9095?si=YVUA4NdSvCpViWYG" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@djsantariksh" target="_blank" rel="noopener noreferrer">
                 <AiFillYoutube className="w-[30px] h-[30px]" />
               </a>
             </li>

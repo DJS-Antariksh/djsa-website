@@ -13,6 +13,7 @@
   import Competition from "./components/Competitions/Competitions"
   import IRC25 from "./components/IRC25"
   import ARModelViewer from "./components/ARModelViewer"
+  import IRC26 from "./components/IRC2026/IRC26"
 
 export default function App() {
   return (
@@ -32,7 +33,7 @@ export default function App() {
             <Footer />
           </>
         } />
-      <Route path="/irc" element={<IRC25 />} />
+      <Route path="/irc" element={<IRC26 />} />
       <Route path="/ar" element={<ARModelViewer />} />
     </Routes>
     </div>

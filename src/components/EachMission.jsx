@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const EachMission = ({ title, description, imgSrc, imagePosition }) => {
+const EachMission = ({ title, description, imgSrc, imagePosition, customStyle = '' }) => {
   const containerRef = useRef(null);
   const imageRef = useRef(null);
   const contentRef = useRef(null);
@@ -60,7 +60,7 @@ const EachMission = ({ title, description, imgSrc, imagePosition }) => {
       <div className={`flex items-center ${imagePosition === 'right' ? 'md:flex-row' : 'md:flex-row-reverse'} gap-[5%] items-center`}>
           <div
             ref={imageRef}
-            className="hidden md:flex w-full md:w-1/3 justify-center sm:block items-center"
+            className={`hidden md:flex w-full md:w-1/3 justify-center sm:block items-center ${customStyle}`}
           >
             <div className="flex justify-center items-center aspect-square overflow-hidden rounded-lg shadow-lg">
               <img
