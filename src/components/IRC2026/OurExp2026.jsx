@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const OurExp = () => {
   const sectionRef = useRef(null);
@@ -9,21 +9,19 @@ const OurExp = () => {
   const paragraphRef = useRef(null);
 
   useEffect(() => {
-    // Register the ScrollTrigger plugin
     gsap.registerPlugin(ScrollTrigger);
 
-    // GSAP animation with ScrollTrigger
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: sectionRef.current, // The section to watch
-        start: 'top 80%', // Animation starts when the top of the section is 80% down the viewport
-        end: 'bottom 50%', // Animation ends when the bottom is 50% down the viewport
-        toggleActions: 'play none none none', // Play animation only once
+        trigger: sectionRef.current,
+        start: "top 80%",
+        end: "bottom 50%",
+        toggleActions: "play none none none",
       },
     });
 
     tl.from(headingRef.current, { opacity: 0, y: -50, duration: 1 })
-      .from(paragraphRef.current, { opacity: 0, y: 50, duration: 1 }, '-=0.5'); // Overlapping animation
+      .from(paragraphRef.current, { opacity: 0, y: 50, duration: 1 }, "-=0.5");
   }, []);
 
   return (
@@ -31,36 +29,34 @@ const OurExp = () => {
       ref={sectionRef}
       className="flex flex-col justify-center items-center gap-8"
     >
+      {/* Heading */}
       <div
         ref={headingRef}
-        className="text-white font-meth text-[24px] ss:text-[36px] mb-7 tracking-widest font-bold"
+        className="text-white font-meth text-[24px] ss:text-[36px] mb-7 tracking-widest font-bold opacity-1"
       >
         OUR EXPERIENCE
       </div>
-    <div className='w-[90%] ss:px-[12%] px-[8%]'>
-      <div className='w-full'>
-        <img src="./our.jpg" className="ss:border-[5px] border-[2px] border-white rounded-2xl" />
-      </div>
 
-      <div
-        ref={paragraphRef}
-        className="text-gray-300 font-poppins ss:text-[20px] text-[16px] ss:leading-relaxed leading-snug text-justify w-full"
-      >
-        <br />
-        Participating in the International Rover Challenge (IRC) has been an
-        extraordinary experience that has pushed the boundaries of our technical
-        and collaborative capabilities. From designing and assembling a robust
-        rover to navigating complex challenges like terrain traversal,
-        autonomous navigation, and scientific exploration, the competition has
-        tested every aspect of our engineering expertise. The interdisciplinary
-        collaboration between software, mechanical, and electronics teams
-        fostered innovation and teamwork, while the high-pressure environment has
-        sharpened our problem-solving skills. Competing alongside teams from
-        around the globe provided us with invaluable insights, new
-        perspectives, and a sense of camaraderie that transcended borders. IRC
-        not only allowed us to showcase our rover's capabilities but also
-        deepened our passion for space exploration and robotics. The event left us inspired, motivated, and eager to tackle even greater challenges in the future, especially after securing the 2nd runner-up position last year. We are determined to push the boundaries of our knowledge and skills, aiming to achieve even greater heights this year.
-      </div>
+      {/* MAIN CONTAINER (80% of screen) */}
+      <div className="w-[80%] mx-auto px-[8%] ss:px-[12%] flex flex-col gap-8">
+
+        {/* IMAGE — smaller, centered */}
+        <div className="w-full flex justify-center">
+          <img
+            src="/tasks/irc2025_win1.jpg"
+            className="w-full ss:w-full h-[30%] ss:h-[30%] border-white ss:border-[5px] border-[2px] rounded-2xl"
+          />
+        </div>
+
+        {/* TEXT — full width of container */}
+        <div
+          ref={paragraphRef}
+          className="w-full text-gray-300 font-poppins ss:text-[20px] text-[16px] ss:leading-relaxed leading-snug text-justify"
+        >
+          <p>
+            Competing at the International Rover Challenge (IRC) has been a truly memorable experience. It pushed our technical capabilities and managerial skills beyond our limits. From brainstorming to manufacturing the rover for complex challenges like autonomous navigation and scientific exploration, the competition thoroughly tests our engineering expertise. Coordinated efforts among various departments enabled the team to develop a rover fully equipped “To Decipher Unimaginable”. Furthermore, competing alongside international teams helps us understand different methodologies and approaches, giving us practical insights that strengthens our overall learning and offers a broader perspective on innovation, turning the event into a platform for cross-cultural learning and professional growth. Securing a podium finish for the past two years has left us incredibly inspired and proud, giving us confidence as a team. However, we view this success not as a final destination, but as a strong foundation to build upon. Using this experience as a solid framework, we strive to improve our skills and achieve even greater heights this year.
+          </p>
+        </div>
       </div>
     </div>
   );

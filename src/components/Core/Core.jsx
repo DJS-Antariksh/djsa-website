@@ -17,7 +17,7 @@ import "./Core.css";
 
 
 function Core() {
-  const [fillActive, setFillActive] = useState("tab5");
+  const [fillActive, setFillActive] = useState("tab6");
   const handleFillClick = (value) => {
     if (value === fillActive) {
       return;

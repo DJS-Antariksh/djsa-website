@@ -10,7 +10,7 @@ const IRC26 = () => {
         <div className="">
             <Navbar />
         </div>
-        <div className='flex flex-col justify-center items-center gap-9'>
+        <div className='w-full flex flex-col justify-center items-center gap-9'>
             <div className="mt-[25%]">
                 <AboutIrc26 />
             </div>
@@ -20,7 +20,7 @@ const IRC26 = () => {
             <div className='mb-4'>
                 <OurExp26/>
             </div>
-            <div>
+            <div className="w-full">
                 <Footer />
             </div>
         </div>
