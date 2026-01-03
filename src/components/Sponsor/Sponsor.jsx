@@ -3,7 +3,7 @@ import React from "react";
 const Sponsor = () => {
   const sponsors = [
     "/sponsors2026/2.png",
-    "/sponsors2026/3.png", // index 1
+    "/sponsors2026/3.png", // PCB Power
     "/sponsors2026/4.png",
     "/sponsors2026/5.png",
     "/sponsors2026/6.png",
@@ -17,18 +17,18 @@ const Sponsor = () => {
           Sponsors
         </div>
 
-        <div className="flex flex-wrap justify-center items-center">
+        {/* GRID instead of flex */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center">
           {sponsors.map((src, index) => {
             const image = (
               <img
-                key={index}
-                className="m-12 w-[20%] h-[5rem] sm:h-[10rem] object-contain rounded-[5%] transition-all duration-300 hover:scale-110 drop-shadow-[0_0_5px_rgba(255,255,255,0.5)] hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.9)] cursor-pointer"
+                className="m-12 w-[220px] h-[120px] object-contain rounded-[5%] transition-all duration-300 hover:scale-110 drop-shadow-[0_0_5px_rgba(255,255,255,0.5)] hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.9)] cursor-pointer"
                 src={src}
                 alt={`sponsor ${index + 1}`}
               />
             );
 
-            // Only 3.png → pcbpower website
+            // Only PCB Power clickable
             if (index === 1) {
               return (
                 <a
@@ -42,7 +42,7 @@ const Sponsor = () => {
               );
             }
 
-            return image;
+            return <div key={index}>{image}</div>;
           })}
         </div>
       </div>
